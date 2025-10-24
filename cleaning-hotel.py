@@ -1,5 +1,8 @@
 import pandas as pd
 import numpy as np
+import warnings
+
+warnings.filterwarnings("ignore")
 
 # FUNCTION for hotel star column validation
 def clean_hotel_star(df, dataset_name, column_name='Hotel Star'):
@@ -13,11 +16,10 @@ def clean_hotel_star(df, dataset_name, column_name='Hotel Star'):
     # Fill the null values of "Hotel Star" with the mode value
     if not df[column_name].isnull().all(): # Check if the column is completely empty
         mode_star = df[column_name].mode()[0]   # find the mode value of Hotel Star
-        df[column_name].fillna(mode_star, inplace=True)
+        df[column_name] = df[column_name].fillna(mode_star)
+        # Change the data type to integer
+        df[column_name] = df[column_name].astype(int)
         
-    # Change the data type to integer
-    df[column_name] = df[column_name].astype(int)
-    
     return df
 
 
@@ -39,9 +41,8 @@ def clean_guest_rating(df, dataset_name, column_name='Guest Rating'):
     df[column_name] = df[column_name].clip(lower=0, upper=10)
 
     #  Fill the null values of "Guest Rating" with the median value
-    if not df[column_name].isnull().all():
-        median_rating = df[column_name].median()
-        df[column_name].fillna(median_rating, inplace=True)
+    median_rating = df[column_name].median()
+    df[column_name] = df[column_name].fillna(median_rating)
 
     # Round the values to one decimal place
     df[column_name] = df[column_name].round(1)
@@ -55,10 +56,11 @@ def date_format(df, dataset_name):
     
     # Change the data type to datetime
     if 'Checkin Date' in df.columns:
-        df['Checkin Date'] = pd.to_datetime(df['Checkin Date'], dayfirst=True, errors='coerce')
+        df['Checkin Date'] = pd.to_datetime(df['Checkin Date'], errors='coerce')
     if 'Checkout Date' in df.columns:
-        df['Checkout Date'] = pd.to_datetime(df['Checkout Date'], dayfirst=True, errors='coerce')
-        
+        df['Checkout Date'] = pd.to_datetime(df['Checkout Date'], errors='coerce')
+    df.dropna(subset=['Checkin Date', 'Checkout Date'], inplace=True)
+
     # 3. Change the date format to dd/mm/yyyy
     if 'Checkin Date' in df.columns:
         df['Checkin Date'] = df['Checkin Date'].dt.strftime('%d/%m/%Y')
@@ -73,7 +75,8 @@ dataset_paths = [
     'data-scraping/hotel/hotel_agoda_20250926_10days.xlsx',
     'data-scraping/hotel/hotel_traveloka_20250926_10days.xlsx',
     'data-scraping/hotel/hotel_tiketcom_(13 Oktober 2025 - 24 Oktober 2025).xlsx',
-    'data-scraping/hotel/hotel_tripcom_(12 Oktober 2025 - 23 Oktober 2025).xlsx'
+    'data-scraping/hotel/hotel_tripcom_(12 Oktober 2025 - 23 Oktober 2025).xlsx',
+    'data-scraping/hotel/hotel_bookingcom_data_(27 Oktober 2025 - 6 November 2025).xlsx'
 ]
 
 # DATA CLEANING on each datasets
@@ -88,7 +91,7 @@ for path in dataset_paths:
         drop_columns = ['Hotel_ID', 'Scraped Timestamp', 'Source URL']
         # Determine the required columns (remove any row if one of these columns is null)
         required_columns = ['Hotel Name', 'Price', 'Checkin Date', 'Checkout Date']
-        df = df_raw.drop(drop_columns, axis=1).dropna(subset=required_columns)
+        df = df_raw.drop(drop_columns, axis=1, errors='ignore').dropna(subset=required_columns)
 
         # Check validation for all datasets
         print(f"\n--- Validating columns of {dataset_name} ---")
