@@ -1,59 +1,59 @@
 date,airline,departure_time,arrival_time,duration,transit,price,origin,destination,seat_class,baggage,duration_minutes,airline_encoded,seat_class_encoded,cluster,cluster_label
-01/11/25,AirAsia,07:40,13:00,6h 20m,1,2191927,SIN,CGK,Business,40.0,380,1,0,2,High-end Flight
+01/11/25,AirAsia,07:40,13:00,6h 20m,1,2191927,SIN,CGK,Business,40.0,380,1,0,2,Mid-range Flight
 01/11/25,AirAsia,11:50,12:35,1h 45m,0,924030,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 01/11/25,AirAsia,14:40,15:30,1h 50m,0,2306394,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 01/11/25,AirAsia,16:30,19:20,1h 50m,0,920966,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
-01/11/25,Batik Air,05:00,06:20,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-01/11/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
+01/11/25,Batik Air,05:00,06:20,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+01/11/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
 01/11/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 01/11/25,Batik Air,05:15,10:30,5h 15m,1,4910100,CGK,SIN,Business,10.0,315,5,0,0,Budget Flight
 01/11/25,Batik Air,05:15,07:15,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-01/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-01/11/25,Batik Air,05:25,06:50,1h 25m,0,3412399,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-01/11/25,Batik Air,06:00,07:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+01/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+01/11/25,Batik Air,05:25,06:50,1h 25m,0,3412399,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+01/11/25,Batik Air,06:00,07:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 01/11/25,Batik Air,06:20,08:20,1h 0m,0,762980,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-01/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-01/11/25,Batik Air,07:45,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+01/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+01/11/25,Batik Air,07:45,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 01/11/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
-01/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
+01/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 01/11/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
-01/11/25,Batik Air,10:10,20:30,9h 20m,1,5391180,SUB,SIN,Business,30.0,560,5,0,2,High-end Flight
-01/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-01/11/25,Batik Air,11:20,16:50,6h 30m,1,6186907,SIN,SUB,Business,40.0,390,5,0,2,High-end Flight
-01/11/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,11:35,12:55,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,12:00,13:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-01/11/25,Batik Air,13:30,15:00,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-01/11/25,Batik Air,14:10,15:40,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,15:20,16:50,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,15:50,17:15,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-01/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+01/11/25,Batik Air,10:10,20:30,9h 20m,1,5391180,SUB,SIN,Business,30.0,560,5,0,2,Mid-range Flight
+01/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+01/11/25,Batik Air,11:20,16:50,6h 30m,1,6186907,SIN,SUB,Business,40.0,390,5,0,2,Mid-range Flight
+01/11/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,11:35,12:55,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,12:00,13:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+01/11/25,Batik Air,13:30,15:00,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+01/11/25,Batik Air,14:10,15:40,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,15:20,16:50,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,15:50,17:15,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+01/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 01/11/25,Batik Air,16:15,21:30,6h 15m,1,6186907,SIN,SUB,Business,10.0,375,5,0,0,Budget Flight
-01/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-01/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+01/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+01/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 01/11/25,Batik Air,17:30,19:00,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 01/11/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-01/11/25,Batik Air,17:55,19:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-01/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+01/11/25,Batik Air,17:55,19:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+01/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 01/11/25,Batik Air,18:10,19:40,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 01/11/25,Batik Air,18:15,23:05,5h 50m,1,2104041,SIN,CGK,Economy,10.0,350,5,1,0,Budget Flight
 01/11/25,Batik Air,18:30,21:15,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-01/11/25,Batik Air,18:40,20:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+01/11/25,Batik Air,18:40,20:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 01/11/25,Batik Air,18:45,18:45,1h 0m,0,727600,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
 01/11/25,Batik Air,19:15,20:45,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-01/11/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-01/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+01/11/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+01/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 01/11/25,Batik Air,20:30,20:30,1h 0m,0,648434,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
 01/11/25,Batik Air,21:25,22:15,1h 50m,0,1985300,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-01/11/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+01/11/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 01/11/25,"Batik Air , Lion Air",09:30,16:10,6h 40m,1,1645830,SRG,SUB,Economy,20.0,400,6,1,0,Budget Flight
 01/11/25,"Batik Air , Lion Air",12:15,16:10,3h 55m,1,1645830,SRG,SUB,Economy,20.0,235,6,1,0,Budget Flight
 01/11/25,Citilink,07:05,07:10,1h 5m,0,746683,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
@@ -71,10 +71,10 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 01/11/25,Garuda Indonesia,07:00,10:25,4h 25m,1,23332800,DPS,SUB,Business,10.0,265,12,0,0,Budget Flight
 01/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,2575038,SUB,SIN,Economy,30.0,140,12,1,0,Budget Flight
 01/11/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
-01/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
+01/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
 01/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,2615689,SRG,SUB,Economy,20.0,230,12,1,0,Budget Flight
 01/11/25,Garuda Indonesia,20:15,21:50,1h 35m,0,1433603,CGK,SUB,Economy,20.0,95,12,1,0,Budget Flight
-01/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+01/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 01/11/25,Lion Air,03:30,05:00,1h 30m,0,867438,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 01/11/25,Lion Air,07:00,07:00,1h 0m,0,612837,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 01/11/25,Lion Air,07:40,09:10,1h 30m,0,958487,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
@@ -98,21 +98,21 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 01/11/25,Lion Air,20:00,21:30,1h 30m,0,903926,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 01/11/25,Lion Air,20:30,20:30,1h,0,589891,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 01/11/25,Lion Air,21:00,22:30,1h 30m,0,903926,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
-01/11/25,Malaysia Airlines,06:00,14:50,9h 50m,1,6003235,SIN,SUB,Business,20.0,590,16,0,2,High-end Flight
+01/11/25,Malaysia Airlines,06:00,14:50,9h 50m,1,6003235,SIN,SUB,Business,20.0,590,16,0,2,Mid-range Flight
 01/11/25,Malaysia Airlines,10:00,18:35,7h 35m,1,1509000,SUB,SIN,Economy,20.0,455,16,1,0,Budget Flight
-01/11/25,Pelita Air,07:55,08:35,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
+01/11/25,Pelita Air,07:55,08:35,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
 01/11/25,Pelita Air,11:40,12:25,1h 45m,0,1962568,SIN,CGK,Economy,20.0,105,17,1,0,Budget Flight
 01/11/25,Pelita Air,17:15,18:50,1h 35m,0,874532,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 01/11/25,Pelita Air,18:25,20:00,1h 35m,0,916558,SUB,CGK,Economy,10.0,95,17,1,0,Budget Flight
 01/11/25,Scoot,07:30,09:00,2h 30m,0,1874485,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 01/11/25,Scoot,09:35,12:25,1h 50m,0,945116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
 01/11/25,Scoot,09:45,13:05,2h 20m,0,1949886,SUB,SIN,Economy,10.0,140,18,1,0,Budget Flight
-01/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-01/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+01/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+01/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 01/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,3048221,SIN,SUB,Economy,30.0,150,19,1,0,Budget Flight
-01/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-01/11/25,Singapore Airlines,16:25,17:50,2h 25m,0,11545766,SIN,SUB,Business,40.0,145,19,0,2,High-end Flight
-01/11/25,Singapore Airlines,18:40,19:25,1h 45m,0,13580544,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+01/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+01/11/25,Singapore Airlines,16:25,17:50,2h 25m,0,11545766,SIN,SUB,Business,40.0,145,19,0,2,Mid-range Flight
+01/11/25,Singapore Airlines,18:40,19:25,1h 45m,0,13580544,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 01/11/25,Super Air Jet,13:30,15:30,1h 0m,0,548084,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 01/11/25,Super Air Jet,16:10,16:10,1h 0m,0,576698,DPS,SUB,Economy,15.0,60,20,1,0,Budget Flight
 01/11/25,TransNusa,07:45,10:40,1h 55m,0,1004118,CGK,SIN,Economy,20.0,115,22,1,0,Budget Flight
@@ -121,55 +121,55 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 01/11/25,Wings Air,10:00,11:10,1h 10m,0,851680,SRG,SUB,Economy,10.0,70,23,1,0,Budget Flight
 01/11/25,Wings Air,11:40,12:35,55m,0,804482,SUB,SRG,Economy,10.0,55,23,1,0,Budget Flight
 02/11/25,AirAsia,11:10,14:00,1h 50m,0,925792,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
-02/11/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-02/11/25,Batik Air,05:00,06:20,1h 20m,0,1800319,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+02/11/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+02/11/25,Batik Air,05:00,06:20,1h 20m,0,1800319,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 02/11/25,Batik Air,05:05,06:35,1h 30m,0,982891,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-02/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-02/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
+02/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+02/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
 02/11/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 02/11/25,Batik Air,05:15,13:45,5h 15m,1,4910100,CGK,SIN,Business,10.0,315,5,0,0,Budget Flight
 02/11/25,Batik Air,05:15,07:15,1h 0m,0,692062,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-02/11/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,High-end Flight
-02/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
+02/11/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,Mid-range Flight
+02/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 02/11/25,Batik Air,05:25,06:50,1h 25m,0,1023410,HLP,SUB,Economy,20.0,85,5,1,0,Budget Flight
 02/11/25,Batik Air,06:00,07:30,1h 30m,0,1002260,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 02/11/25,Batik Air,06:20,08:20,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-02/11/25,Batik Air,06:20,16:30,9h 10m,1,5254680,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
-02/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-02/11/25,Batik Air,07:30,08:50,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+02/11/25,Batik Air,06:20,16:30,9h 10m,1,5254680,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
+02/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+02/11/25,Batik Air,07:30,08:50,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 02/11/25,Batik Air,07:45,10:30,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 02/11/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 02/11/25,Batik Air,08:00,09:30,1h 30m,0,1002260,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 02/11/25,Batik Air,08:30,10:00,1h 30m,0,1032580,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 02/11/25,Batik Air,08:30,15:15,6h 45m,1,1679780,SUB,SRG,Economy,20.0,405,5,1,0,Budget Flight
-02/11/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-02/11/25,Batik Air,08:50,10:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+02/11/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+02/11/25,Batik Air,08:50,10:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 02/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Economy,30.0,85,5,1,0,Budget Flight
-02/11/25,Batik Air,09:30,10:55,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+02/11/25,Batik Air,09:30,10:55,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 02/11/25,Batik Air,09:30,13:30,4h,1,3636849,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
-02/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,10:15,15:00,4h 45m,1,2958530,SRG,SUB,Business,30.0,285,5,0,2,High-end Flight
+02/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,10:15,15:00,4h 45m,1,2958530,SRG,SUB,Business,30.0,285,5,0,2,Mid-range Flight
 02/11/25,Batik Air,10:30,19:05,9h 35m,1,5089000,SIN,SUB,Business,10.0,575,5,0,0,Budget Flight
-02/11/25,Batik Air,11:20,12:10,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-02/11/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-02/11/25,Batik Air,12:00,13:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-02/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,15:20,16:50,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,15:30,10:55,19h 25m,1,2555331,SRG,SUB,Economy,30.0,1165,5,1,2,High-end Flight
-02/11/25,Batik Air,16:00,17:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,17:00,18:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,17:30,18:20,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-02/11/25,Batik Air,17:45,10:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-02/11/25,Batik Air,18:10,19:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,18:30,11:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-02/11/25,Batik Air,18:45,18:45,1h,0,1611639,DPS,SUB,Business,30.0,60,5,0,2,High-end Flight
-02/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-02/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+02/11/25,Batik Air,11:20,12:10,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+02/11/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+02/11/25,Batik Air,12:00,13:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+02/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,15:20,16:50,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,15:30,10:55,19h 25m,1,2555331,SRG,SUB,Economy,30.0,1165,5,1,2,Mid-range Flight
+02/11/25,Batik Air,16:00,17:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,17:00,18:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,17:30,18:20,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+02/11/25,Batik Air,17:45,10:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+02/11/25,Batik Air,18:10,19:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,18:30,11:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+02/11/25,Batik Air,18:45,18:45,1h,0,1611639,DPS,SUB,Business,30.0,60,5,0,2,Mid-range Flight
+02/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+02/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 02/11/25,Batik Air,20:15,21:40,1h 25m,0,1224461,HLP,SUB,Economy,20.0,85,5,1,0,Budget Flight
-02/11/25,Batik Air,20:30,20:30,1h,0,1611639,DPS,SUB,Business,30.0,60,5,0,2,High-end Flight
-02/11/25,Batik Air,21:25,22:15,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+02/11/25,Batik Air,20:30,20:30,1h,0,1611639,DPS,SUB,Business,30.0,60,5,0,2,Mid-range Flight
+02/11/25,Batik Air,21:25,22:15,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 02/11/25,Batik Air,22:10,23:00,1h 50m,0,1985600,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
 02/11/25,Citilink,03:30,05:00,1h 30m,0,875500,CGK,SUB,Economy,10.0,90,10,1,0,Budget Flight
 02/11/25,Citilink,05:25,07:00,1h 35m,0,982639,CGK,SUB,Economy,10.0,95,10,1,0,Budget Flight
@@ -183,9 +183,9 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 02/11/25,Citilink,15:40,15:45,1h 5m,0,746683,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
 02/11/25,Citilink,19:25,19:30,1h 5m,0,746683,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
 02/11/25,Garuda Indonesia,05:50,08:35,1h 45m,0,1601369,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
-02/11/25,Garuda Indonesia,05:50,07:30,1h 40m,0,9640681,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
+02/11/25,Garuda Indonesia,05:50,07:30,1h 40m,0,9640681,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
 02/11/25,Garuda Indonesia,07:00,10:25,4h 25m,1,24103600,DPS,SUB,Business,10.0,265,12,0,0,Budget Flight
-02/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,High-end Flight
+02/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,Mid-range Flight
 02/11/25,Garuda Indonesia,09:35,10:35,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
 02/11/25,Garuda Indonesia,13:00,14:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
 02/11/25,Garuda Indonesia,14:35,16:10,1h 35m,0,1386641,SUB,CGK,Economy,20.0,95,12,1,0,Budget Flight
@@ -193,8 +193,8 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 02/11/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
 02/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,765804,DPS,SUB,Economy,15.0,75,12,1,0,Budget Flight
 02/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,2615542,SRG,SUB,Economy,20.0,230,12,1,0,Budget Flight
-02/11/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7173904,SIN,SUB,Business,40.0,150,12,0,2,High-end Flight
-02/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+02/11/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7173904,SIN,SUB,Business,40.0,150,12,0,2,Mid-range Flight
+02/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 02/11/25,Lion Air,03:30,05:00,1h 30m,0,831191,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 02/11/25,Lion Air,05:05,06:35,1h 30m,0,1070490,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 02/11/25,Lion Air,05:25,07:00,1h 35m,0,910715,CGK,SUB,Economy,15.0,95,13,1,0,Budget Flight
@@ -218,15 +218,15 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 02/11/25,Lion Air,20:30,20:30,1h 0m,0,756900,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 02/11/25,Lion Air,21:00,22:30,1h 30m,0,1044263,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 02/11/25,Malaysia Airlines,04:25,10:20,4h 55m,1,1125400,CGK,SIN,Economy,20.0,295,16,1,0,Budget Flight
-02/11/25,Malaysia Airlines,09:55,14:50,5h 55m,1,6003235,SIN,SUB,Business,40.0,355,16,0,2,High-end Flight
+02/11/25,Malaysia Airlines,09:55,14:50,5h 55m,1,6003235,SIN,SUB,Business,40.0,355,16,0,2,Mid-range Flight
 02/11/25,Malaysia Airlines,10:00,09:05,22h 5m,1,1624500,SUB,SIN,Economy,25.0,1325,16,1,0,Budget Flight
 02/11/25,Malaysia Airlines,15:50,09:05,16h 15m,1,1544500,SUB,SIN,Economy,20.0,975,16,1,0,Budget Flight
 02/11/25,Pelita Air,06:10,07:40,1h 30m,0,928719,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
-02/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
+02/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
 02/11/25,Pelita Air,08:30,10:05,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 02/11/25,Pelita Air,09:00,10:30,1h 30m,0,929900,CGK,SUB,Economy,10.0,90,17,1,0,Budget Flight
 02/11/25,Pelita Air,10:50,12:25,1h 35m,0,1034755,SUB,CGK,Economy,10.0,95,17,1,0,Budget Flight
-02/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,High-end Flight
+02/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,Mid-range Flight
 02/11/25,Scoot,07:30,09:00,2h 30m,0,1668195,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 02/11/25,Scoot,07:55,08:50,1h 55m,0,2091661,SIN,CGK,Economy,10.0,115,18,1,0,Budget Flight
 02/11/25,Scoot,09:30,10:25,1h 55m,0,2091661,SIN,CGK,Economy,10.0,115,18,1,0,Budget Flight
@@ -234,12 +234,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 02/11/25,Scoot,17:00,18:30,2h 30m,0,2336869,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 02/11/25,Scoot,19:30,23:00,2h 30m,0,1269992,SUB,SIN,Economy,10.0,150,18,1,0,Budget Flight
 02/11/25,Scoot,22:10,01:00,1h 50m,0,1151098,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-02/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-02/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,14395083,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
-02/11/25,Singapore Airlines,07:40,08:30,1h 50m,0,12941606,SIN,CGK,Business,40.0,110,19,0,2,High-end Flight
-02/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-02/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-02/11/25,Singapore Airlines,17:20,18:05,1h 45m,0,12403188,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+02/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+02/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,14395083,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
+02/11/25,Singapore Airlines,07:40,08:30,1h 50m,0,12941606,SIN,CGK,Business,40.0,110,19,0,2,Mid-range Flight
+02/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+02/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+02/11/25,Singapore Airlines,17:20,18:05,1h 45m,0,12403188,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 02/11/25,Super Air Jet,13:30,15:30,1h 0m,0,554696,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 02/11/25,Super Air Jet,16:10,16:10,1h 0m,0,642576,DPS,SUB,Economy,15.0,60,20,1,0,Budget Flight
 02/11/25,TransNusa,07:45,10:40,1h 55m,0,1249000,CGK,SIN,Economy,20.0,115,22,1,0,Budget Flight
@@ -251,54 +251,54 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 03/11/25,AirAsia,11:10,14:00,1h 50m,0,930889,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 03/11/25,AirAsia,14:40,15:30,1h 50m,0,1372029,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 03/11/25,AirAsia,20:00,20:45,1h 45m,0,929474,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
-03/11/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-03/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,05:05,13:35,7h 30m,1,3880380,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-03/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
+03/11/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+03/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,05:05,13:35,7h 30m,1,3880380,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+03/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
 03/11/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 03/11/25,Batik Air,05:15,07:15,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-03/11/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,High-end Flight
-03/11/25,Batik Air,05:25,06:50,1h 25m,0,2777085,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,06:00,07:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+03/11/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,Mid-range Flight
+03/11/25,Batik Air,05:25,06:50,1h 25m,0,2777085,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,06:00,07:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 03/11/25,Batik Air,06:20,08:20,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-03/11/25,Batik Air,06:20,16:30,9h 10m,1,4744680,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
-03/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-03/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+03/11/25,Batik Air,06:20,16:30,9h 10m,1,4744680,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
+03/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+03/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 03/11/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
-03/11/25,Batik Air,08:00,09:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,08:30,10:00,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+03/11/25,Batik Air,08:00,09:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,08:30,10:00,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 03/11/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
 03/11/25,Batik Air,10:30,19:05,9h 35m,1,5089000,SIN,SUB,Business,10.0,575,5,0,0,Budget Flight
-03/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-03/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-03/11/25,Batik Air,11:35,12:55,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-03/11/25,Batik Air,12:00,13:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-03/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,13:35,15:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,14:10,15:40,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-03/11/25,Batik Air,15:20,16:50,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-03/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,16:35,18:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,17:30,18:20,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+03/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+03/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+03/11/25,Batik Air,11:35,12:55,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+03/11/25,Batik Air,12:00,13:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+03/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,13:35,15:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,14:10,15:40,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+03/11/25,Batik Air,15:20,16:50,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+03/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,16:35,18:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,17:30,18:20,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 03/11/25,Batik Air,17:30,19:00,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 03/11/25,Batik Air,17:45,20:30,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-03/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+03/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 03/11/25,Batik Air,18:10,19:40,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 03/11/25,Batik Air,18:30,21:15,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-03/11/25,Batik Air,18:40,20:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+03/11/25,Batik Air,18:40,20:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 03/11/25,Batik Air,18:45,18:45,1h 0m,0,727600,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
 03/11/25,Batik Air,19:15,20:45,1h 30m,0,1002260,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-03/11/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-03/11/25,Batik Air,20:15,21:40,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-03/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+03/11/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+03/11/25,Batik Air,20:15,21:40,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+03/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 03/11/25,Batik Air,20:30,20:30,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-03/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+03/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 03/11/25,Citilink,05:25,07:00,1h 35m,0,1024340,CGK,SUB,Economy,10.0,95,10,1,0,Budget Flight
 03/11/25,Citilink,06:20,09:10,1h 50m,0,1186407,CGK,SIN,Economy,10.0,110,10,1,0,Budget Flight
 03/11/25,Citilink,07:05,07:10,1h 5m,0,746683,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
@@ -310,14 +310,14 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 03/11/25,Citilink,19:00,20:40,1h 40m,0,1024340,CGK,SUB,Economy,10.0,100,10,1,0,Budget Flight
 03/11/25,Citilink,21:00,21:50,1h 50m,0,1396602,SIN,CGK,Economy,10.0,110,10,1,0,Budget Flight
 03/11/25,Garuda Indonesia,05:50,08:35,1h 45m,0,3616100,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
-03/11/25,Garuda Indonesia,06:55,07:55,2h,0,10930744,SIN,CGK,Business,40.0,120,12,0,2,High-end Flight
+03/11/25,Garuda Indonesia,06:55,07:55,2h,0,10930744,SIN,CGK,Business,40.0,120,12,0,2,Mid-range Flight
 03/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,2149650,SUB,SIN,Economy,30.0,140,12,1,0,Budget Flight
 03/11/25,Garuda Indonesia,08:00,09:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
 03/11/25,Garuda Indonesia,10:15,11:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
 03/11/25,Garuda Indonesia,13:00,14:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
 03/11/25,Garuda Indonesia,15:35,17:10,1h 35m,0,1386641,SUB,CGK,Economy,20.0,95,12,1,0,Budget Flight
-03/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
-03/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,High-end Flight
+03/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
+03/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,Mid-range Flight
 03/11/25,Garuda Indonesia,19:00,20:30,2h 30m,0,3282187,SIN,SUB,Economy,30.0,150,12,1,0,Budget Flight
 03/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,2806458,SIN,CGK,Economy,30.0,125,12,1,0,Budget Flight
 03/11/25,Lion Air,03:30,05:00,1h 30m,0,921031,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
@@ -346,19 +346,19 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 03/11/25,Lion Air,20:30,20:30,1h 0m,0,594262,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 03/11/25,Lion Air,21:00,22:30,1h 30m,0,903926,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 03/11/25,Malaysia Airlines,10:00,16:40,5h 40m,1,1509000,SUB,SIN,Economy,20.0,340,16,1,0,Budget Flight
-03/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
+03/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
 03/11/25,Pelita Air,08:30,10:05,1h 35m,0,958034,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 03/11/25,Pelita Air,10:50,12:25,1h 35m,0,919062,SUB,CGK,Economy,10.0,95,17,1,0,Budget Flight
-03/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,High-end Flight
+03/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,Mid-range Flight
 03/11/25,Scoot,07:30,09:00,2h 30m,0,1665824,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 03/11/25,Scoot,09:45,13:05,2h 20m,0,1708091,SUB,SIN,Economy,10.0,140,18,1,0,Budget Flight
 03/11/25,Scoot,20:25,21:25,2h 0m,0,1606443,SIN,CGK,Economy,10.0,120,18,1,0,Budget Flight
-03/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-03/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
-03/11/25,Singapore Airlines,07:40,08:30,1h 50m,0,12096052,SIN,CGK,Business,40.0,110,19,0,2,High-end Flight
+03/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+03/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
+03/11/25,Singapore Airlines,07:40,08:30,1h 50m,0,12096052,SIN,CGK,Business,40.0,110,19,0,2,Mid-range Flight
 03/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,3713790,SIN,SUB,Economy,30.0,150,19,1,0,Budget Flight
-03/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,16113131,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-03/11/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,High-end Flight
+03/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,16113131,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+03/11/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,Mid-range Flight
 03/11/25,Super Air Jet,13:30,15:30,1h 0m,0,541121,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 03/11/25,Super Air Jet,16:10,16:10,1h 0m,0,576698,DPS,SUB,Economy,15.0,60,20,1,0,Budget Flight
 03/11/25,TransNusa,07:45,10:40,1h 55m,0,1217493,CGK,SIN,Economy,20.0,115,22,1,0,Budget Flight
@@ -371,53 +371,53 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 04/11/25,AirAsia,14:40,15:30,1h 50m,0,929474,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 04/11/25,AirAsia,16:30,19:20,1h 50m,0,800621,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 04/11/25,AirAsia,20:00,20:45,1h 45m,0,929474,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
-04/11/25,Batik Air,05:00,06:20,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+04/11/25,Batik Air,05:00,06:20,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 04/11/25,Batik Air,05:05,06:35,1h 30m,0,920506,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-04/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-04/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
+04/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+04/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
 04/11/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 04/11/25,Batik Air,05:15,07:15,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-04/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,05:25,06:50,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,06:00,07:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+04/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,05:25,06:50,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,06:00,07:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 04/11/25,Batik Air,06:20,08:20,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-04/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-04/11/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-04/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-04/11/25,Batik Air,08:00,09:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,08:30,10:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,High-end Flight
+04/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+04/11/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+04/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+04/11/25,Batik Air,08:00,09:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,08:30,10:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,Mid-range Flight
 04/11/25,Batik Air,08:30,11:55,3h 25m,1,2946880,SUB,SRG,Business,10.0,205,5,0,0,Budget Flight
 04/11/25,Batik Air,08:40,20:40,11h 0m,1,1396500,SUB,SIN,Economy,10.0,660,5,1,0,Budget Flight
-04/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,09:30,10:55,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+04/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,09:30,10:55,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 04/11/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
-04/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+04/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 04/11/25,Batik Air,10:30,15:30,6h 0m,1,4705000,SIN,CGK,Business,10.0,360,5,0,0,Budget Flight
 04/11/25,Batik Air,10:30,19:05,9h 35m,1,2039000,SIN,SUB,Economy,10.0,575,5,1,0,Budget Flight
-04/11/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-04/11/25,Batik Air,10:55,12:15,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-04/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-04/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-04/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-04/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,13:35,15:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,15:20,16:50,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,15:50,17:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,16:35,18:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-04/11/25,Batik Air,17:30,19:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+04/11/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+04/11/25,Batik Air,10:55,12:15,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+04/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+04/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+04/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+04/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,13:35,15:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,15:20,16:50,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,15:50,17:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,16:35,18:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+04/11/25,Batik Air,17:30,19:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 04/11/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 04/11/25,Batik Air,18:10,19:40,1h 30m,0,920506,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-04/11/25,Batik Air,18:30,13:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+04/11/25,Batik Air,18:30,13:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 04/11/25,Batik Air,18:45,18:45,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-04/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-04/11/25,Batik Air,20:15,21:40,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+04/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+04/11/25,Batik Air,20:15,21:40,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 04/11/25,Batik Air,20:30,20:30,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-04/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-04/11/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+04/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+04/11/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 04/11/25,Citilink,10:10,11:00,1h 50m,0,1586412,SIN,CGK,Economy,10.0,110,10,1,0,Budget Flight
 04/11/25,Citilink,10:10,14:40,2h 5m,1,2389142,SIN,SUB,Economy,10.0,125,10,1,0,Budget Flight
 04/11/25,Citilink,14:40,16:10,1h 30m,0,875500,CGK,SUB,Economy,10.0,90,10,1,0,Budget Flight
@@ -427,12 +427,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 04/11/25,Citilink,21:00,21:50,1h 50m,0,1396602,SIN,CGK,Economy,10.0,110,10,1,0,Budget Flight
 04/11/25,Garuda Indonesia,05:50,08:35,1h 45m,0,1617100,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
 04/11/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-04/11/25,Garuda Indonesia,09:45,13:45,4h,1,18045495,SRG,SUB,Business,30.0,240,12,0,2,High-end Flight
-04/11/25,Garuda Indonesia,12:55,14:00,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+04/11/25,Garuda Indonesia,09:45,13:45,4h,1,18045495,SRG,SUB,Business,30.0,240,12,0,2,Mid-range Flight
+04/11/25,Garuda Indonesia,12:55,14:00,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 04/11/25,Garuda Indonesia,13:00,14:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
 04/11/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
-04/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
-04/11/25,Garuda Indonesia,19:30,20:30,2h 0m,0,15015126,SIN,CGK,Business,40.0,120,12,0,2,High-end Flight
+04/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
+04/11/25,Garuda Indonesia,19:30,20:30,2h 0m,0,15015126,SIN,CGK,Business,40.0,120,12,0,2,Mid-range Flight
 04/11/25,Lion Air,03:30,05:00,1h 30m,0,831191,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 04/11/25,Lion Air,07:00,07:00,1h 0m,0,605900,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 04/11/25,Lion Air,07:00,10:35,3h 35m,1,1529045,SRG,SUB,Economy,10.0,215,13,1,0,Budget Flight
@@ -462,12 +462,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 04/11/25,Malaysia Airlines,18:05,00:30,5h 25m,1,1509000,SUB,SIN,Economy,20.0,325,16,1,0,Budget Flight
 04/11/25,Pelita Air,06:10,07:40,1h 30m,0,910764,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 04/11/25,Pelita Air,06:40,08:15,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
-04/11/25,Pelita Air,07:55,15:15,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
+04/11/25,Pelita Air,07:55,15:15,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
 04/11/25,Pelita Air,08:30,10:05,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 04/11/25,Pelita Air,09:00,10:35,1h 35m,0,910764,SUB,CGK,Economy,10.0,95,17,1,0,Budget Flight
-04/11/25,Pelita Air,09:00,16:55,6h 55m,1,5637280,SUB,DPS,Business,25.0,415,17,0,2,High-end Flight
+04/11/25,Pelita Air,09:00,16:55,6h 55m,1,5637280,SUB,DPS,Business,25.0,415,17,0,2,Mid-range Flight
 04/11/25,Pelita Air,10:40,12:15,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
-04/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,High-end Flight
+04/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,Mid-range Flight
 04/11/25,Pelita Air,13:30,15:00,1h 30m,0,949780,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 04/11/25,Pelita Air,14:25,16:00,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 04/11/25,Pelita Air,17:15,18:50,1h 35m,0,969017,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
@@ -477,12 +477,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 04/11/25,Scoot,11:20,14:05,1h 45m,0,945116,CGK,SIN,Economy,10.0,105,18,1,0,Budget Flight
 04/11/25,Scoot,17:00,18:30,2h 30m,0,1874485,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 04/11/25,Scoot,19:30,23:00,2h 30m,0,1025258,SUB,SIN,Economy,10.0,150,18,1,0,Budget Flight
-04/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-04/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+04/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+04/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 04/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,2766786,SIN,SUB,Economy,25.0,150,19,1,0,Budget Flight
-04/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
+04/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
 04/11/25,Singapore Airlines,14:10,15:40,2h 30m,0,2766786,SIN,SUB,Economy,25.0,150,19,1,0,Budget Flight
-04/11/25,Singapore Airlines,16:30,19:55,2h 25m,0,7867509,SUB,SIN,Business,40.0,145,19,0,2,High-end Flight
+04/11/25,Singapore Airlines,16:30,19:55,2h 25m,0,7867509,SUB,SIN,Business,40.0,145,19,0,2,Mid-range Flight
 04/11/25,Super Air Jet,13:30,15:30,1h 0m,0,554696,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 04/11/25,TransNusa,11:40,12:25,1h 45m,0,1404000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
 04/11/25,Wings Air,10:00,11:10,1h 10m,0,805658,SRG,SUB,Economy,10.0,70,23,1,0,Budget Flight
@@ -492,66 +492,66 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 05/11/25,AirAsia,14:40,15:30,1h 50m,0,923164,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 05/11/25,AirAsia,16:30,19:20,1h 50m,0,800621,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 05/11/25,AirAsia,20:00,20:45,1h 45m,0,923342,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
-05/11/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,05:00,06:20,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,05:05,13:35,7h 30m,1,3880380,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-05/11/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
-05/11/25,Batik Air,05:05,08:45,3h 40m,1,2964080,SUB,SRG,Business,30.0,220,5,0,2,High-end Flight
+05/11/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:00,06:20,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:05,13:35,7h 30m,1,3880380,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:05,08:45,3h 40m,1,2964080,SUB,SRG,Business,30.0,220,5,0,2,Mid-range Flight
 05/11/25,Batik Air,05:15,13:45,5h 15m,1,4910100,CGK,SIN,Business,10.0,315,5,0,0,Budget Flight
 05/11/25,Batik Air,05:15,07:15,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-05/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,05:25,06:50,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+05/11/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,05:25,06:50,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 05/11/25,Batik Air,06:20,08:20,1h 0m,0,700654,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-05/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-05/11/25,Batik Air,07:45,10:30,1h 45m,0,3691964,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+05/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+05/11/25,Batik Air,07:45,10:30,1h 45m,0,3691964,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 05/11/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 05/11/25,Batik Air,08:00,09:30,1h 30m,0,998914,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-05/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,High-end Flight
-05/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,09:30,10:55,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+05/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,Mid-range Flight
+05/11/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,09:30,10:55,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 05/11/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
 05/11/25,Batik Air,10:30,15:30,6h,1,1912157,SIN,CGK,Economy,10.0,360,5,1,0,Budget Flight
 05/11/25,Batik Air,10:30,19:05,9h 35m,1,5089000,SIN,SUB,Business,10.0,575,5,0,0,Budget Flight
-05/11/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,10:55,12:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-05/11/25,Batik Air,11:20,12:10,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-05/11/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,11:35,12:55,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+05/11/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,10:55,12:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,11:00,20:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+05/11/25,Batik Air,11:20,12:10,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+05/11/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,11:35,12:55,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 05/11/25,Batik Air,12:30,19:05,7h 35m,1,5089000,SIN,SUB,Business,10.0,455,5,0,0,Budget Flight
-05/11/25,Batik Air,13:30,15:00,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,13:35,15:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,14:45,15:35,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-05/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-05/11/25,Batik Air,15:50,17:15,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-05/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,17:30,18:20,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-05/11/25,Batik Air,17:30,19:00,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+05/11/25,Batik Air,13:30,15:00,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,13:35,15:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,14:45,15:35,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+05/11/25,Batik Air,15:40,17:00,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+05/11/25,Batik Air,15:50,17:15,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,16:00,17:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,16:25,17:55,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,16:35,18:00,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+05/11/25,Batik Air,17:00,18:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,17:30,18:20,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+05/11/25,Batik Air,17:30,19:00,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 05/11/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-05/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+05/11/25,Batik Air,17:55,19:15,1h 20m,0,1767580,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 05/11/25,Batik Air,18:10,19:40,1h 30m,0,938645,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 05/11/25,Batik Air,18:30,21:15,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 05/11/25,Batik Air,18:45,18:45,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-05/11/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-05/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+05/11/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+05/11/25,Batik Air,20:15,21:40,1h 25m,0,1714185,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 05/11/25,Batik Air,20:30,20:30,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-05/11/25,Batik Air,21:25,22:15,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+05/11/25,Batik Air,21:25,22:15,1h 50m,0,4630300,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 05/11/25,Citilink,07:05,07:10,1h 5m,0,753136,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
 05/11/25,Citilink,11:20,12:50,1h 30m,0,949780,SUB,CGK,Economy,10.0,90,10,1,0,Budget Flight
 05/11/25,Citilink,12:45,14:50,1h 5m,0,786662,SUB,DPS,Economy,15.0,65,10,1,0,Budget Flight
 05/11/25,Citilink,14:40,16:10,1h 30m,0,875500,CGK,SUB,Economy,10.0,90,10,1,0,Budget Flight
 05/11/25,Citilink,17:10,20:00,1h 50m,0,896697,CGK,SIN,Economy,10.0,110,10,1,0,Budget Flight
 05/11/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-05/11/25,Garuda Indonesia,15:30,19:40,5h 10m,1,18135772,SIN,SUB,Business,40.0,310,12,0,2,High-end Flight
-05/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
-05/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,High-end Flight
+05/11/25,Garuda Indonesia,15:30,19:40,5h 10m,1,18135772,SIN,SUB,Business,40.0,310,12,0,2,Mid-range Flight
+05/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
+05/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,Mid-range Flight
 05/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,2806458,SIN,CGK,Economy,30.0,125,12,1,0,Budget Flight
 05/11/25,Lion Air,03:30,05:00,1h 30m,0,815128,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 05/11/25,Lion Air,05:25,07:00,1h 35m,0,910715,CGK,SUB,Economy,15.0,95,13,1,0,Budget Flight
@@ -582,11 +582,11 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 05/11/25,Malaysia Airlines,15:50,09:05,16h 15m,1,1544500,SUB,SIN,Economy,20.0,975,16,1,0,Budget Flight
 05/11/25,Pelita Air,06:10,07:40,1h 30m,0,832454,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 05/11/25,Pelita Air,06:40,08:15,1h 35m,0,978331,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
-05/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
+05/11/25,Pelita Air,07:55,10:30,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
 05/11/25,Pelita Air,08:30,10:05,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 05/11/25,Pelita Air,09:00,10:35,1h 35m,0,916558,SUB,CGK,Economy,10.0,95,17,1,0,Budget Flight
 05/11/25,Pelita Air,10:40,12:15,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
-05/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,High-end Flight
+05/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,Mid-range Flight
 05/11/25,Pelita Air,13:25,14:55,1h 30m,0,916558,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 05/11/25,Pelita Air,14:25,16:00,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 05/11/25,Pelita Air,17:15,18:50,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
@@ -595,13 +595,13 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 05/11/25,Scoot,09:35,12:25,1h 50m,0,802116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
 05/11/25,Scoot,09:45,13:05,2h 20m,0,1703309,SUB,SIN,Economy,10.0,140,18,1,0,Budget Flight
 05/11/25,Scoot,11:20,14:05,1h 45m,0,970374,CGK,SIN,Economy,10.0,105,18,1,0,Budget Flight
-05/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-05/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+05/11/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+05/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 05/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,3598335,SIN,SUB,Economy,30.0,150,19,1,0,Budget Flight
 05/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,2165349,SUB,SIN,Economy,30.0,140,19,1,0,Budget Flight
 05/11/25,Singapore Airlines,14:10,15:40,2h 30m,0,3713790,SIN,SUB,Economy,30.0,150,19,1,0,Budget Flight
-05/11/25,Singapore Airlines,16:30,19:55,2h 25m,0,11089631,SUB,SIN,Business,40.0,145,19,0,2,High-end Flight
-05/11/25,Singapore Airlines,18:40,19:25,1h 45m,0,12428783,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+05/11/25,Singapore Airlines,16:30,19:55,2h 25m,0,11089631,SUB,SIN,Business,40.0,145,19,0,2,Mid-range Flight
+05/11/25,Singapore Airlines,18:40,19:25,1h 45m,0,12428783,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 05/11/25,Super Air Jet,13:30,15:30,1h 0m,0,548084,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 05/11/25,TransNusa,11:40,12:25,1h 45m,0,1404000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
 05/11/25,TransNusa,15:30,16:15,1h 45m,0,1404000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
@@ -611,57 +611,57 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 06/11/25,AirAsia,11:50,12:35,1h 45m,0,923342,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 06/11/25,AirAsia,14:40,15:30,1h 50m,0,923342,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 06/11/25,AirAsia,16:30,19:20,1h 50m,0,916978,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
-06/11/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+06/11/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 06/11/25,Batik Air,05:05,06:35,1h 30m,0,920506,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-06/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-06/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
-06/11/25,Batik Air,05:05,09:35,4h 30m,1,2964080,SUB,SRG,Business,30.0,270,5,0,2,High-end Flight
+06/11/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+06/11/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
+06/11/25,Batik Air,05:05,09:35,4h 30m,1,2964080,SUB,SRG,Business,30.0,270,5,0,2,Mid-range Flight
 06/11/25,Batik Air,05:15,07:15,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-06/11/25,Batik Air,05:25,06:50,1h 25m,0,2777085,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-06/11/25,Batik Air,06:00,07:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+06/11/25,Batik Air,05:25,06:50,1h 25m,0,2777085,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+06/11/25,Batik Air,06:00,07:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 06/11/25,Batik Air,06:20,08:20,1h 0m,0,727480,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-06/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-06/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+06/11/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+06/11/25,Batik Air,07:45,15:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 06/11/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 06/11/25,Batik Air,08:00,09:30,1h 30m,0,1068670,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-06/11/25,Batik Air,08:30,10:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,High-end Flight
+06/11/25,Batik Air,08:30,10:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,Mid-range Flight
 06/11/25,Batik Air,08:40,16:10,6h 30m,1,1535500,SUB,SIN,Economy,10.0,390,5,1,0,Budget Flight
 06/11/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
-06/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+06/11/25,Batik Air,10:10,11:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 06/11/25,Batik Air,10:30,19:05,9h 35m,1,2039000,SIN,SUB,Economy,10.0,575,5,1,0,Budget Flight
 06/11/25,Batik Air,11:00,13:45,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-06/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-06/11/25,Batik Air,12:00,13:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-06/11/25,Batik Air,13:30,15:00,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-06/11/25,Batik Air,13:35,15:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-06/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+06/11/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+06/11/25,Batik Air,12:00,13:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,12:30,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+06/11/25,Batik Air,13:30,15:00,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+06/11/25,Batik Air,13:35,15:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+06/11/25,Batik Air,14:10,15:40,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 06/11/25,Batik Air,15:20,16:50,1h 30m,0,1002260,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-06/11/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-06/11/25,Batik Air,15:50,17:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-06/11/25,Batik Air,15:50,17:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-06/11/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-06/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,16:35,18:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+06/11/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+06/11/25,Batik Air,15:50,17:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+06/11/25,Batik Air,15:50,17:15,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+06/11/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+06/11/25,Batik Air,16:25,17:55,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,16:35,18:00,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 06/11/25,Batik Air,17:00,18:30,1h 30m,0,1002260,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 06/11/25,Batik Air,17:15,18:50,1h 35m,0,929000,CGK,SUB,Economy,20.0,95,5,1,0,Budget Flight
-06/11/25,Batik Air,17:30,19:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+06/11/25,Batik Air,17:30,19:00,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 06/11/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-06/11/25,Batik Air,17:55,19:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-06/11/25,Batik Air,17:55,19:15,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+06/11/25,Batik Air,17:55,19:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+06/11/25,Batik Air,17:55,19:15,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 06/11/25,Batik Air,18:10,19:40,1h 30m,0,920506,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 06/11/25,Batik Air,18:30,21:15,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-06/11/25,Batik Air,18:40,20:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-06/11/25,Batik Air,18:40,20:00,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+06/11/25,Batik Air,18:40,20:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+06/11/25,Batik Air,18:40,20:00,1h 20m,0,1751949,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 06/11/25,Batik Air,18:45,18:45,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-06/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-06/11/25,Batik Air,20:15,21:40,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+06/11/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,20:00,21:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+06/11/25,Batik Air,20:15,21:40,1h 25m,0,1729479,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 06/11/25,Batik Air,20:30,20:30,1h 0m,0,692000,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-06/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+06/11/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 06/11/25,"Batik Air , Lion Air",11:40,16:10,4h 30m,1,1645830,SRG,SUB,Economy,20.0,270,6,1,0,Budget Flight
 06/11/25,Citilink,07:05,07:10,1h 5m,0,776220,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
 06/11/25,Citilink,07:35,16:15,8h 40m,1,1574850,SUB,SRG,Economy,15.0,520,10,1,0,Budget Flight
@@ -676,12 +676,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 06/11/25,Garuda Indonesia,05:50,08:35,1h 45m,0,1818100,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
 06/11/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
 06/11/25,Garuda Indonesia,07:05,08:40,1h 35m,0,1386641,SUB,CGK,Economy,20.0,95,12,1,0,Budget Flight
-06/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,High-end Flight
+06/11/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,Mid-range Flight
 06/11/25,Garuda Indonesia,14:35,18:45,4h 10m,1,2620265,SUB,SRG,Economy,20.0,250,12,1,0,Budget Flight
 06/11/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6543400,DPS,SUB,Business,10.0,75,12,0,0,Budget Flight
-06/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,High-end Flight
+06/11/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18045495,SRG,SUB,Business,30.0,230,12,0,2,Mid-range Flight
 06/11/25,Garuda Indonesia,19:00,20:30,2h 30m,0,2947229,SIN,SUB,Economy,30.0,150,12,1,0,Budget Flight
-06/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+06/11/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 06/11/25,Lion Air,03:30,05:00,1h 30m,0,831191,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 06/11/25,Lion Air,07:00,07:00,1h 0m,0,637000,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 06/11/25,Lion Air,07:00,10:35,3h 35m,1,1567226,SRG,SUB,Economy,10.0,215,13,1,0,Budget Flight
@@ -703,16 +703,16 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 06/11/25,Lion Air,20:00,21:30,1h 30m,0,886458,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 06/11/25,Lion Air,20:30,20:30,1h 0m,0,605900,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 06/11/25,Lion Air,21:00,22:30,1h 30m,0,886458,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
-06/11/25,Malaysia Airlines,09:55,14:50,5h 55m,1,6003235,SIN,SUB,Business,20.0,355,16,0,2,High-end Flight
-06/11/25,Malaysia Airlines,19:30,09:10,14h 40m,1,6003235,SIN,SUB,Business,20.0,880,16,0,2,High-end Flight
+06/11/25,Malaysia Airlines,09:55,14:50,5h 55m,1,6003235,SIN,SUB,Business,20.0,355,16,0,2,Mid-range Flight
+06/11/25,Malaysia Airlines,19:30,09:10,14h 40m,1,6003235,SIN,SUB,Business,20.0,880,16,0,2,Mid-range Flight
 06/11/25,Pelita Air,10:50,12:25,1h 35m,0,892633,SUB,CGK,Economy,20.0,95,17,1,0,Budget Flight
-06/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,High-end Flight
+06/11/25,Pelita Air,11:40,12:25,1h 45m,0,3907812,SIN,CGK,Business,25.0,105,17,0,2,Mid-range Flight
 06/11/25,Pelita Air,13:25,14:55,1h 30m,0,910764,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 06/11/25,Pelita Air,14:40,16:10,1h 30m,0,875500,CGK,SUB,Economy,10.0,90,17,1,0,Budget Flight
 06/11/25,Scoot,09:35,12:25,1h 50m,0,970374,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-06/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12019267,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+06/11/25,Singapore Airlines,06:50,07:35,1h 45m,0,12019267,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 06/11/25,Singapore Airlines,07:50,09:20,2h 30m,0,3176301,SIN,SUB,Economy,30.0,150,19,1,0,Budget Flight
-06/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,8737268,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
+06/11/25,Singapore Airlines,10:15,13:35,2h 20m,0,8737268,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
 06/11/25,TransNusa,11:40,12:25,1h 45m,0,1404000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
 06/11/25,TransNusa,15:30,16:15,1h 45m,0,1404000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
 06/11/25,Wings Air,10:00,11:10,1h 10m,0,851680,SRG,SUB,Economy,10.0,70,23,1,0,Budget Flight
@@ -732,78 +732,78 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 27/10/25,"AirAsia , Lion Air",09:35,09:35,4h 40m,1,170016584,SUB,DPS,Economy,30.0,280,4,1,0,Budget Flight
 27/10/25,"AirAsia , Lion Air",10:35,20:30,10h 55m,1,2025870,SIN,SUB,Economy,10.0,655,4,1,0,Budget Flight
 27/10/25,"AirAsia , Lion Air",12:45,20:30,8h 45m,1,1958250,SIN,SUB,Economy,10.0,525,4,1,0,Budget Flight
-27/10/25,Batik Air,05:00,13:40,7h 40m,1,6213400,SUB,DPS,Business,30.0,460,5,0,2,High-end Flight
-27/10/25,Batik Air,05:00,06:20,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,05:05,06:35,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,05:05,13:35,7h 30m,1,8327100,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-27/10/25,Batik Air,05:05,15:15,9h 10m,1,5391200,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
+27/10/25,Batik Air,05:00,13:40,7h 40m,1,6213400,SUB,DPS,Business,30.0,460,5,0,2,Mid-range Flight
+27/10/25,Batik Air,05:00,06:20,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,05:05,06:35,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,05:05,13:35,7h 30m,1,8327100,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+27/10/25,Batik Air,05:05,15:15,9h 10m,1,5391200,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
 27/10/25,Batik Air,05:05,15:15,10h 10m,1,1939600,SUB,SRG,Economy,20.0,610,5,1,0,Budget Flight
 27/10/25,Batik Air,05:15,07:15,1h 0m,0,570572,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-27/10/25,Batik Air,05:15,16:30,10h 15m,1,4744700,SUB,SIN,Business,30.0,615,5,0,2,High-end Flight
-27/10/25,Batik Air,05:25,06:50,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-27/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+27/10/25,Batik Air,05:15,16:30,10h 15m,1,4744700,SUB,SIN,Business,30.0,615,5,0,2,Mid-range Flight
+27/10/25,Batik Air,05:25,06:50,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+27/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 27/10/25,Batik Air,06:20,08:20,1h 0m,0,705300,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-27/10/25,Batik Air,06:20,16:30,9h 10m,1,4744700,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
-27/10/25,Batik Air,07:00,07:00,4h 55m,1,434278607,CGK,SIN,Premium economy,20.0,295,5,3,1,Mid-range Flight
-27/10/25,Batik Air,07:00,15:00,8h 0m,1,2958530,SRG,SUB,Business,30.0,480,5,0,2,High-end Flight
-27/10/25,Batik Air,07:30,13:40,5h 10m,1,6858300,SUB,DPS,Business,30.0,310,5,0,2,High-end Flight
+27/10/25,Batik Air,06:20,16:30,9h 10m,1,4744700,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
+27/10/25,Batik Air,07:00,07:00,4h 55m,1,434278607,CGK,SIN,Premium economy,20.0,295,5,3,1,High-end Flight
+27/10/25,Batik Air,07:00,15:00,8h 0m,1,2958530,SRG,SUB,Business,30.0,480,5,0,2,Mid-range Flight
+27/10/25,Batik Air,07:30,13:40,5h 10m,1,6858300,SUB,DPS,Business,30.0,310,5,0,2,Mid-range Flight
 27/10/25,Batik Air,07:45,10:30,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 27/10/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
-27/10/25,Batik Air,07:55,07:55,11h 35m,2,727164179,DPS,SUB,Premium economy,30.0,695,5,3,1,Mid-range Flight
-27/10/25,Batik Air,08:00,09:30,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,08:30,10:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,08:30,21:15,11h 45m,1,6324200,SUB,SIN,Business,30.0,705,5,0,2,High-end Flight
+27/10/25,Batik Air,07:55,07:55,11h 35m,2,727164179,DPS,SUB,Premium economy,30.0,695,5,3,1,High-end Flight
+27/10/25,Batik Air,08:00,09:30,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,08:30,10:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,08:30,21:15,11h 45m,1,6324200,SUB,SIN,Business,30.0,705,5,0,2,Mid-range Flight
 27/10/25,Batik Air,08:30,15:15,6h 45m,1,1939600,SUB,SRG,Economy,20.0,405,5,1,0,Budget Flight
 27/10/25,Batik Air,08:40,20:40,11h 0m,1,5410500,SUB,SIN,Business,10.0,660,5,0,0,Budget Flight
-27/10/25,Batik Air,08:50,10:15,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+27/10/25,Batik Air,08:50,10:15,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 27/10/25,Batik Air,09:15,20:40,10h 25m,1,4910100,CGK,SIN,Business,10.0,625,5,0,0,Budget Flight
-27/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+27/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 27/10/25,Batik Air,09:30,13:30,4h 0m,1,1891900,SRG,SUB,Economy,20.0,240,5,1,0,Budget Flight
-27/10/25,Batik Air,09:40,09:40,9h 50m,2,779353234,DPS,SUB,Premium economy,20.0,590,5,3,1,Mid-range Flight
-27/10/25,Batik Air,10:10,11:40,1h 30m,0,3493500,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,10:10,21:15,10h 5m,1,6908200,SUB,SIN,Business,30.0,605,5,0,2,High-end Flight
+27/10/25,Batik Air,09:40,09:40,9h 50m,2,779353234,DPS,SUB,Premium economy,20.0,590,5,3,1,High-end Flight
+27/10/25,Batik Air,10:10,11:40,1h 30m,0,3493500,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,10:10,21:15,10h 5m,1,6908200,SUB,SIN,Business,30.0,605,5,0,2,Mid-range Flight
 27/10/25,Batik Air,10:10,15:15,5h 5m,1,1809700,SUB,SRG,Economy,20.0,305,5,1,0,Budget Flight
 27/10/25,Batik Air,10:15,15:00,4h 45m,1,1847500,SRG,SUB,Economy,20.0,285,5,1,0,Budget Flight
-27/10/25,Batik Air,10:55,12:15,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+27/10/25,Batik Air,10:55,12:15,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 27/10/25,Batik Air,11:00,13:45,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 27/10/25,Batik Air,11:20,12:10,1h 50m,0,1966900,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-27/10/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,11:45,11:45,7h 45m,2,727164179,DPS,SUB,Premium economy,30.0,465,5,3,1,Mid-range Flight
-27/10/25,Batik Air,12:00,13:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+27/10/25,Batik Air,11:35,12:55,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,11:45,11:45,7h 45m,2,727164179,DPS,SUB,Premium economy,30.0,465,5,3,1,High-end Flight
+27/10/25,Batik Air,12:00,13:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 27/10/25,Batik Air,12:30,15:15,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-27/10/25,Batik Air,12:30,19:05,7h 35m,1,6260200,SIN,SUB,Business,30.0,455,5,0,2,High-end Flight
+27/10/25,Batik Air,12:30,19:05,7h 35m,1,6260200,SIN,SUB,Business,30.0,455,5,0,2,Mid-range Flight
 27/10/25,Batik Air,13:30,15:00,1h 30m,0,1060500,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-27/10/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-27/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-27/10/25,Batik Air,14:10,15:40,1h 30m,0,2845200,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+27/10/25,Batik Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+27/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+27/10/25,Batik Air,14:10,15:40,1h 30m,0,2845200,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 27/10/25,Batik Air,14:45,15:35,1h 50m,0,1966900,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
 27/10/25,Batik Air,15:20,16:50,1h 30m,0,1062800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-27/10/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,16:25,17:55,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,16:25,16:25,18h 40m,1,787761194,SUB,DPS,Premium economy,30.0,1120,5,3,1,Mid-range Flight
-27/10/25,Batik Air,16:35,18:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-27/10/25,Batik Air,16:35,18:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+27/10/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,16:25,17:55,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,16:25,16:25,18h 40m,1,787761194,SUB,DPS,Premium economy,30.0,1120,5,3,1,High-end Flight
+27/10/25,Batik Air,16:35,18:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+27/10/25,Batik Air,16:35,18:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 27/10/25,Batik Air,17:00,18:30,1h 30m,0,1021600,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-27/10/25,Batik Air,17:10,23:10,7h 0m,1,4718700,SIN,CGK,Business,30.0,420,5,0,2,High-end Flight
+27/10/25,Batik Air,17:10,23:10,7h 0m,1,4718700,SIN,CGK,Business,30.0,420,5,0,2,Mid-range Flight
 27/10/25,Batik Air,17:30,18:20,1h 50m,0,1966900,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-27/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,17:30,17:30,19h 05m,1,786086235,SUB,DPS,Premium economy,30.0,1145,5,3,1,Mid-range Flight
+27/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,17:30,17:30,19h 05m,1,786086235,SUB,DPS,Premium economy,30.0,1145,5,3,1,High-end Flight
 27/10/25,Batik Air,17:45,20:30,1h 45m,0,1000700,CGK,SIN,Economy,30.0,105,5,1,0,Budget Flight
 27/10/25,Batik Air,18:30,21:15,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-27/10/25,Batik Air,18:40,20:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-27/10/25,Batik Air,18:40,20:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+27/10/25,Batik Air,18:40,20:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+27/10/25,Batik Air,18:40,20:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 27/10/25,Batik Air,18:45,18:45,1h 0m,0,640900,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-27/10/25,Batik Air,19:15,20:45,1h 30m,0,1809600,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-27/10/25,Batik Air,19:15,19:15,17h 20m,1,786086235,SUB,DPS,Premium economy,30.0,1040,5,3,1,Mid-range Flight
-27/10/25,Batik Air,19:25,19:25,13h 05m,1,779353234,DPS,SUB,Premium economy,30.0,785,5,3,1,Mid-range Flight
+27/10/25,Batik Air,19:15,20:45,1h 30m,0,1809600,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+27/10/25,Batik Air,19:15,19:15,17h 20m,1,786086235,SUB,DPS,Premium economy,30.0,1040,5,3,1,High-end Flight
+27/10/25,Batik Air,19:25,19:25,13h 05m,1,779353234,DPS,SUB,Premium economy,30.0,785,5,3,1,High-end Flight
 27/10/25,Batik Air,20:00,21:30,1h 30m,0,1062800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-27/10/25,Batik Air,20:15,21:40,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-27/10/25,Batik Air,20:15,21:40,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+27/10/25,Batik Air,20:15,21:40,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+27/10/25,Batik Air,20:15,21:40,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 27/10/25,Batik Air,20:30,20:30,1h 0m,0,615808,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
 27/10/25,Batik Air,21:25,22:15,1h 50m,0,1966900,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-27/10/25,Batik Air,22:00,22:00,8h 20m,1,945986733,SUB,DPS,Premium economy,30.0,500,5,3,1,Mid-range Flight
+27/10/25,Batik Air,22:00,22:00,8h 20m,1,945986733,SUB,DPS,Premium economy,30.0,500,5,3,1,High-end Flight
 27/10/25,Batik Air,22:10,23:00,1h 50m,0,1667800,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
 27/10/25,"Batik Air , Lion Air",05:15,15:00,9h 45m,1,1705600,SUB,SRG,Economy,20.0,585,6,1,0,Budget Flight
 27/10/25,"Batik Air , Lion Air",06:20,15:00,8h 40m,1,1741100,SUB,SRG,Economy,20.0,520,6,1,0,Budget Flight
@@ -844,54 +844,54 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 27/10/25,Citilink,21:00,21:50,1h 50m,0,1572200,SIN,CGK,Economy,15.0,110,10,1,0,Budget Flight
 27/10/25,"Citilink , Lion Air",14:40,14:40,5h 35m,1,196948590,DPS,SUB,Economy,10.0,335,11,1,0,Budget Flight
 27/10/25,"Citilink , Lion Air",16:40,16:40,5h 30m,1,190215589,DPS,SUB,Economy,10.0,330,11,1,0,Budget Flight
-27/10/25,Garuda Indonesia,05:10,06:45,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,05:10,12:35,6h 25m,1,22977400,SUB,DPS,Business,30.0,385,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,05:10,06:45,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,05:10,12:35,6h 25m,1,22977400,SUB,DPS,Business,30.0,385,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,2369600,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
-27/10/25,Garuda Indonesia,05:50,20:30,14h 40m,1,19130700,CGK,SUB,Business,40.0,880,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,05:50,20:30,14h 40m,1,19130700,CGK,SUB,Business,40.0,880,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,06:55,07:55,2h 0m,0,3254365,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-27/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,22964800,DPS,SUB,Business,30.0,265,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,07:05,17:10,10h 5m,1,17338400,CGK,SUB,Business,30.0,605,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,07:05,14:30,7h 25m,1,14619700,SRG,SUB,Business,30.0,445,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,07:05,08:40,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,22964800,DPS,SUB,Business,30.0,265,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,07:05,17:10,10h 5m,1,17338400,CGK,SUB,Business,30.0,605,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,07:05,14:30,7h 25m,1,14619700,SRG,SUB,Business,30.0,445,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,07:05,08:40,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,3157766,SUB,SIN,Economy,30.0,140,12,1,0,Budget Flight
-27/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,08:55,20:30,11h 35m,1,15247000,CGK,SUB,Business,40.0,695,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,08:55,20:30,11h 35m,1,15247000,CGK,SUB,Business,40.0,695,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,09:20,11:20,1h 0m,0,836500,SUB,DPS,Economy,20.0,60,12,1,0,Budget Flight
-27/10/25,Garuda Indonesia,09:35,09:35,2h,0,1147976783,SIN,CGK,Premium economy,40.0,120,12,3,1,Mid-range Flight
-27/10/25,Garuda Indonesia,09:40,17:10,7h 30m,1,17338400,CGK,SUB,Business,30.0,450,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,09:45,13:45,4h 0m,1,17806300,SRG,SUB,Business,30.0,240,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,10:15,17:00,6h 45m,1,14633700,SUB,SRG,Business,30.0,405,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,11:30,11:30,1h 50m,0,969552239,CGK,SIN,Premium economy,40.0,110,12,3,1,Mid-range Flight
-27/10/25,Garuda Indonesia,11:30,20:30,9h 0m,1,19130700,CGK,SUB,Business,40.0,540,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,12:05,13:45,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,12:55,12:55,2h 05m,0,1147976783,SIN,CGK,Premium economy,40.0,125,12,3,1,Mid-range Flight
-27/10/25,Garuda Indonesia,13:25,17:40,5h 15m,1,22964800,DPS,SUB,Business,30.0,315,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,14:35,16:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,09:35,09:35,2h,0,1147976783,SIN,CGK,Premium economy,40.0,120,12,3,1,High-end Flight
+27/10/25,Garuda Indonesia,09:40,17:10,7h 30m,1,17338400,CGK,SUB,Business,30.0,450,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,09:45,13:45,4h 0m,1,17806300,SRG,SUB,Business,30.0,240,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,10:15,17:00,6h 45m,1,14633700,SUB,SRG,Business,30.0,405,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,11:30,11:30,1h 50m,0,969552239,CGK,SIN,Premium economy,40.0,110,12,3,1,High-end Flight
+27/10/25,Garuda Indonesia,11:30,20:30,9h 0m,1,19130700,CGK,SUB,Business,40.0,540,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,12:05,13:45,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,12:55,12:55,2h 05m,0,1147976783,SIN,CGK,Premium economy,40.0,125,12,3,1,High-end Flight
+27/10/25,Garuda Indonesia,13:25,17:40,5h 15m,1,22964800,DPS,SUB,Business,30.0,315,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,14:35,16:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
-27/10/25,Garuda Indonesia,15:15,09:00,17h 45m,1,14633700,SUB,SRG,Business,30.0,1065,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,14619700,SRG,SUB,Business,30.0,1385,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,15:30,16:30,2h 0m,0,15015126,SIN,CGK,Business,40.0,120,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,15:40,15:40,1h 45m,0,969552239,CGK,SIN,Premium economy,40.0,105,12,3,1,Mid-range Flight
-27/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,16:30,18:10,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,16:30,22:40,5h 10m,1,22977400,SUB,DPS,Business,30.0,310,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6312100,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,17:30,19:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,17:35,17:35,1h 50m,0,969552239,CGK,SIN,Premium economy,40.0,110,12,3,1,Mid-range Flight
-27/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,14619700,SRG,SUB,Business,30.0,1230,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,18:00,19:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7226300,SIN,SUB,Business,40.0,150,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,19:00,20:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,20:05,21:45,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,20:45,08:25,12h 40m,1,22964800,DPS,SUB,Business,30.0,760,12,0,2,High-end Flight
-27/10/25,Garuda Indonesia,21:30,08:25,11h 55m,1,22964800,DPS,SUB,Business,30.0,715,12,0,2,High-end Flight
+27/10/25,Garuda Indonesia,15:15,09:00,17h 45m,1,14633700,SUB,SRG,Business,30.0,1065,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,14619700,SRG,SUB,Business,30.0,1385,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,15:30,16:30,2h 0m,0,15015126,SIN,CGK,Business,40.0,120,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,15:40,15:40,1h 45m,0,969552239,CGK,SIN,Premium economy,40.0,105,12,3,1,High-end Flight
+27/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,16:30,18:10,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,16:30,22:40,5h 10m,1,22977400,SUB,DPS,Business,30.0,310,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6312100,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,17:30,19:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,17:35,17:35,1h 50m,0,969552239,CGK,SIN,Premium economy,40.0,110,12,3,1,High-end Flight
+27/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,14619700,SRG,SUB,Business,30.0,1230,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,18:00,19:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7226300,SIN,SUB,Business,40.0,150,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,19:00,20:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,20:05,21:45,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,20:45,08:25,12h 40m,1,22964800,DPS,SUB,Business,30.0,760,12,0,2,Mid-range Flight
+27/10/25,Garuda Indonesia,21:30,08:25,11h 55m,1,22964800,DPS,SUB,Business,30.0,715,12,0,2,Mid-range Flight
 27/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,4508505,SIN,CGK,Economy,30.0,125,12,1,0,Budget Flight
 27/10/25,Lion Air,03:30,05:00,1h 30m,0,939180,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 27/10/25,Lion Air,05:05,05:05,3h 50m,1,220514096,SUB,DPS,Economy,10.0,230,13,1,0,Budget Flight
@@ -927,32 +927,32 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 27/10/25,"Lion Air , Wings Air",09:25,09:25,3h 15m,1,244079602,DPS,SUB,Economy,30.0,195,15,1,0,Budget Flight
 27/10/25,"Lion Air , Wings Air",11:50,17:10,6h 20m,1,1894200,DPS,SUB,Economy,10.0,380,15,1,0,Budget Flight
 27/10/25,Malaysia Airlines,04:25,16:40,11h 15m,1,1653000,CGK,SIN,Economy,25.0,675,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,06:00,11:15,6h 15m,1,6462000,SIN,CGK,Business,40.0,375,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,06:00,17:05,12h 5m,1,5755200,SIN,SUB,Business,40.0,725,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,06:00,11:15,6h 15m,1,6462000,SIN,CGK,Business,40.0,375,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,06:00,17:05,12h 5m,1,5755200,SIN,SUB,Business,40.0,725,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,09:40,16:40,6h 0m,1,1653000,CGK,SIN,Economy,25.0,360,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,09:55,14:40,5h 45m,1,6462000,SIN,CGK,Business,40.0,345,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,09:55,17:05,8h 10m,1,5755200,SIN,SUB,Business,40.0,490,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,09:55,14:40,5h 45m,1,6462000,SIN,CGK,Business,40.0,345,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,09:55,17:05,8h 10m,1,5755200,SIN,SUB,Business,40.0,490,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,10:00,09:05,22h 5m,1,1501300,SUB,SIN,Economy,25.0,1325,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,11:05,10:10,24h 5m,1,2112700,SIN,CGK,Economy,25.0,1445,16,1,2,High-end Flight
-27/10/25,Malaysia Airlines,11:05,17:05,7h 0m,1,5755200,SIN,SUB,Business,40.0,420,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,11:10,18:35,6h 25m,1,5323300,CGK,SIN,Business,40.0,385,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,12:15,18:35,5h 20m,1,5323300,CGK,SIN,Business,40.0,320,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,11:05,10:10,24h 5m,1,2112700,SIN,CGK,Economy,25.0,1445,16,1,2,Mid-range Flight
+27/10/25,Malaysia Airlines,11:05,17:05,7h 0m,1,5755200,SIN,SUB,Business,40.0,420,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,11:10,18:35,6h 25m,1,5323300,CGK,SIN,Business,40.0,385,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,12:15,18:35,5h 20m,1,5323300,CGK,SIN,Business,40.0,320,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,12:55,10:10,22h 15m,1,2112700,SIN,CGK,Economy,25.0,1335,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,12:55,17:05,5h 10m,1,5755200,SIN,SUB,Business,40.0,310,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,13:40,17:30,4h 50m,1,6462000,SIN,CGK,Business,40.0,290,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,13:40,09:10,20h 30m,1,5960300,SIN,SUB,Business,40.0,1230,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,12:55,17:05,5h 10m,1,5755200,SIN,SUB,Business,40.0,310,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,13:40,17:30,4h 50m,1,6462000,SIN,CGK,Business,40.0,290,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,13:40,09:10,20h 30m,1,5960300,SIN,SUB,Business,40.0,1230,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,15:40,09:05,16h 25m,1,1240400,CGK,SIN,Economy,25.0,985,16,1,0,Budget Flight
 27/10/25,Malaysia Airlines,16:35,14:40,23h 5m,1,2112700,SIN,CGK,Economy,25.0,1385,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,16:35,09:10,17h 35m,1,5960300,SIN,SUB,Business,40.0,1055,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,17:25,23:40,7h 15m,1,6462000,SIN,CGK,Business,40.0,435,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,17:25,09:10,16h 45m,1,5960300,SIN,SUB,Business,40.0,1005,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,16:35,09:10,17h 35m,1,5960300,SIN,SUB,Business,40.0,1055,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,17:25,23:40,7h 15m,1,6462000,SIN,CGK,Business,40.0,435,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,17:25,09:10,16h 45m,1,5960300,SIN,SUB,Business,40.0,1005,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,18:05,09:05,14h 0m,1,1402600,SUB,SIN,Economy,20.0,840,16,1,0,Budget Flight
 27/10/25,Malaysia Airlines,18:15,23:05,5h 50m,1,2104041,SIN,CGK,Economy,10.0,350,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,18:25,00:30,5h 5m,1,5323300,CGK,SIN,Business,40.0,305,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,High-end Flight
-27/10/25,Malaysia Airlines,19:30,09:10,14h 40m,1,5755200,SIN,SUB,Business,40.0,880,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,18:25,00:30,5h 5m,1,5323300,CGK,SIN,Business,40.0,305,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,Mid-range Flight
+27/10/25,Malaysia Airlines,19:30,09:10,14h 40m,1,5755200,SIN,SUB,Business,40.0,880,16,0,2,Mid-range Flight
 27/10/25,Malaysia Airlines,19:55,09:05,12h 10m,1,1125000,CGK,SIN,Economy,20.0,730,16,1,0,Budget Flight
-27/10/25,Malaysia Airlines,21:20,09:10,12h 50m,1,5755200,SIN,SUB,Business,40.0,770,16,0,2,High-end Flight
+27/10/25,Malaysia Airlines,21:20,09:10,12h 50m,1,5755200,SIN,SUB,Business,40.0,770,16,0,2,Mid-range Flight
 27/10/25,Pelita Air,06:40,08:15,1h 35m,0,2610400,CGK,SUB,Premium economy,20.0,95,17,3,0,Budget Flight
 27/10/25,Pelita Air,07:55,10:45,1h 50m,0,1249000,CGK,SIN,Economy,20.0,110,17,1,0,Budget Flight
 27/10/25,Pelita Air,08:30,10:05,1h 35m,0,1058900,CGK,SUB,Economy,20.0,95,17,1,0,Budget Flight
@@ -974,22 +974,22 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 27/10/25,Scoot,20:10,23:00,1h 50m,0,1385116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
 27/10/25,Scoot,20:25,21:25,2h 0m,0,2091700,SIN,CGK,Economy,30.0,120,18,1,0,Budget Flight
 27/10/25,Scoot,22:10,01:00,1h 50m,0,1385116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-27/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,9304169,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-27/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,11979167,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+27/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,9304169,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+27/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,11979167,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 27/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,2555017,SIN,SUB,Economy,25.0,150,19,1,0,Budget Flight
-27/10/25,Singapore Airlines,08:40,11:20,1h 40m,0,18462300,CGK,SIN,First,50.0,100,19,2,2,High-end Flight
-27/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-27/10/25,Singapore Airlines,11:10,11:10,1h 50m,0,951044776,CGK,SIN,Premium economy,40.0,110,19,3,1,Mid-range Flight
-27/10/25,Singapore Airlines,12:30,12:30,1h 50m,0,1248971808,SIN,CGK,Premium economy,40.0,110,19,3,1,Mid-range Flight
-27/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,19262565,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-27/10/25,Singapore Airlines,15:15,15:15,1h 50m,0,1250663350,SIN,CGK,Premium economy,40.0,110,19,3,1,Mid-range Flight
-27/10/25,Singapore Airlines,16:10,16:10,1h 55m,0,1250663350,SIN,CGK,Premium economy,40.0,115,19,3,1,Mid-range Flight
-27/10/25,Singapore Airlines,16:30,19:55,2h 25m,0,8659800,SUB,SIN,Business,40.0,145,19,0,2,High-end Flight
-27/10/25,Singapore Airlines,17:00,17:00,1h 45m,0,989751244,CGK,SIN,Premium economy,40.0,105,19,3,1,Mid-range Flight
-27/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,18462300,CGK,SIN,First,50.0,105,19,2,2,High-end Flight
-27/10/25,Singapore Airlines,18:40,22:05,2h 25m,0,8659800,SUB,SIN,Business,40.0,145,19,0,2,High-end Flight
-27/10/25,Singapore Airlines,19:00,22:05,2h 5m,0,18462300,CGK,SIN,First,50.0,125,19,2,2,High-end Flight
-27/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,High-end Flight
+27/10/25,Singapore Airlines,08:40,11:20,1h 40m,0,18462300,CGK,SIN,First,50.0,100,19,2,2,Mid-range Flight
+27/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+27/10/25,Singapore Airlines,11:10,11:10,1h 50m,0,951044776,CGK,SIN,Premium economy,40.0,110,19,3,1,High-end Flight
+27/10/25,Singapore Airlines,12:30,12:30,1h 50m,0,1248971808,SIN,CGK,Premium economy,40.0,110,19,3,1,High-end Flight
+27/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,19262565,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+27/10/25,Singapore Airlines,15:15,15:15,1h 50m,0,1250663350,SIN,CGK,Premium economy,40.0,110,19,3,1,High-end Flight
+27/10/25,Singapore Airlines,16:10,16:10,1h 55m,0,1250663350,SIN,CGK,Premium economy,40.0,115,19,3,1,High-end Flight
+27/10/25,Singapore Airlines,16:30,19:55,2h 25m,0,8659800,SUB,SIN,Business,40.0,145,19,0,2,Mid-range Flight
+27/10/25,Singapore Airlines,17:00,17:00,1h 45m,0,989751244,CGK,SIN,Premium economy,40.0,105,19,3,1,High-end Flight
+27/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,18462300,CGK,SIN,First,50.0,105,19,2,2,Mid-range Flight
+27/10/25,Singapore Airlines,18:40,22:05,2h 25m,0,8659800,SUB,SIN,Business,40.0,145,19,0,2,Mid-range Flight
+27/10/25,Singapore Airlines,19:00,22:05,2h 5m,0,18462300,CGK,SIN,First,50.0,125,19,2,2,Mid-range Flight
+27/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,Mid-range Flight
 27/10/25,Super Air Jet,13:30,15:30,1h 0m,0,583539,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 27/10/25,Super Air Jet,16:10,16:10,1h 0m,0,769200,DPS,SUB,Economy,10.0,60,20,1,0,Budget Flight
 27/10/25,Thai Airways,13:05,18:15,28h 10m,1,8055700,CGK,SIN,Premium economy,35.0,1690,21,3,0,Budget Flight
@@ -1006,73 +1006,73 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 28/10/25,AirAsia,11:50,12:35,1h 45m,0,923164,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 28/10/25,AirAsia,14:40,15:30,1h 50m,0,923164,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 28/10/25,AirAsia,16:30,19:20,1h 50m,0,959100,CGK,SIN,Economy,30.0,110,1,1,0,Budget Flight
-28/10/25,AirAsia,17:40,07:05,12h 25m,1,1710100,SUB,SIN,Economy,30.0,745,1,1,2,High-end Flight
+28/10/25,AirAsia,17:40,07:05,12h 25m,1,1710100,SUB,SIN,Economy,30.0,745,1,1,2,Mid-range Flight
 28/10/25,AirAsia,20:00,20:45,1h 45m,0,923342,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 28/10/25,AirAsia,21:15,07:05,8h 50m,1,1508081,CGK,SIN,Economy,10.0,530,1,1,0,Budget Flight
 28/10/25,"AirAsia , Lion Air",10:35,20:30,10h 55m,1,2007915,SIN,SUB,Economy,10.0,655,4,1,0,Budget Flight
-28/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-28/10/25,Batik Air,05:00,13:40,7h 40m,1,6213400,SUB,DPS,Business,30.0,460,5,0,2,High-end Flight
+28/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+28/10/25,Batik Air,05:00,13:40,7h 40m,1,6213400,SUB,DPS,Business,30.0,460,5,0,2,Mid-range Flight
 28/10/25,Batik Air,05:00,06:20,1h 20m,0,1187800,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
 28/10/25,Batik Air,05:05,06:35,1h 30m,0,938645,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-28/10/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-28/10/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
+28/10/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+28/10/25,Batik Air,05:05,15:15,9h 10m,1,5391180,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
 28/10/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 28/10/25,Batik Air,05:15,11:30,5h 15m,1,1314800,CGK,SIN,Economy,10.0,315,5,1,0,Budget Flight
 28/10/25,Batik Air,05:15,07:15,1h 0m,0,537705,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-28/10/25,Batik Air,05:15,15:10,9h 55m,1,4344700,SUB,HLP,Business,30.0,595,5,0,2,High-end Flight
-28/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+28/10/25,Batik Air,05:15,15:10,9h 55m,1,4344700,SUB,HLP,Business,30.0,595,5,0,2,Mid-range Flight
+28/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 28/10/25,Batik Air,06:00,07:30,1h 30m,0,1001800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 28/10/25,Batik Air,06:20,08:20,1h 0m,0,571889,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-28/10/25,Batik Air,06:20,15:10,8h 50m,1,4344700,SUB,HLP,Business,30.0,530,5,0,2,High-end Flight
+28/10/25,Batik Air,06:20,15:10,8h 50m,1,4344700,SUB,HLP,Business,30.0,530,5,0,2,Mid-range Flight
 28/10/25,Batik Air,07:00,13:30,6h 30m,1,1827500,SRG,SUB,Economy,20.0,390,5,1,0,Budget Flight
-28/10/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-28/10/25,Batik Air,07:30,13:40,5h 10m,1,6213400,SUB,DPS,Business,30.0,310,5,0,2,High-end Flight
+28/10/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+28/10/25,Batik Air,07:30,13:40,5h 10m,1,6213400,SUB,DPS,Business,30.0,310,5,0,2,Mid-range Flight
 28/10/25,Batik Air,07:30,08:50,1h 20m,0,1187800,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
 28/10/25,Batik Air,07:45,10:30,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 28/10/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 28/10/25,Batik Air,08:00,09:30,1h 30m,0,1001800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-28/10/25,Batik Air,08:30,21:15,11h 45m,1,5391180,SUB,SIN,Business,30.0,705,5,0,2,High-end Flight
-28/10/25,Batik Air,08:30,14:50,6h 20m,1,4705700,SUB,SRG,Business,30.0,380,5,0,2,High-end Flight
-28/10/25,Batik Air,08:40,20:40,11h 0m,1,1680800,SUB,SIN,Economy,30.0,660,5,1,2,High-end Flight
-28/10/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-28/10/25,Batik Air,08:50,10:15,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-28/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-28/10/25,Batik Air,09:30,10:55,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+28/10/25,Batik Air,08:30,21:15,11h 45m,1,5391180,SUB,SIN,Business,30.0,705,5,0,2,Mid-range Flight
+28/10/25,Batik Air,08:30,14:50,6h 20m,1,4705700,SUB,SRG,Business,30.0,380,5,0,2,Mid-range Flight
+28/10/25,Batik Air,08:40,20:40,11h 0m,1,1680800,SUB,SIN,Economy,30.0,660,5,1,2,Mid-range Flight
+28/10/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+28/10/25,Batik Air,08:50,10:15,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+28/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+28/10/25,Batik Air,09:30,10:55,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 28/10/25,Batik Air,09:30,13:30,4h 0m,1,1827500,SRG,SUB,Economy,20.0,240,5,1,0,Budget Flight
-28/10/25,Batik Air,10:10,11:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-28/10/25,Batik Air,10:10,21:15,10h 5m,1,5391180,SUB,SIN,Business,30.0,605,5,0,2,High-end Flight
-28/10/25,Batik Air,10:10,14:50,4h 40m,1,4705700,SUB,SRG,Business,30.0,280,5,0,2,High-end Flight
+28/10/25,Batik Air,10:10,11:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+28/10/25,Batik Air,10:10,21:15,10h 5m,1,5391180,SUB,SIN,Business,30.0,605,5,0,2,Mid-range Flight
+28/10/25,Batik Air,10:10,14:50,4h 40m,1,4705700,SUB,SRG,Business,30.0,280,5,0,2,Mid-range Flight
 28/10/25,Batik Air,10:15,15:00,4h 45m,1,1783100,SRG,SUB,Economy,20.0,285,5,1,0,Budget Flight
-28/10/25,Batik Air,10:30,15:30,6h 0m,1,4718700,SIN,CGK,Business,30.0,360,5,0,2,High-end Flight
-28/10/25,Batik Air,10:30,19:05,9h 35m,1,2028400,SIN,SUB,Economy,30.0,575,5,1,2,High-end Flight
-28/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
+28/10/25,Batik Air,10:30,15:30,6h 0m,1,4718700,SIN,CGK,Business,30.0,360,5,0,2,Mid-range Flight
+28/10/25,Batik Air,10:30,19:05,9h 35m,1,2028400,SIN,SUB,Economy,30.0,575,5,1,2,Mid-range Flight
+28/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
 28/10/25,Batik Air,10:55,12:15,1h 20m,0,1187800,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
 28/10/25,Batik Air,11:00,13:45,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-28/10/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+28/10/25,Batik Air,11:20,12:10,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 28/10/25,Batik Air,11:35,12:55,1h 20m,0,1187800,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
 28/10/25,Batik Air,12:00,13:30,1h 30m,0,1001800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 28/10/25,Batik Air,12:30,20:40,7h 10m,1,1225800,CGK,SIN,Economy,10.0,430,5,1,0,Budget Flight
-28/10/25,Batik Air,12:30,19:10,7h 40m,1,5875800,SIN,CGK,Business,30.0,460,5,0,2,High-end Flight
-28/10/25,Batik Air,12:30,19:05,7h 35m,1,2028400,SIN,SUB,Economy,30.0,455,5,1,2,High-end Flight
+28/10/25,Batik Air,12:30,19:10,7h 40m,1,5875800,SIN,CGK,Business,30.0,460,5,0,2,Mid-range Flight
+28/10/25,Batik Air,12:30,19:05,7h 35m,1,2028400,SIN,SUB,Economy,30.0,455,5,1,2,Mid-range Flight
 28/10/25,Batik Air,13:30,15:00,1h 30m,0,1001800,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-28/10/25,Batik Air,13:35,15:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-28/10/25,Batik Air,14:10,15:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-28/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+28/10/25,Batik Air,13:35,15:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+28/10/25,Batik Air,14:10,15:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+28/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 28/10/25,Batik Air,15:20,16:50,1h 30m,0,930258,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 28/10/25,Batik Air,15:40,17:00,1h 20m,0,1123700,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
-28/10/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-28/10/25,Batik Air,16:35,18:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+28/10/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+28/10/25,Batik Air,16:35,18:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 28/10/25,Batik Air,17:00,18:30,1h 30m,0,930258,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 28/10/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 28/10/25,Batik Air,18:30,21:15,1h 45m,0,1000600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 28/10/25,Batik Air,18:40,20:00,1h 20m,0,1123700,SUB,HLP,Economy,20.0,80,5,1,0,Budget Flight
 28/10/25,Batik Air,18:45,18:45,1h 0m,0,710900,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-28/10/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-28/10/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-28/10/25,Batik Air,20:15,21:40,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+28/10/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+28/10/25,Batik Air,20:00,21:30,1h 30m,0,1758846,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+28/10/25,Batik Air,20:15,21:40,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 28/10/25,Batik Air,20:30,20:30,1h 0m,0,673700,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-28/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-28/10/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+28/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+28/10/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 28/10/25,"Batik Air , Lion Air",05:05,12:35,6h 30m,1,1731000,SUB,DPS,Economy,20.0,390,6,1,0,Budget Flight
 28/10/25,"Batik Air , Lion Air",07:00,12:20,5h 20m,1,1690300,SRG,SUB,Economy,20.0,320,6,1,0,Budget Flight
 28/10/25,"Batik Air , Lion Air",09:30,16:10,6h 40m,1,1690300,SRG,SUB,Economy,20.0,400,6,1,0,Budget Flight
@@ -1109,43 +1109,43 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 28/10/25,Citilink,21:00,06:55,10h 55m,1,2119800,SIN,SUB,Economy,15.0,655,10,1,0,Budget Flight
 28/10/25,"Citilink , Lion Air",11:20,17:10,5h 50m,1,1748250,SRG,SUB,Economy,15.0,350,11,1,0,Budget Flight
 28/10/25,"Citilink , Lion Air",13:25,19:35,6h 10m,1,1765050,SRG,SUB,Economy,10.0,370,11,1,0,Budget Flight
-28/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,9167253,CGK,SIN,Business,40.0,105,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,9167253,CGK,SIN,Business,40.0,105,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,22964800,DPS,SUB,Business,30.0,265,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,07:05,14:30,7h 25m,1,14619700,SRG,SUB,Business,30.0,445,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7934900,SUB,SIN,Business,40.0,140,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,07:05,12:05,5h 0m,1,17822200,SUB,SRG,Business,30.0,300,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,08:30,09:10,24h 40m,1,13338600,CGK,SUB,Business,40.0,1480,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,22964800,DPS,SUB,Business,30.0,265,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,07:05,14:30,7h 25m,1,14619700,SRG,SUB,Business,30.0,445,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7934900,SUB,SIN,Business,40.0,140,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,07:05,12:05,5h 0m,1,17822200,SUB,SRG,Business,30.0,300,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,08:30,09:10,24h 40m,1,13338600,CGK,SUB,Business,40.0,1480,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,09:20,11:20,1h 0m,0,823300,SUB,DPS,Economy,20.0,60,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,09:20,20:25,11h 5m,1,17716500,SUB,HLP,Business,30.0,665,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,09:40,09:10,23h 30m,1,14289400,CGK,SUB,Business,40.0,1410,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,09:45,13:45,4h 0m,1,17806300,SRG,SUB,Business,30.0,240,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,11:10,09:10,22h 0m,1,14289400,CGK,SUB,Business,40.0,1320,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,11:35,17:25,4h 50m,1,22977400,SUB,DPS,Business,30.0,290,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,12:05,13:45,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,12:50,14:30,25h 40m,1,14619700,SRG,SUB,Business,30.0,1540,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,09:20,20:25,11h 5m,1,17716500,SUB,HLP,Business,30.0,665,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,09:40,09:10,23h 30m,1,14289400,CGK,SUB,Business,40.0,1410,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,09:45,13:45,4h 0m,1,17806300,SRG,SUB,Business,30.0,240,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,11:10,09:10,22h 0m,1,14289400,CGK,SUB,Business,40.0,1320,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,11:35,17:25,4h 50m,1,22977400,SUB,DPS,Business,30.0,290,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,12:05,13:45,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,12:50,14:30,25h 40m,1,14619700,SRG,SUB,Business,30.0,1540,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,13:00,14:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,13:55,17:40,4h 45m,1,22964800,DPS,SUB,Business,30.0,285,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,14:35,18:45,4h 10m,1,17822200,SUB,SRG,Business,30.0,250,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,13:55,17:40,4h 45m,1,22964800,DPS,SUB,Business,30.0,285,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,14:35,18:45,4h 10m,1,17822200,SUB,SRG,Business,30.0,250,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1459800,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,15:15,09:00,17h 45m,1,14633700,SUB,SRG,Business,30.0,1065,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,14619700,SRG,SUB,Business,30.0,1385,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,15:15,09:00,17h 45m,1,14633700,SUB,SRG,Business,30.0,1065,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,14619700,SRG,SUB,Business,30.0,1385,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,15:40,18:25,1h 45m,0,1543951,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,15:40,09:10,17h 30m,1,15219600,CGK,SUB,Business,40.0,1050,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,16:30,22:40,5h 10m,1,22977400,SUB,DPS,Business,30.0,310,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,15:40,09:10,17h 30m,1,15219600,CGK,SUB,Business,40.0,1050,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,16:30,22:40,5h 10m,1,22977400,SUB,DPS,Business,30.0,310,12,0,2,Mid-range Flight
 28/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,823400,DPS,SUB,Economy,20.0,75,12,1,0,Budget Flight
-28/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,14619700,SRG,SUB,Business,30.0,1230,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,21:30,19:10,22h 40m,1,20976900,DPS,SUB,Business,30.0,1360,12,0,2,High-end Flight
-28/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+28/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,14619700,SRG,SUB,Business,30.0,1230,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,21:30,19:10,22h 40m,1,20976900,DPS,SUB,Business,30.0,1360,12,0,2,Mid-range Flight
+28/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 28/10/25,Lion Air,03:30,05:00,1h 30m,0,867438,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 28/10/25,Lion Air,07:00,07:00,1h,0,542979,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 28/10/25,Lion Air,07:00,10:35,3h 35m,1,1448530,SRG,SUB,Economy,10.0,215,13,1,0,Budget Flight
@@ -1179,23 +1179,23 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 28/10/25,"Lion Air , Wings Air",09:25,11:40,3h 15m,1,1850800,DPS,SUB,Economy,10.0,195,15,1,0,Budget Flight
 28/10/25,"Lion Air , Wings Air",09:50,11:40,2h 50m,1,1830900,DPS,SUB,Economy,10.0,170,15,1,0,Budget Flight
 28/10/25,Malaysia Airlines,04:25,10:20,4h 55m,1,1031500,CGK,SIN,Economy,20.0,295,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,06:00,10:10,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,06:00,10:10,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,06:00,17:05,12h 5m,1,2064600,SIN,SUB,Economy,20.0,725,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,09:40,16:40,6h 0m,1,1031500,CGK,SIN,Economy,20.0,360,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,09:55,14:40,5h 45m,1,6462000,SIN,CGK,Business,40.0,345,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,09:55,14:40,5h 45m,1,6462000,SIN,CGK,Business,40.0,345,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,09:55,17:05,8h 10m,1,2064600,SIN,SUB,Economy,20.0,490,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,10:00,16:40,5h 40m,1,1402500,SUB,SIN,Economy,20.0,340,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,11:05,14:40,4h 35m,1,6462000,SIN,CGK,Business,40.0,275,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,11:05,14:40,4h 35m,1,6462000,SIN,CGK,Business,40.0,275,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,11:05,17:05,7h 0m,1,2064600,SIN,SUB,Economy,20.0,420,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,11:10,16:40,4h 30m,1,1031500,CGK,SIN,Economy,20.0,270,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,12:15,18:35,5h 20m,1,1031500,CGK,SIN,Economy,20.0,320,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,13:40,17:30,4h 50m,1,6462000,SIN,CGK,Business,40.0,290,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,13:40,17:30,4h 50m,1,6462000,SIN,CGK,Business,40.0,290,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,15:40,00:30,7h 50m,1,1031500,CGK,SIN,Economy,20.0,470,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,17:25,23:40,7h 15m,1,6462000,SIN,CGK,Business,40.0,435,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,17:25,23:40,7h 15m,1,6462000,SIN,CGK,Business,40.0,435,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,17:25,14:50,22h 25m,1,2106000,SIN,SUB,Economy,25.0,1345,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,18:05,00:30,5h 25m,1,1402500,SUB,SIN,Economy,20.0,325,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,18:25,00:30,5h 5m,1,1031500,CGK,SIN,Economy,20.0,305,16,1,0,Budget Flight
-28/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,High-end Flight
+28/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6462000,SIN,CGK,Business,40.0,310,16,0,2,Mid-range Flight
 28/10/25,Malaysia Airlines,19:30,09:10,14h 40m,1,2064600,SIN,SUB,Economy,20.0,880,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,19:55,09:05,12h 10m,1,1125000,CGK,SIN,Economy,20.0,730,16,1,0,Budget Flight
 28/10/25,Malaysia Airlines,21:20,09:10,12h 50m,1,2064600,SIN,SUB,Economy,20.0,770,16,1,0,Budget Flight
@@ -1217,16 +1217,16 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 28/10/25,Scoot,17:00,18:30,2h 30m,0,1874485,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 28/10/25,Scoot,19:30,23:00,2h 30m,0,1923100,SUB,SIN,Economy,30.0,150,18,1,0,Budget Flight
 28/10/25,Scoot,20:10,23:00,1h 50m,0,1385116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-28/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,20387528,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,High-end Flight
-28/10/25,Singapore Airlines,17:20,18:05,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,High-end Flight
-28/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,20045000,CGK,SIN,First,50.0,105,19,2,2,High-end Flight
-28/10/25,Singapore Airlines,19:00,22:05,2h 5m,0,20045000,CGK,SIN,First,50.0,125,19,2,2,High-end Flight
-28/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,High-end Flight
+28/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,20387528,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,Mid-range Flight
+28/10/25,Singapore Airlines,17:20,18:05,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,Mid-range Flight
+28/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,20045000,CGK,SIN,First,50.0,105,19,2,2,Mid-range Flight
+28/10/25,Singapore Airlines,19:00,22:05,2h 5m,0,20045000,CGK,SIN,First,50.0,125,19,2,2,Mid-range Flight
+28/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,Mid-range Flight
 28/10/25,Super Air Jet,13:30,15:30,1h 0m,0,545880,SUB,DPS,Economy,10.0,60,20,1,0,Budget Flight
 28/10/25,Super Air Jet,16:10,16:10,1h 0m,0,546000,DPS,SUB,Economy,10.0,60,20,1,0,Budget Flight
 28/10/25,Thai Airways,13:05,22:20,8h 15m,1,8010700,CGK,SIN,Premium economy,35.0,495,21,3,0,Budget Flight
@@ -1236,80 +1236,80 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 28/10/25,Wings Air,10:00,11:10,1h 10m,0,948280,SRG,SUB,Economy,10.0,70,23,1,0,Budget Flight
 28/10/25,Wings Air,11:40,12:35,55m,0,857230,SUB,SRG,Economy,10.0,55,23,1,0,Budget Flight
 29/10/25,Air China,09:30,00:15,15h 45m,1,53251600,SIN,CGK,Premium economy,5.0,945,0,3,0,Budget Flight
-29/10/25,AirAsia,07:40,14:25,7h 45m,1,2045100,SIN,CGK,Economy,30.0,465,1,1,2,High-end Flight
+29/10/25,AirAsia,07:40,14:25,7h 45m,1,2045100,SIN,CGK,Economy,30.0,465,1,1,2,Mid-range Flight
 29/10/25,AirAsia,08:25,11:10,1h 45m,0,1061500,CGK,SIN,Economy,10.0,105,1,1,0,Budget Flight
-29/10/25,AirAsia,08:55,14:25,6h 30m,1,2070800,SIN,CGK,Economy,30.0,390,1,1,2,High-end Flight
+29/10/25,AirAsia,08:55,14:25,6h 30m,1,2070800,SIN,CGK,Economy,30.0,390,1,1,2,Mid-range Flight
 29/10/25,AirAsia,10:05,14:25,5h 20m,1,2070800,SIN,CGK,Economy,30.0,320,1,1,0,Budget Flight
 29/10/25,AirAsia,11:10,14:00,1h 50m,0,1061500,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 29/10/25,AirAsia,11:50,12:35,1h 45m,0,926770,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 29/10/25,AirAsia,14:40,15:30,1h 50m,0,1235400,SIN,CGK,Economy,30.0,110,1,1,0,Budget Flight
 29/10/25,AirAsia,16:30,19:20,1h 50m,0,772900,CGK,SIN,Economy,30.0,110,1,1,0,Budget Flight
 29/10/25,AirAsia,16:35,20:45,5h 10m,1,2070800,SIN,CGK,Economy,30.0,310,1,1,0,Budget Flight
-29/10/25,AirAsia,17:40,08:20,13h 40m,1,1697200,SUB,SIN,Economy,30.0,820,1,1,2,High-end Flight
+29/10/25,AirAsia,17:40,08:20,13h 40m,1,1697200,SUB,SIN,Economy,30.0,820,1,1,2,Mid-range Flight
 29/10/25,AirAsia,19:25,07:05,10h 40m,1,1389018,CGK,SIN,Economy,10.0,640,1,1,0,Budget Flight
 29/10/25,AirAsia,20:00,20:45,1h 45m,0,926770,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 29/10/25,AirAsia,21:15,07:05,8h 50m,1,1389018,CGK,SIN,Economy,10.0,530,1,1,0,Budget Flight
-29/10/25,"AirAsia , Batik Air",08:40,18:00,8h 20m,1,1447530,SUB,SIN,Economy,30.0,500,2,1,2,High-end Flight
+29/10/25,"AirAsia , Batik Air",08:40,18:00,8h 20m,1,1447530,SUB,SIN,Economy,30.0,500,2,1,2,Mid-range Flight
 29/10/25,"AirAsia , Lion Air",10:35,20:30,10h 55m,1,2023455,SIN,SUB,Economy,10.0,655,4,1,0,Budget Flight
 29/10/25,"AirAsia , Lion Air",12:05,17:10,6h 5m,1,1321845,DPS,SUB,Economy,15.0,365,4,1,0,Budget Flight
-29/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-29/10/25,Batik Air,05:00,06:20,1h 20m,0,1835471,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-29/10/25,Batik Air,05:05,06:35,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,05:05,13:35,7h 30m,1,5945000,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-29/10/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
+29/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:00,06:20,1h 20m,0,1835471,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:05,06:35,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:05,13:35,7h 30m,1,5945000,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
 29/10/25,Batik Air,05:05,08:45,3h 40m,1,2946880,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 29/10/25,Batik Air,05:15,07:15,1h 0m,0,578716,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-29/10/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,High-end Flight
-29/10/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+29/10/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 29/10/25,Batik Air,06:20,08:20,1h 0m,0,615808,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-29/10/25,Batik Air,06:20,16:30,9h 10m,1,4744680,SUB,SIN,Business,30.0,550,5,0,2,High-end Flight
+29/10/25,Batik Air,06:20,16:30,9h 10m,1,4744680,SUB,SIN,Business,30.0,550,5,0,2,Mid-range Flight
 29/10/25,Batik Air,07:00,13:30,6h 30m,1,1936300,SRG,SUB,Economy,20.0,390,5,1,0,Budget Flight
-29/10/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
+29/10/25,Batik Air,07:30,08:50,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
 29/10/25,Batik Air,07:45,10:30,1h 45m,0,1327600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 29/10/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
-29/10/25,Batik Air,08:00,09:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,08:30,10:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,08:30,14:50,6h 20m,1,4705700,SUB,SRG,Business,30.0,380,5,0,2,High-end Flight
+29/10/25,Batik Air,08:00,09:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,08:30,10:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,08:30,14:50,6h 20m,1,4705700,SUB,SRG,Business,30.0,380,5,0,2,Mid-range Flight
 29/10/25,Batik Air,08:40,16:10,6h 30m,1,1396500,SUB,SIN,Economy,10.0,390,5,1,0,Budget Flight
-29/10/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,08:50,10:15,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+29/10/25,Batik Air,08:50,10:15,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,08:50,10:15,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 29/10/25,Batik Air,09:15,16:10,5h 55m,1,1225800,CGK,SIN,Economy,10.0,355,5,1,0,Budget Flight
-29/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+29/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 29/10/25,Batik Air,09:30,13:30,4h 0m,1,1891900,SRG,SUB,Economy,20.0,240,5,1,0,Budget Flight
-29/10/25,Batik Air,10:10,11:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,10:10,14:50,4h 40m,1,4705700,SUB,SRG,Business,30.0,280,5,0,2,High-end Flight
+29/10/25,Batik Air,10:10,11:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,10:10,14:50,4h 40m,1,4705700,SUB,SRG,Business,30.0,280,5,0,2,Mid-range Flight
 29/10/25,Batik Air,10:15,15:00,4h 45m,1,1847500,SRG,SUB,Economy,20.0,285,5,1,0,Budget Flight
 29/10/25,Batik Air,10:30,19:10,9h 40m,1,4705000,SIN,CGK,Business,10.0,580,5,0,0,Budget Flight
-29/10/25,Batik Air,10:30,19:05,9h 35m,1,2028300,SIN,SUB,Economy,30.0,575,5,1,2,High-end Flight
-29/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
+29/10/25,Batik Air,10:30,19:05,9h 35m,1,2028300,SIN,SUB,Economy,30.0,575,5,1,2,Mid-range Flight
+29/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
 29/10/25,Batik Air,11:00,13:45,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 29/10/25,Batik Air,11:20,12:10,1h 50m,0,1418400,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-29/10/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-29/10/25,Batik Air,12:00,13:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+29/10/25,Batik Air,11:35,12:55,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+29/10/25,Batik Air,12:00,13:30,1h 30m,0,2845200,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 29/10/25,Batik Air,12:30,20:40,7h 10m,1,1225800,CGK,SIN,Economy,10.0,430,5,1,0,Budget Flight
-29/10/25,Batik Air,12:30,19:10,7h 40m,1,5877600,SIN,CGK,Business,30.0,460,5,0,2,High-end Flight
-29/10/25,Batik Air,12:30,19:05,7h 35m,1,2026300,SIN,SUB,Economy,30.0,455,5,1,2,High-end Flight
-29/10/25,Batik Air,13:30,15:00,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,14:10,15:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+29/10/25,Batik Air,12:30,19:10,7h 40m,1,5877600,SIN,CGK,Business,30.0,460,5,0,2,Mid-range Flight
+29/10/25,Batik Air,12:30,19:05,7h 35m,1,2026300,SIN,SUB,Economy,30.0,455,5,1,2,Mid-range Flight
+29/10/25,Batik Air,13:30,15:00,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,14:10,15:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 29/10/25,Batik Air,14:45,15:35,1h 50m,0,1670000,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-29/10/25,Batik Air,15:20,16:50,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-29/10/25,Batik Air,16:25,17:55,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,16:35,18:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-29/10/25,Batik Air,17:00,18:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-29/10/25,Batik Air,17:10,23:10,7h 0m,1,2028900,SIN,CGK,Economy,30.0,420,5,1,2,High-end Flight
+29/10/25,Batik Air,15:20,16:50,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+29/10/25,Batik Air,16:25,17:55,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,16:35,18:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+29/10/25,Batik Air,17:00,18:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+29/10/25,Batik Air,17:10,23:10,7h 0m,1,2028900,SIN,CGK,Economy,30.0,420,5,1,2,Mid-range Flight
 29/10/25,Batik Air,17:30,18:20,1h 50m,0,1670000,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-29/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+29/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 29/10/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 29/10/25,Batik Air,18:30,21:15,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 29/10/25,Batik Air,18:45,18:45,1h 0m,0,671400,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-29/10/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+29/10/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 29/10/25,Batik Air,20:00,21:30,1h 30m,0,1005892,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-29/10/25,Batik Air,20:15,21:40,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+29/10/25,Batik Air,20:15,21:40,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 29/10/25,Batik Air,20:30,20:30,1h 0m,0,671400,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
 29/10/25,Batik Air,21:25,22:15,1h 50m,0,1670000,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
 29/10/25,Batik Air,22:10,23:00,1h 50m,0,1418400,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
@@ -1344,51 +1344,51 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 29/10/25,"Citilink , Lion Air",11:20,17:10,5h 50m,1,1628865,SRG,SUB,Economy,15.0,350,11,1,0,Budget Flight
 29/10/25,"Citilink , Lion Air",13:25,19:35,6h 10m,1,1743840,SRG,SUB,Economy,10.0,370,11,1,0,Budget Flight
 29/10/25,"Citilink , Lion Air",15:00,19:35,5h 35m,1,1393140,DPS,SUB,Economy,10.0,335,11,1,0,Budget Flight
-29/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,11617978,CGK,SIN,Business,40.0,105,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,20976900,DPS,SUB,Business,30.0,265,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,07:05,15:35,8h 30m,1,14594100,SRG,SUB,Business,30.0,510,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,11617978,CGK,SIN,Business,40.0,105,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,06:50,08:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,07:00,10:25,4h 25m,1,20976900,DPS,SUB,Business,30.0,265,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,07:05,15:35,8h 30m,1,14594100,SRG,SUB,Business,30.0,510,12,0,2,Mid-range Flight
 29/10/25,Garuda Indonesia,07:05,08:40,1h 35m,0,1386641,SUB,CGK,Economy,20.0,95,12,1,0,Budget Flight
-29/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,07:05,12:35,4h 30m,1,22977400,SUB,DPS,Business,30.0,270,12,0,2,Mid-range Flight
 29/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,2575038,SUB,SIN,Economy,30.0,140,12,1,0,Budget Flight
-29/10/25,Garuda Indonesia,07:05,12:05,5h 0m,1,17822200,SUB,SRG,Business,30.0,300,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,07:05,12:05,5h 0m,1,17822200,SUB,SRG,Business,30.0,300,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,08:45,10:25,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
 29/10/25,Garuda Indonesia,09:20,11:20,1h 0m,0,831700,SUB,DPS,Economy,20.0,60,12,1,0,Budget Flight
 29/10/25,Garuda Indonesia,09:35,10:35,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-29/10/25,Garuda Indonesia,09:45,15:35,5h 50m,1,14594100,SRG,SUB,Business,30.0,350,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,11:10,09:10,22h 0m,1,14289400,CGK,SUB,Business,40.0,1320,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,11:35,13:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,11:35,17:25,4h 50m,1,22977400,SUB,DPS,Business,30.0,290,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,11:35,17:00,5h 25m,1,17822200,SUB,SRG,Business,30.0,325,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,12:50,17:40,4h 50m,1,14594100,SRG,SUB,Business,30.0,290,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,12:55,14:00,2h 5m,0,17971313,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,09:45,15:35,5h 50m,1,14594100,SRG,SUB,Business,30.0,350,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,11:10,09:10,22h 0m,1,14289400,CGK,SUB,Business,40.0,1320,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,11:35,13:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,11:35,17:25,4h 50m,1,22977400,SUB,DPS,Business,30.0,290,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,11:35,17:00,5h 25m,1,17822200,SUB,SRG,Business,30.0,325,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,11:55,15:35,4h 40m,1,22964800,DPS,SUB,Business,30.0,280,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,12:50,17:40,4h 50m,1,14594100,SRG,SUB,Business,30.0,290,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,12:55,14:00,2h 5m,0,17971313,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 29/10/25,Garuda Indonesia,13:00,14:30,1h 30m,0,1344374,HLP,SUB,Economy,20.0,90,12,1,0,Budget Flight
-29/10/25,Garuda Indonesia,13:25,17:40,5h 15m,1,22964800,DPS,SUB,Business,30.0,315,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,14:35,16:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,14:35,18:45,4h 10m,1,17822200,SUB,SRG,Business,30.0,250,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,14:50,16:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,10797800,SRG,SUB,Business,30.0,1385,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,16:30,18:10,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,16:30,21:55,4h 25m,1,22977400,SUB,DPS,Business,30.0,265,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,13:25,17:40,5h 15m,1,22964800,DPS,SUB,Business,30.0,315,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,14:00,15:35,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,14:35,16:10,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,14:35,19:55,4h 20m,1,22977400,SUB,DPS,Business,30.0,260,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,14:35,18:45,4h 10m,1,17822200,SUB,SRG,Business,30.0,250,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,14:50,16:25,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,15:25,14:30,23h 5m,1,10797800,SRG,SUB,Business,30.0,1385,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,15:40,19:10,4h 30m,1,22964800,DPS,SUB,Business,30.0,270,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,16:00,17:40,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,16:30,18:10,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,16:30,21:55,4h 25m,1,22977400,SUB,DPS,Business,30.0,265,12,0,2,Mid-range Flight
 29/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,831200,DPS,SUB,Economy,20.0,75,12,1,0,Budget Flight
-29/10/25,Garuda Indonesia,17:10,18:45,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,17:25,21:50,5h 25m,1,22964800,DPS,SUB,Business,30.0,325,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,17:30,19:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,10797800,SRG,SUB,Business,30.0,1230,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,18:00,19:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,18:30,21:50,4h 20m,1,22964800,DPS,SUB,Business,30.0,260,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7225200,SIN,SUB,Business,40.0,150,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,19:00,20:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,19:55,09:10,13h 15m,1,14289400,CGK,SUB,Business,40.0,795,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,20:05,21:45,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,20:15,21:50,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,High-end Flight
-29/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+29/10/25,Garuda Indonesia,17:10,18:45,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,17:25,21:50,5h 25m,1,22964800,DPS,SUB,Business,30.0,325,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,17:30,19:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,18:00,14:30,20h 30m,1,10797800,SRG,SUB,Business,30.0,1230,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,18:00,19:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,18:30,20:10,1h 40m,0,9794300,CGK,SUB,Business,30.0,100,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,18:30,21:50,4h 20m,1,22964800,DPS,SUB,Business,30.0,260,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,19:00,20:30,2h 30m,0,7225200,SIN,SUB,Business,40.0,150,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,19:00,20:35,1h 35m,0,9743300,SUB,CGK,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,19:55,09:10,13h 15m,1,14289400,CGK,SUB,Business,40.0,795,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,20:05,21:45,1h 40m,0,9743300,SUB,CGK,Business,30.0,100,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,20:15,21:50,1h 35m,0,9794300,CGK,SUB,Business,30.0,95,12,0,2,Mid-range Flight
+29/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 29/10/25,Lion Air,03:30,05:00,1h 30m,0,780427,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 29/10/25,Lion Air,07:00,07:00,1h 0m,0,637000,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 29/10/25,Lion Air,07:00,10:35,3h 35m,1,1478430,SRG,SUB,Economy,10.0,215,13,1,0,Budget Flight
@@ -1421,24 +1421,24 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 29/10/25,"Lion Air , Wings Air",09:25,11:40,3h 15m,1,1860100,DPS,SUB,Economy,10.0,195,15,1,0,Budget Flight
 29/10/25,"Lion Air , Wings Air",09:50,11:40,2h 50m,1,1840100,DPS,SUB,Economy,10.0,170,15,1,0,Budget Flight
 29/10/25,Malaysia Airlines,04:25,18:35,13h 10m,1,1125000,CGK,SIN,Economy,20.0,790,16,1,0,Budget Flight
-29/10/25,Malaysia Airlines,06:00,10:10,5h 10m,1,6461000,SIN,CGK,Business,40.0,310,16,0,2,High-end Flight
+29/10/25,Malaysia Airlines,06:00,10:10,5h 10m,1,6461000,SIN,CGK,Business,40.0,310,16,0,2,Mid-range Flight
 29/10/25,Malaysia Airlines,06:00,14:50,9h 50m,1,2064400,SIN,SUB,Economy,20.0,590,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,09:40,18:35,7h 55m,1,1125000,CGK,SIN,Economy,20.0,475,16,1,0,Budget Flight
-29/10/25,Malaysia Airlines,09:55,17:30,8h 35m,1,6461000,SIN,CGK,Business,40.0,515,16,0,2,High-end Flight
+29/10/25,Malaysia Airlines,09:55,17:30,8h 35m,1,6461000,SIN,CGK,Business,40.0,515,16,0,2,Mid-range Flight
 29/10/25,Malaysia Airlines,09:55,14:50,5h 55m,1,2064400,SIN,SUB,Economy,20.0,355,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,10:00,18:35,7h 35m,1,1389300,SUB,SIN,Economy,20.0,455,16,1,0,Budget Flight
-29/10/25,Malaysia Airlines,11:05,17:30,7h 25m,1,6461000,SIN,CGK,Business,40.0,445,16,0,2,High-end Flight
-29/10/25,Malaysia Airlines,11:05,09:10,23h 5m,1,5959400,SIN,SUB,Business,40.0,1385,16,0,2,High-end Flight
+29/10/25,Malaysia Airlines,11:05,17:30,7h 25m,1,6461000,SIN,CGK,Business,40.0,445,16,0,2,Mid-range Flight
+29/10/25,Malaysia Airlines,11:05,09:10,23h 5m,1,5959400,SIN,SUB,Business,40.0,1385,16,0,2,Mid-range Flight
 29/10/25,Malaysia Airlines,11:10,18:35,6h 25m,1,1125000,CGK,SIN,Economy,20.0,385,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,12:15,18:35,5h 20m,1,1125000,CGK,SIN,Economy,20.0,320,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,15:40,09:05,16h 25m,1,1240400,CGK,SIN,Economy,25.0,985,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,15:50,09:05,16h 15m,1,1424500,SUB,SIN,Economy,20.0,975,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,17:25,09:10,16h 45m,1,2099600,SIN,SUB,Economy,20.0,1005,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,18:25,09:05,13h 40m,1,1125000,CGK,SIN,Economy,20.0,820,16,1,0,Budget Flight
-29/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6461000,SIN,CGK,Business,40.0,310,16,0,2,High-end Flight
+29/10/25,Malaysia Airlines,19:30,23:40,5h 10m,1,6461000,SIN,CGK,Business,40.0,310,16,0,2,Mid-range Flight
 29/10/25,Malaysia Airlines,19:30,09:10,14h 40m,1,2064400,SIN,SUB,Economy,20.0,880,16,1,0,Budget Flight
 29/10/25,Malaysia Airlines,19:55,09:05,12h 10m,1,1125000,CGK,SIN,Economy,20.0,730,16,1,0,Budget Flight
-29/10/25,Malaysia Airlines,21:20,08:30,12h 10m,1,6461000,SIN,CGK,Business,40.0,730,16,0,2,High-end Flight
+29/10/25,Malaysia Airlines,21:20,08:30,12h 10m,1,6461000,SIN,CGK,Business,40.0,730,16,0,2,Mid-range Flight
 29/10/25,Malaysia Airlines,21:20,09:10,12h 50m,1,2064400,SIN,SUB,Economy,20.0,770,16,1,0,Budget Flight
 29/10/25,Pelita Air,06:40,08:15,1h 35m,0,2610400,CGK,SUB,Premium economy,20.0,95,17,3,0,Budget Flight
 29/10/25,Pelita Air,07:55,10:45,1h 50m,0,1249000,CGK,SIN,Economy,20.0,110,17,1,0,Budget Flight
@@ -1453,15 +1453,15 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 29/10/25,Scoot,11:20,14:05,1h 45m,0,1410374,CGK,SIN,Economy,10.0,105,18,1,0,Budget Flight
 29/10/25,Scoot,18:25,19:20,1h 55m,0,1750100,SIN,CGK,Economy,30.0,115,18,1,0,Budget Flight
 29/10/25,Scoot,20:10,23:00,1h 50m,0,1410374,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-29/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-29/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
-29/10/25,Singapore Airlines,07:40,08:30,1h 50m,0,12941606,SIN,CGK,Business,40.0,110,19,0,2,High-end Flight
+29/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+29/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
+29/10/25,Singapore Airlines,07:40,08:30,1h 50m,0,12941606,SIN,CGK,Business,40.0,110,19,0,2,Mid-range Flight
 29/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,2555017,SIN,SUB,Economy,25.0,150,19,1,0,Budget Flight
-29/10/25,Singapore Airlines,08:40,11:20,1h 40m,0,20045000,CGK,SIN,First,50.0,100,19,2,2,High-end Flight
-29/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-29/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,9574974,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-29/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,20045000,CGK,SIN,First,50.0,105,19,2,2,High-end Flight
-29/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,High-end Flight
+29/10/25,Singapore Airlines,08:40,11:20,1h 40m,0,20045000,CGK,SIN,First,50.0,100,19,2,2,Mid-range Flight
+29/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+29/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,9574974,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+29/10/25,Singapore Airlines,18:10,20:55,1h 45m,0,20045000,CGK,SIN,First,50.0,105,19,2,2,Mid-range Flight
+29/10/25,Singapore Airlines,22:40,23:25,1h 45m,0,30272700,SIN,CGK,First,50.0,105,19,2,2,Mid-range Flight
 29/10/25,Super Air Jet,13:30,15:30,1h 0m,0,583539,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 29/10/25,Super Air Jet,16:10,16:10,1h 0m,0,575900,DPS,SUB,Economy,10.0,60,20,1,0,Budget Flight
 29/10/25,Thai Airways,13:05,22:20,8h 15m,1,7385100,CGK,SIN,Premium economy,35.0,495,21,3,0,Budget Flight
@@ -1476,53 +1476,53 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 30/10/25,AirAsia,11:50,12:35,1h 45m,0,926770,SIN,CGK,Economy,10.0,105,1,1,0,Budget Flight
 30/10/25,AirAsia,14:40,15:30,1h 50m,0,1247148,SIN,CGK,Economy,10.0,110,1,1,0,Budget Flight
 30/10/25,AirAsia,16:30,19:20,1h 50m,0,800621,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
-30/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,05:00,06:20,1h 20m,0,1835471,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-30/10/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,High-end Flight
-30/10/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,High-end Flight
-30/10/25,Batik Air,05:05,09:35,4h 30m,1,2964080,SUB,SRG,Business,30.0,270,5,0,2,High-end Flight
+30/10/25,Batik Air,05:00,06:20,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:00,06:20,1h 20m,0,1835471,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:05,06:35,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:05,13:35,7h 30m,1,5150280,SUB,DPS,Business,30.0,450,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:05,13:45,7h 40m,1,5391180,SUB,SIN,Business,30.0,460,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:05,09:35,4h 30m,1,2964080,SUB,SRG,Business,30.0,270,5,0,2,Mid-range Flight
 30/10/25,Batik Air,05:15,07:15,1h 0m,0,571889,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-30/10/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+30/10/25,Batik Air,05:25,06:50,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,05:25,06:50,1h 25m,0,1761217,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,06:00,07:30,1h 30m,0,1807434,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 30/10/25,Batik Air,06:20,08:20,1h 0m,0,642723,SUB,DPS,Economy,20.0,60,5,1,0,Budget Flight
-30/10/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,High-end Flight
-30/10/25,Batik Air,07:30,08:50,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,07:45,10:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+30/10/25,Batik Air,07:00,13:30,6h 30m,1,2958530,SRG,SUB,Business,30.0,390,5,0,2,Mid-range Flight
+30/10/25,Batik Air,07:30,08:50,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,07:45,10:30,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 30/10/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
 30/10/25,Batik Air,08:00,09:30,1h 30m,0,1005892,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-30/10/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,High-end Flight
-30/10/25,Batik Air,08:50,10:15,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,09:30,10:55,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+30/10/25,Batik Air,08:30,20:30,11h 0m,1,5391180,SUB,SIN,Business,30.0,660,5,0,2,Mid-range Flight
+30/10/25,Batik Air,08:50,10:15,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,09:30,10:55,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,09:30,10:55,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 30/10/25,Batik Air,09:30,13:30,4h,1,2941343,SRG,SUB,Business,10.0,240,5,0,0,Budget Flight
-30/10/25,Batik Air,10:10,11:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-30/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,10:55,12:15,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+30/10/25,Batik Air,10:10,11:40,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+30/10/25,Batik Air,10:55,12:15,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,10:55,12:15,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 30/10/25,Batik Air,11:00,13:45,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 30/10/25,Batik Air,11:20,12:10,1h 50m,0,1435600,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-30/10/25,Batik Air,11:35,12:55,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+30/10/25,Batik Air,11:35,12:55,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 30/10/25,Batik Air,12:30,20:40,7h 10m,1,1226100,CGK,SIN,Economy,10.0,430,5,1,0,Budget Flight
 30/10/25,Batik Air,12:30,19:05,7h 35m,1,5089000,SIN,SUB,Business,10.0,455,5,0,0,Budget Flight
-30/10/25,Batik Air,13:35,15:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-30/10/25,Batik Air,15:20,16:50,1h 30m,0,2765519,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-30/10/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,15:40,17:00,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-30/10/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+30/10/25,Batik Air,13:35,15:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+30/10/25,Batik Air,15:20,16:50,1h 30m,0,2765519,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+30/10/25,Batik Air,15:40,17:00,1h 20m,0,1802380,SUB,CGK,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,15:40,17:00,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+30/10/25,Batik Air,16:10,17:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 30/10/25,Batik Air,16:25,17:55,1h 30m,0,910557,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
-30/10/25,Batik Air,16:35,18:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-30/10/25,Batik Air,17:30,19:00,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+30/10/25,Batik Air,16:35,18:00,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+30/10/25,Batik Air,17:30,19:00,1h 30m,0,2790193,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 30/10/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
 30/10/25,Batik Air,18:30,21:15,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-30/10/25,Batik Air,18:40,20:00,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+30/10/25,Batik Air,18:40,20:00,1h 20m,0,2778762,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 30/10/25,Batik Air,18:45,18:45,1h 0m,0,648434,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-30/10/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-30/10/25,Batik Air,20:00,21:30,1h 30m,0,2765519,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-30/10/25,Batik Air,20:15,21:40,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+30/10/25,Batik Air,19:15,20:45,1h 30m,0,1774538,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+30/10/25,Batik Air,20:00,21:30,1h 30m,0,2765519,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+30/10/25,Batik Air,20:15,21:40,1h 25m,0,2716589,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 30/10/25,Batik Air,20:30,20:30,1h 0m,0,648434,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-30/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+30/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 30/10/25,"Batik Air , Lion Air",13:30,17:35,4h 5m,1,1662480,SUB,SRG,Economy,10.0,245,6,1,0,Budget Flight
 30/10/25,Citilink,06:20,09:10,1h 50m,0,1186407,CGK,SIN,Economy,10.0,110,10,1,0,Budget Flight
 30/10/25,Citilink,07:05,07:10,1h 5m,0,577816,DPS,SUB,Economy,15.0,65,10,1,0,Budget Flight
@@ -1536,10 +1536,10 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 30/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,1617100,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
 30/10/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
 30/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,2575038,SUB,SIN,Economy,30.0,140,12,1,0,Budget Flight
-30/10/25,Garuda Indonesia,12:55,14:00,2h 5m,0,17971313,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
-30/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
+30/10/25,Garuda Indonesia,12:55,14:00,2h 5m,0,17971313,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
+30/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
 30/10/25,Garuda Indonesia,18:00,21:50,3h 50m,1,2615689,SRG,SUB,Economy,20.0,230,12,1,0,Budget Flight
-30/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+30/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 30/10/25,Lion Air,03:30,05:00,1h 30m,0,815128,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 30/10/25,Lion Air,05:25,06:55,1h 30m,0,910715,CGK,SUB,Economy,15.0,90,13,1,0,Budget Flight
 30/10/25,Lion Air,07:00,07:00,1h 0m,0,546000,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
@@ -1568,7 +1568,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 30/10/25,Malaysia Airlines,12:15,18:35,5h 20m,1,1125400,CGK,SIN,Economy,20.0,320,16,1,0,Budget Flight
 30/10/25,Malaysia Airlines,15:40,00:30,7h 50m,1,1125400,CGK,SIN,Economy,20.0,470,16,1,0,Budget Flight
 30/10/25,Malaysia Airlines,15:50,00:30,7h 40m,1,1509000,SUB,SIN,Economy,20.0,460,16,1,0,Budget Flight
-30/10/25,Malaysia Airlines,18:25,09:10,14h 45m,1,7716579,CGK,SUB,Business,30.0,885,16,0,2,High-end Flight
+30/10/25,Malaysia Airlines,18:25,09:10,14h 45m,1,7716579,CGK,SUB,Business,30.0,885,16,0,2,Mid-range Flight
 30/10/25,Malaysia Airlines,19:55,09:05,12h 10m,1,1125400,CGK,SIN,Economy,20.0,730,16,1,0,Budget Flight
 30/10/25,Pelita Air,06:10,07:40,1h 30m,0,832454,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 30/10/25,Pelita Air,06:40,08:15,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
@@ -1576,7 +1576,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 30/10/25,Pelita Air,08:30,10:05,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 30/10/25,Pelita Air,10:40,12:15,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 30/10/25,Pelita Air,11:40,12:25,1h 45m,0,1451819,SIN,CGK,Economy,20.0,105,17,1,0,Budget Flight
-30/10/25,Pelita Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,17,0,2,High-end Flight
+30/10/25,Pelita Air,13:35,15:00,1h 25m,0,1763600,CGK,SUB,Business,30.0,85,17,0,2,Mid-range Flight
 30/10/25,Pelita Air,14:25,16:00,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 30/10/25,Pelita Air,17:15,18:50,1h 35m,0,960268,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 30/10/25,Scoot,07:30,09:00,2h 30m,0,1874485,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
@@ -1584,12 +1584,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 30/10/25,Scoot,09:45,13:05,2h 20m,0,1691333,SUB,SIN,Economy,10.0,140,18,1,0,Budget Flight
 30/10/25,Scoot,11:20,14:05,1h 45m,0,1121116,CGK,SIN,Economy,10.0,105,18,1,0,Budget Flight
 30/10/25,Scoot,20:10,23:00,1h 50m,0,1121116,CGK,SIN,Economy,10.0,110,18,1,0,Budget Flight
-30/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-30/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
+30/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+30/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,12941606,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
 30/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,2555017,SIN,SUB,Economy,25.0,150,19,1,0,Budget Flight
-30/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-30/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,20387391,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-30/10/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,High-end Flight
+30/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,6917389,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+30/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,20387391,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+30/10/25,Singapore Airlines,16:25,17:50,2h 25m,0,14578737,SIN,SUB,Business,40.0,145,19,0,2,Mid-range Flight
 30/10/25,Super Air Jet,13:30,15:30,1h 0m,0,606125,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 30/10/25,Super Air Jet,16:10,16:10,1h 0m,0,575900,DPS,SUB,Economy,10.0,60,20,1,0,Budget Flight
 30/10/25,TransNusa,07:45,10:40,1h 55m,0,1249000,CGK,SIN,Economy,20.0,115,22,1,0,Budget Flight
@@ -1600,48 +1600,48 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 31/10/25,AirAsia,11:10,14:00,1h 50m,0,849484,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 31/10/25,AirAsia,16:30,19:20,1h 50m,0,800621,CGK,SIN,Economy,10.0,110,1,1,0,Budget Flight
 31/10/25,Batik Air,03:30,05:00,1h 30m,0,875500,CGK,SUB,Economy,10.0,90,5,1,0,Budget Flight
-31/10/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+31/10/25,Batik Air,05:00,06:20,1h 20m,0,2874752,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 31/10/25,Batik Air,05:05,06:35,1h 30m,0,982891,SUB,CGK,Economy,20.0,90,5,1,0,Budget Flight
 31/10/25,Batik Air,05:05,15:15,10h 10m,1,1635380,SUB,SRG,Economy,20.0,610,5,1,0,Budget Flight
-31/10/25,Batik Air,05:15,07:15,1h 0m,0,1045980,SUB,DPS,Business,30.0,60,5,0,2,High-end Flight
-31/10/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,High-end Flight
-31/10/25,Batik Air,05:25,06:50,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
+31/10/25,Batik Air,05:15,07:15,1h 0m,0,1045980,SUB,DPS,Business,30.0,60,5,0,2,Mid-range Flight
+31/10/25,Batik Air,05:15,16:30,10h 15m,1,4744680,SUB,SIN,Business,30.0,615,5,0,2,Mid-range Flight
+31/10/25,Batik Air,05:25,06:50,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
 31/10/25,Batik Air,06:00,07:30,1h 30m,0,1002260,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-31/10/25,Batik Air,06:20,08:20,1h 0m,0,1966180,SUB,DPS,Business,30.0,60,5,0,2,High-end Flight
-31/10/25,Batik Air,06:40,08:15,1h 35m,0,2668000,CGK,SUB,Business,25.0,95,5,0,2,High-end Flight
-31/10/25,Batik Air,07:00,15:00,8h 0m,1,2958530,SRG,SUB,Business,30.0,480,5,0,2,High-end Flight
-31/10/25,Batik Air,07:30,08:50,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-31/10/25,Batik Air,07:45,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+31/10/25,Batik Air,06:20,08:20,1h 0m,0,1966180,SUB,DPS,Business,30.0,60,5,0,2,Mid-range Flight
+31/10/25,Batik Air,06:40,08:15,1h 35m,0,2668000,CGK,SUB,Business,25.0,95,5,0,2,Mid-range Flight
+31/10/25,Batik Air,07:00,15:00,8h 0m,1,2958530,SRG,SUB,Business,30.0,480,5,0,2,Mid-range Flight
+31/10/25,Batik Air,07:30,08:50,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+31/10/25,Batik Air,07:45,21:15,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 31/10/25,Batik Air,07:50,11:30,3h 40m,1,3266242,SUB,SRG,Business,10.0,220,5,0,0,Budget Flight
-31/10/25,Batik Air,08:00,09:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
+31/10/25,Batik Air,08:00,09:30,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
 31/10/25,Batik Air,08:40,16:10,6h 30m,1,1396500,SUB,SIN,Economy,10.0,390,5,1,0,Budget Flight
 31/10/25,Batik Air,09:15,08:35,5h 55m,1,4910100,CGK,SIN,Business,10.0,355,5,0,0,Budget Flight
-31/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-31/10/25,Batik Air,09:30,15:00,5h 30m,1,2958530,SRG,SUB,Business,30.0,330,5,0,2,High-end Flight
-31/10/25,Batik Air,10:10,11:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-31/10/25,Batik Air,10:55,12:15,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-31/10/25,Batik Air,11:00,10:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
+31/10/25,Batik Air,09:30,10:55,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+31/10/25,Batik Air,09:30,15:00,5h 30m,1,2958530,SRG,SUB,Business,30.0,330,5,0,2,Mid-range Flight
+31/10/25,Batik Air,10:10,11:40,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+31/10/25,Batik Air,10:55,12:15,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+31/10/25,Batik Air,11:00,10:45,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
 31/10/25,Batik Air,11:20,12:10,1h 50m,0,1985600,SIN,CGK,Economy,20.0,110,5,1,0,Budget Flight
-31/10/25,Batik Air,12:00,13:30,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-31/10/25,Batik Air,13:30,15:00,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-31/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,High-end Flight
-31/10/25,Batik Air,14:10,15:40,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
-31/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-31/10/25,Batik Air,15:20,16:50,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,High-end Flight
-31/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
-31/10/25,Batik Air,16:25,17:55,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+31/10/25,Batik Air,12:00,13:30,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+31/10/25,Batik Air,13:30,15:00,1h 30m,0,1774538,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+31/10/25,Batik Air,13:35,15:00,1h 25m,0,2740826,HLP,SUB,Business,30.0,85,5,0,2,Mid-range Flight
+31/10/25,Batik Air,14:10,15:40,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
+31/10/25,Batik Air,14:45,15:35,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+31/10/25,Batik Air,15:20,16:50,1h 30m,0,2790193,CGK,SUB,Business,30.0,90,5,0,2,Mid-range Flight
+31/10/25,Batik Air,15:40,17:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
+31/10/25,Batik Air,16:25,17:55,1h 30m,0,1809580,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 31/10/25,Batik Air,17:00,18:30,1h 30m,0,1105871,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
-31/10/25,Batik Air,17:30,18:20,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-31/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+31/10/25,Batik Air,17:30,18:20,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+31/10/25,Batik Air,17:30,19:00,1h 30m,0,2752045,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 31/10/25,Batik Air,17:45,20:30,1h 45m,0,1027600,CGK,SIN,Economy,20.0,105,5,1,0,Budget Flight
-31/10/25,Batik Air,18:30,16:10,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,High-end Flight
-31/10/25,Batik Air,18:40,20:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,High-end Flight
+31/10/25,Batik Air,18:30,16:10,1h 45m,0,3748600,CGK,SIN,Business,30.0,105,5,0,2,Mid-range Flight
+31/10/25,Batik Air,18:40,20:00,1h 20m,0,2754189,SUB,HLP,Business,30.0,80,5,0,2,Mid-range Flight
 31/10/25,Batik Air,18:45,18:45,1h 0m,0,674447,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-31/10/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,High-end Flight
+31/10/25,Batik Air,19:15,20:45,1h 30m,0,1740598,SUB,CGK,Business,30.0,90,5,0,2,Mid-range Flight
 31/10/25,Batik Air,20:00,21:30,1h 30m,0,1196551,CGK,SUB,Economy,20.0,90,5,1,0,Budget Flight
 31/10/25,Batik Air,20:30,20:30,1h 0m,0,674447,DPS,SUB,Economy,20.0,60,5,1,0,Budget Flight
-31/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
-31/10/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,High-end Flight
+31/10/25,Batik Air,21:25,22:15,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
+31/10/25,Batik Air,22:10,23:00,1h 50m,0,4630600,SIN,CGK,Business,30.0,110,5,0,2,Mid-range Flight
 31/10/25,"Batik Air , Lion Air",07:00,12:20,5h 20m,1,1800456,SRG,SUB,Economy,20.0,320,6,1,0,Budget Flight
 31/10/25,Citilink,05:00,07:05,1h 5m,0,786662,SUB,DPS,Economy,15.0,65,10,1,0,Budget Flight
 31/10/25,Citilink,05:25,06:55,1h 30m,0,980384,CGK,SUB,Economy,10.0,90,10,1,0,Budget Flight
@@ -1653,13 +1653,13 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 31/10/25,Citilink,20:10,22:10,1h 0m,0,770645,SUB,DPS,Economy,10.0,60,10,1,0,Budget Flight
 31/10/25,Garuda Indonesia,05:50,08:35,1h 45m,0,1818100,CGK,SIN,Economy,30.0,105,12,1,0,Budget Flight
 31/10/25,Garuda Indonesia,06:55,07:55,2h 0m,0,2806458,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
-31/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,High-end Flight
+31/10/25,Garuda Indonesia,07:05,10:25,2h 20m,0,7940528,SUB,SIN,Business,40.0,140,12,0,2,Mid-range Flight
 31/10/25,Garuda Indonesia,09:20,11:20,1h 0m,0,763540,SUB,DPS,Economy,15.0,60,12,1,0,Budget Flight
 31/10/25,Garuda Indonesia,09:35,10:35,2h 0m,0,3254365,SIN,CGK,Economy,30.0,120,12,1,0,Budget Flight
 31/10/25,Garuda Indonesia,15:15,16:45,1h 30m,0,1386641,SUB,HLP,Economy,20.0,90,12,1,0,Budget Flight
-31/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,High-end Flight
-31/10/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18820939,SRG,SUB,Business,30.0,230,12,0,2,High-end Flight
-31/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,High-end Flight
+31/10/25,Garuda Indonesia,16:55,17:10,1h 15m,0,6324038,DPS,SUB,Business,30.0,75,12,0,2,Mid-range Flight
+31/10/25,Garuda Indonesia,18:00,21:50,3h 50m,1,18820939,SRG,SUB,Business,30.0,230,12,0,2,Mid-range Flight
+31/10/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693,SIN,CGK,Business,40.0,125,12,0,2,Mid-range Flight
 31/10/25,Lion Air,03:30,05:00,1h 30m,0,831191,CGK,SUB,Economy,10.0,90,13,1,0,Budget Flight
 31/10/25,Lion Air,06:00,07:30,1h 30m,0,967080,CGK,SUB,Economy,20.0,90,13,1,0,Budget Flight
 31/10/25,Lion Air,07:00,07:00,1h 0m,0,546000,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
@@ -1685,12 +1685,12 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 31/10/25,Lion Air,20:30,20:30,1h 0m,0,546000,DPS,SUB,Economy,10.0,60,13,1,0,Budget Flight
 31/10/25,Lion Air,21:00,22:30,1h 30m,0,949780,SUB,CGK,Economy,10.0,90,13,1,0,Budget Flight
 31/10/25,Malaysia Airlines,04:25,10:20,4h 55m,1,1125400,CGK,SIN,Economy,20.0,295,16,1,0,Budget Flight
-31/10/25,Malaysia Airlines,06:00,17:05,12h 5m,1,6003235,SIN,SUB,Business,40.0,725,16,0,2,High-end Flight
-31/10/25,Malaysia Airlines,10:00,16:40,5h 40m,1,5574100,SUB,SIN,Business,40.0,340,16,0,2,High-end Flight
+31/10/25,Malaysia Airlines,06:00,17:05,12h 5m,1,6003235,SIN,SUB,Business,40.0,725,16,0,2,Mid-range Flight
+31/10/25,Malaysia Airlines,10:00,16:40,5h 40m,1,5574100,SUB,SIN,Business,40.0,340,16,0,2,Mid-range Flight
 31/10/25,Pelita Air,06:10,07:40,1h 30m,0,910764,SUB,CGK,Economy,10.0,90,17,1,0,Budget Flight
 31/10/25,Pelita Air,06:40,08:15,1h 35m,0,966763,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
-31/10/25,Pelita Air,07:55,20:40,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,High-end Flight
-31/10/25,Pelita Air,09:00,16:55,6h 55m,1,5637280,SUB,DPS,Business,25.0,415,17,0,2,High-end Flight
+31/10/25,Pelita Air,07:55,20:40,1h 50m,0,3799000,CGK,SIN,Business,25.0,110,17,0,2,Mid-range Flight
+31/10/25,Pelita Air,09:00,16:55,6h 55m,1,5637280,SUB,DPS,Business,25.0,415,17,0,2,Mid-range Flight
 31/10/25,Pelita Air,10:40,12:15,1h 35m,0,1003126,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
 31/10/25,Pelita Air,11:40,12:25,1h 45m,0,1575683,SIN,CGK,Economy,20.0,105,17,1,0,Budget Flight
 31/10/25,Pelita Air,14:25,16:00,1h 35m,0,966763,CGK,SUB,Economy,10.0,95,17,1,0,Budget Flight
@@ -1700,11 +1700,11 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 31/10/25,Scoot,17:00,18:30,2h 30m,0,1874485,SIN,SUB,Economy,10.0,150,18,1,0,Budget Flight
 31/10/25,Scoot,18:25,19:20,1h 55m,0,2090971,SIN,CGK,Economy,10.0,115,18,1,0,Budget Flight
 31/10/25,Scoot,19:30,23:00,2h 30m,0,1225258,SUB,SIN,Economy,10.0,150,18,1,0,Budget Flight
-31/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,High-end Flight
-31/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,14395083,SIN,CGK,Business,40.0,105,19,0,2,High-end Flight
-31/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
-31/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,High-end Flight
-31/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,14578737,SIN,SUB,Business,40.0,150,19,0,2,High-end Flight
+31/10/25,Singapore Airlines,05:25,08:05,1h 40m,0,8606154,CGK,SIN,Business,40.0,100,19,0,2,Mid-range Flight
+31/10/25,Singapore Airlines,06:50,07:35,1h 45m,0,14395083,SIN,CGK,Business,40.0,105,19,0,2,Mid-range Flight
+31/10/25,Singapore Airlines,07:50,09:20,2h 30m,0,10432397,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
+31/10/25,Singapore Airlines,10:15,13:35,2h 20m,0,7867509,SUB,SIN,Business,40.0,140,19,0,2,Mid-range Flight
+31/10/25,Singapore Airlines,14:10,15:40,2h 30m,0,14578737,SIN,SUB,Business,40.0,150,19,0,2,Mid-range Flight
 31/10/25,Super Air Jet,13:30,15:30,1h 0m,0,729068,SUB,DPS,Economy,15.0,60,20,1,0,Budget Flight
 31/10/25,Super Air Jet,16:10,16:10,1h 0m,0,575900,DPS,SUB,Economy,10.0,60,20,1,0,Budget Flight
 31/10/25,TransNusa,11:40,12:25,1h 45m,0,1644000,SIN,CGK,Economy,20.0,105,22,1,0,Budget Flight
