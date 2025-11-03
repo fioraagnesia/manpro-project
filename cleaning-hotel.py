@@ -157,4 +157,4 @@ df_best_price = df_sorted.drop_duplicates(subset=unique_cols, keep='first')
 
 print(f"Data after deduplication: {len(df_best_price)} rows")
 # Save as csv
-df_best_price.to_csv('hotel_data_combined.csv', index=False)
+df_best_price.to_csv('data-cleaned/cleaned_hotel_combined.csv', index=False)
