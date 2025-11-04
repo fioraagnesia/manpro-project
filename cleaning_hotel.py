@@ -84,21 +84,23 @@ def normalize_name(name):
 
 
 # DATA SCRAPING PATHS
-dataset_paths = [
-    'data-scraping/hotel/hotel_agoda_20250926_10days.xlsx',
-    'data-scraping/hotel/hotel_traveloka_20250926_10days.xlsx',
-    'data-scraping/hotel/hotel_tiketcom_(13 Oktober 2025 - 24 Oktober 2025).xlsx',
-    'data-scraping/hotel/hotel_tripcom_(12 Oktober 2025 - 23 Oktober 2025).xlsx',
-    'data-scraping/hotel/hotel_bookingcom_data_(27 Oktober 2025 - 6 November 2025).xlsx'
+dataset_folder = 'data_scraping/hotel/'
+dataset_files = [
+    'hotel_agoda_20250926_10days.xlsx',
+    'hotel_traveloka_20250926_10days.xlsx',
+    'hotel_tiketcom_(13 Oktober 2025 - 24 Oktober 2025).xlsx',
+    'hotel_tripcom_(12 Oktober 2025 - 23 Oktober 2025).xlsx',
+    'hotel_bookingcom_data_(27 Oktober 2025 - 6 November 2025).xlsx'
 ]
 
 # DATA CLEANING on each datasets
 cleaned_df = {}
-for path in dataset_paths:
+for dataset in dataset_files:
     try:
         # Access the data
+        path = dataset_folder + dataset
         df_raw = pd.read_excel(path)
-        dataset_name = path.split('_')[1].split('(')[0].title()
+        dataset_name = dataset.split('_')[1].split('(')[0].title()
 
         # Drop columns that are not needed
         drop_columns = ['Hotel_ID', 'Scraped Timestamp', 'Source URL']
@@ -156,5 +158,15 @@ unique_cols = ['Cleaned Name', 'City', 'Country', 'Checkin Date', 'Checkout Date
 df_best_price = df_sorted.drop_duplicates(subset=unique_cols, keep='first')
 
 print(f"Data after deduplication: {len(df_best_price)} rows")
+
+# Make sure a hotel has the same hotel star and guest rating for each entry
+print("Standardizing hotel stars and guest rating...")
+# Standardizing hotel star with the maximum value
+df_best_price['Hotel Star'] = df_best_price.groupby('Hotel Name')['Hotel Star'].transform('max')
+# Standardizing guest rating with the maximum value
+df_best_price['Guest Rating'] = df_best_price.groupby('Hotel Name')['Guest Rating'].transform('max')
+
 # Save as csv
-df_best_price.to_csv('data-cleaned/cleaned_hotel_combined.csv', index=False)
+file_name = 'data_cleaned/cleaned_hotel_combined.csv'
+df_best_price.to_csv(file_name, index=False)
+print(f"Successfully saved as {file_name}")

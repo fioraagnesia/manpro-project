@@ -7,24 +7,26 @@ import warnings
 warnings.filterwarnings("ignore")
 
 try:
-    df_cleaned_combined = pd.read_csv('data-cleaned/cleaned_hotel_combined.csv')
-    df_cleaned_combined['Checkin Date'] = pd.to_datetime(df_cleaned_combined['Checkin Date'])
-    df_cleaned_combined['Checkout Date'] = pd.to_datetime(df_cleaned_combined['Checkout Date'])
+    df_cleaned_combined = pd.read_csv('data_cleaned/cleaned_hotel_combined.csv')
+    df_cleaned_combined['Checkin Date'] = pd.to_datetime(df_cleaned_combined['Checkin Date'], dayfirst=True)
+    df_cleaned_combined['Checkout Date'] = pd.to_datetime(df_cleaned_combined['Checkout Date'], dayfirst=True)
 except FileNotFoundError:
     print("File 'cleaned_hotel_combined.csv' not found.")
     exit()
 
 
 # CUSTOMIZE: Filter Analysis, adjust the city & check-in date
-city_target = 'Surabaya'
-date_target = pd.to_datetime('2025-10-22') 
+# city_target = 'Surabaya'
+# date_target = pd.to_datetime('2025-10-22') 
 
-print(f"=== Clustering for: {city_target}, {date_target.strftime('%Y-%m-%d')} ===")
+# print(f"=== Clustering for: {city_target}, {date_target.strftime('%Y-%m-%d')} ===")
 # Make a new copy according to the specified filters 
-df_analisis = df_cleaned_combined[
-    (df_cleaned_combined['City'] == city_target) &
-    (df_cleaned_combined['Checkin Date'] == date_target)
-].copy()
+# df_analisis = df_cleaned_combined[
+#     (df_cleaned_combined['City'] == city_target) &
+#     (df_cleaned_combined['Checkin Date'] == date_target)
+# ].copy()
+print(f"=== Global Clustering for all hotels ===")
+df_analisis = df_cleaned_combined.copy()
 
 if df_analisis.empty:
     print(f"No data for specified filters.")
@@ -61,9 +63,9 @@ else:
 
         # Labeling for each segmentation (based on the characteristics)
         segmentation_map = {
-            0: 'Best Value',
-            1: 'Luxury',
-            2: 'Budget'
+            0: 'Mid-Range', # mid price, mid star and rating
+            1: 'Budget',    # cheapest, lowest star and rating
+            2: 'Luxury'     # most expensive, highest star and rating
         }
         
         df_result['Segmentation'] = df_result['Cluster'].map(segmentation_map)
@@ -78,12 +80,14 @@ else:
         for segment in segmentation_map.values():
             print(f"\n--- SEGMENTATION: '{segment}' ---")
             section_data = df_result[df_result['Segmentation'] == segment]
-            print(section_data[['Hotel Name', 'Price', 'Hotel Star', 'Guest Rating']])
+            print(section_data[['Hotel Name', 'City', 'Country', 'Price', 'Hotel Star', 'Guest Rating']])
             # print(section_data)
+            print(f"Total for '{segment}' segmentation: {len(df_result)} hotels")
 
         # Save results as csv
         folder_name = 'data_clustered/'
-        file_name = f'hotel_clustered_{city_target}_{date_target.strftime("%Y%m%d")}.csv'
+        # file_name = f'hotel_clustered_{city_target}_{date_target.strftime("%Y%m%d")}.csv'
+        file_name = f'hotel_clustered_global new.csv'
         file_path = folder_name+ file_name
         df_result.to_csv(file_path, index=False)
         print(f"Successfully saved as {file_name}")
