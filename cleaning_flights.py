@@ -141,11 +141,11 @@ def clean_dataframe(df, drop_cols=None, dropna_cols=None, clean_baggage=True):
 
 
 # load file
-df_trip = pd.read_excel("data-scraping/flight/flight_trip.xlsx")
-df_traveloka = pd.read_excel("data-scraping/flight/flight_traveloka.xlsx")
-df_booking = pd.read_excel("data-scraping/flight/flight_booking.xlsx")
-df_tiket = pd.read_excel("data-scraping/flight/flight_tiket.xlsx")
-df_agoda = pd.read_excel("data-scraping/flight/flight_agoda.xlsx")
+df_trip = pd.read_excel("data_scraping/flight/flight_trip.xlsx")
+df_traveloka = pd.read_excel("data_scraping/flight/flight_traveloka.xlsx")
+df_booking = pd.read_excel("data_scraping/flight/flight_booking.xlsx")
+df_tiket = pd.read_excel("data_scraping/flight/flight_tiket.xlsx")
+df_agoda = pd.read_excel("data_scraping/flight/flight_agoda.xlsx")
 
 
 # col name change
@@ -282,5 +282,5 @@ for a in unique_airlines:
 # END OF ALL AIRLINES NAMES
 
 
-clean_df.to_csv("data-cleaned/cleaned_flights_combined.csv", index=False)
+clean_df.to_csv("data_cleaned/cleaned_flights_combined.csv", index=False)
 print("Saved combined clean data to data/cleaned_flights_combined.csv")

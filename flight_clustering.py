@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import re
 
 
-df = pd.read_csv("data-cleaned/cleaned_flights_combined.csv")
+df = pd.read_csv("data_cleaned/cleaned_flights_combined.csv")
 
 # convert duration to mins
 def duration_to_minutes(x):
@@ -103,7 +103,7 @@ print("\n Assigned Cluster Labels Automatically:")
 for cid, label in cluster_labels.items():
     print(f"Cluster {cid}: {label}")
 
-df.to_csv("data-cleaned/cleaned_flights_clustered.csv", index=False)
+df.to_csv("data_cleaned/cleaned_flights_clustered.csv", index=False)
 
 
 # JUST PLOTTT
