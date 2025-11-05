@@ -63,6 +63,18 @@ def clean_dataframe(df, drop_cols=None, dropna_cols=None, clean_baggage=True):
     df.loc[:, "origin"] = df["origin"].astype(str).str.split().str[0]
     df.loc[:, "destination"] = df["destination"].astype(str).str.split().str[0]
 
+    # map destination city
+    city_map = {
+    "CGK": "Jakarta",
+    "DPS": "Bali",
+    "HLP": "Jakarta",
+    "JKT": "Jakarta",
+    "SIN": "Singapura",
+    "SRG": "Semarang",
+    "SUB": "Surabaya"
+    }
+    df["city"] = df["destination"].map(city_map)
+    
     # clean seat class
     def clean_seat_class(value):
         if pd.isna(value):
@@ -93,14 +105,15 @@ def clean_dataframe(df, drop_cols=None, dropna_cols=None, clean_baggage=True):
  
    # clean baggage
     if clean_baggage and "baggage" in df.columns:
-        df.loc[:, "baggage"] = (
+    # Extract numeric baggage and convert to float early
+        df["baggage"] = (
             df["baggage"]
             .astype(str)
             .str.extract(r"(\d+)")[0]
             .astype(float)
         )
 
-        # most frequent non-zero baggage per airline if null
+    # most frequent non-zero baggage per airline if null
         def airline_mode(series):
             non_zero = series[series > 0]
             if non_zero.empty:
@@ -109,8 +122,12 @@ def clean_dataframe(df, drop_cols=None, dropna_cols=None, clean_baggage=True):
 
         mode_baggage = df.groupby("airline")["baggage"].transform(airline_mode)
 
-        df.loc[:, "baggage"] = np.where(
-            (df["baggage"].isna()) | (df["baggage"] == 0),
+        # to float
+        df["baggage"] = df["baggage"].astype(float)
+        mode_baggage = mode_baggage.astype(float)
+
+        df["baggage"] = np.where(
+            df["baggage"].isna() | (df["baggage"] == 0),
             mode_baggage,
             df["baggage"]
         )
@@ -118,10 +135,10 @@ def clean_dataframe(df, drop_cols=None, dropna_cols=None, clean_baggage=True):
         # fill with overall most frequent non-zero baggage if still null
         global_mode = df.loc[df["baggage"] > 0, "baggage"].mode()
         if not global_mode.empty:
-            df.loc[:, "baggage"] = df["baggage"].fillna(global_mode.iloc[0])
+            df["baggage"] = df["baggage"].fillna(global_mode.iloc[0])
 
-        df.loc[:, "baggage"] = df["baggage"].infer_objects(copy=False)
-        df.loc[:, "baggage"] = df["baggage"].round().astype(int)
+        # convert to nullable Int64 to avoid dtype error
+        df["baggage"] = df["baggage"].round().astype("Int64")
 
 
     # normalize time
@@ -281,6 +298,26 @@ for a in unique_airlines:
     print(a)
 # END OF ALL AIRLINES NAMES
 
+# INI BUAT ALL BANDARA NAMES
+# Combine all airline names into a single Series
+all_airport_des = pd.concat([
+    df_trip["destination"],
+    df_traveloka["destination"],
+    df_booking["destination"],
+    df_tiket["destination"],
+    df_agoda["destination"]
+])
+
+# Drop missing and normalize casing
+all_airport_des = all_airport_des.dropna().str.strip().str.title()
+
+# Get unique names sorted alphabetically
+unique_airport_des = sorted(all_airport_des.unique())
+
+# Display
+print(f"Total unique airlines found: {len(unique_airlines)}")
+for a in unique_airport_des:
+    print(a)
 
 clean_df.to_csv("data_cleaned/cleaned_flights_combined.csv", index=False)
 print("Saved combined clean data to data/cleaned_flights_combined.csv")
