@@ -64,10 +64,10 @@ def date_format(df, dataset_name):
     df.dropna(subset=['Checkin Date', 'Checkout Date'], inplace=True)
 
     # 3. Change the date format to dd/mm/yyyy
-    # if 'Checkin Date' in df.columns:
-    #     df['Checkin Date'] = df['Checkin Date'].dt.strftime('%d/%m/%Y')
-    # if 'Checkout Date' in df.columns:
-    #     df['Checkout Date'] = df['Checkout Date'].dt.strftime('%d/%m/%Y')
+    if 'Checkin Date' in df.columns:
+        df['Checkin Date'] = df['Checkin Date'].dt.strftime('%d/%m/%Y')
+    if 'Checkout Date' in df.columns:
+        df['Checkout Date'] = df['Checkout Date'].dt.strftime('%d/%m/%Y')
 
     return df
 
