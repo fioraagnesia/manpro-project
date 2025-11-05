@@ -103,7 +103,7 @@ print("\n Assigned Cluster Labels Automatically:")
 for cid, label in cluster_labels.items():
     print(f"Cluster {cid}: {label}")
 
-df.to_csv("data_cleaned/cleaned_flights_clustered.csv", index=False)
+df.to_csv("data_clustered/cleaned_flights_clustered.csv", index=False)
 
 
 # JUST PLOTTT
