@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 try:
-    df_cleaned_combined = pd.read_csv('data_cleaned/cleaned_hotel_combined.csv')
+    df_cleaned_combined = pd.read_csv('data_cleaned/cleaned_hotel_combined new.csv')
     df_cleaned_combined['Checkin Date'] = pd.to_datetime(df_cleaned_combined['Checkin Date'], dayfirst=True)
     df_cleaned_combined['Checkout Date'] = pd.to_datetime(df_cleaned_combined['Checkout Date'], dayfirst=True)
 except FileNotFoundError:
