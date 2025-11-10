@@ -74,31 +74,31 @@ def search_combo (
 
     if df_result.empty:
         return "No combo found with the specified filters."
-    # else:
-    #     print(f"--- RESULT: {len(df_result)} combos found ---")
-    #     show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
-    #     print(df_result.sort_values(by='total_price')[show_columns].head())
-    df_result.to_csv("data_clustered/coba.csv", index=False)
+    
+    # df_result.to_csv("data_clustered/coba.csv", index=False)
 
     return df_result
 
 
 # SIMULATION --> ganti di front end
-target_origin = "CGK"
+target_origin = "DPS"
 target_destination = "SUB"
-target_checkin_date = "2025-11-05"
-# target_min_price = 1000000
-# target_max_price = 1100000
-target_cluster = "Budget"
+target_checkin_date = "2025-10-27"
+target_min_price = 1000000
+target_max_price = 1100000
+target_cluster = "Luxury"
 
 
 filtered_result = search_combo(
     origin=target_origin,
     destination=target_destination,
     checkin_date=target_checkin_date,
-    # min_total_price=target_min_price,
-    # max_total_price=target_max_price,
+    min_total_price=target_min_price,
+    max_total_price=target_max_price,
     cluster=target_cluster
 )
 
-print(filtered_result)
+print(f"--- RESULT: {len(filtered_result)} combos found ---")
+show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
+print(filtered_result.sort_values(by='total_price')[show_columns])
+# print(filtered_result)
