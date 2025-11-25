@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-INA | Cari Penawaran Terbaik</title>
+    <style>
+        /* --- CSS GLOBAL --- */
+        :root {
+            --primary-color: #007bff;
+            --primary-dark: #0056b3;
+            --secondary-color: #ff6f00; /* Warna Spesial Combo */
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-dark: #333;
+            --text-light: #666;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --card-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+            color: var(--text-dark);
+        }
+        .search-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-dark);
+            padding: 0 20px;
+            margin-top: 10px;
+        }
+
+        /* --- TABS --- */
+        .tabs {
+            display: flex;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .tab-link {
+            flex: 1;
+            padding: 18px 10px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .tab-link:hover { color: var(--primary-dark); background: #f0f0f0; }
+        .tab-link.active {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            background: #fff;
+        }
+        .tab-link[data-tab="combo"].active {
+             color: var(--secondary-color);
+             border-bottom-color: var(--secondary-color);
+             color: var(--secondary-color);
+        }
+        .tab-content { padding: 25px 30px; display: none; }
+        .tab-content.active { display: block; }
+
+        /* --- FORM --- */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .form-group.full-width { grid-column: 1 / -1; }
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* --- BUTTONS --- */
+        .submit-button {
+            grid-column: 1 / -1;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .submit-button:hover { background-color: var(--primary-dark); }
+        .submit-button:active { transform: scale(0.98); }
+        #combo-form .submit-button { background-color: var(--secondary-color); }
+        #combo-form .submit-button:hover { background-color: #d95e00; }
+
+        /* --- RESULTS CONTAINER --- */
+        .results-container {
+            max-width: 900px;
+            margin: 30px auto;
+        }
+        .results-container h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        
+        /* Layout Grid Default (Hotel) */
+        #results-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        /* Layout List (Flight & Combo) */
+        #results-content.list-mode {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- CARD FLIGHT --- */
+        .flight-card {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .flight-card:hover { transform: translateY(-2px); border-color: var(--primary-color); }
+        .airline-info { display: flex; align-items: center; gap: 15px; width: 25%; }
+        .airline-logo { width: 50px; height: 50px; object-fit: contain; }
+        .airline-name { font-weight: 700; font-size: 16px; color: var(--text-dark); line-height: 1.2; }
+        .airline-cluster { font-size: 12px; color: #888; display: block; margin-top: 2px; }
+        .flight-route { display: flex; align-items: center; justify-content: center; gap: 20px; flex: 1; text-align: center; }
+        .route-time { font-size: 18px; font-weight: 700; color: var(--text-dark); }
+        .route-city { font-size: 14px; color: var(--text-light); background: #f1f1f1; padding: 2px 8px; border-radius: 4px; margin-top: 4px; display: inline-block; }
+        .route-duration { display: flex; flex-direction: column; align-items: center; min-width: 100px; }
+        .duration-text { font-size: 12px; color: #888; margin-bottom: 4px; }
+        .duration-line { width: 100%; height: 2px; background: #ddd; position: relative; }
+        .duration-line::after { content: "✈"; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); color: #aaa; font-size: 14px; }
+        .flight-action { display: flex; flex-direction: column; align-items: flex-end; width: 20%; }
+        .flight-price { font-size: 20px; font-weight: 700; color: #ff5e00; margin-bottom: 10px; }
+        
+        /* --- CARD HOTEL --- */
+        .hotel-card {
+            background: white; border-radius: 10px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);
+            overflow: hidden; transition: transform 0.2s; display: flex; flex-direction: column;
+        }
+        .hotel-card:hover { transform: translateY(-2px); border-color: var(--primary-color); }
+        .hotel-card-image { width: 100%; height: 180px; object-fit: cover; background-color: #eee; }
+        .hotel-card-content { padding: 15px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+        .hotel-name { font-weight: 700; font-size: 16px; color: var(--text-dark); margin: 0; line-height: 1.4; }
+        .hotel-stars { color: #ffc107; font-size: 14px; margin-bottom: 5px; }
+        .hotel-city { font-size: 13px; color: #666; }
+        .hotel-footer { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; padding-top: 10px; border-top: 1px solid #f0f0f0; }
+        .hotel-price { font-size: 16px; font-weight: 700; color: #ff5e00; }
+        .btn-view {
+            background-color: white; border: 1px solid var(--primary-color); color: var(--primary-color); padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;
+        }
+        .btn-view:hover { background-color: var(--primary-color); color: white; }
+
+        /* --- CARD COMBO (BARU) --- */
+        .combo-card {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+            height: 180px;
+        }
+        .combo-card:hover { transform: translateY(-2px); border-color: var(--secondary-color); }
+        
+        /* Bagian Gambar (Kiri) */
+        .combo-image-container {
+            width: 200px;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .combo-image { width: 100%; height: 100%; object-fit: cover; }
+        .combo-badge {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--secondary-color); color: white;
+            padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;
+        }
+
+        /* Bagian Detail (Tengah) */
+        .combo-details {
+            flex: 1;
+            padding: 15px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            border-right: 1px solid #eee;
+        }
+        /* Baris Penerbangan di Combo */
+        .combo-flight-row {
+            display: flex; align-items: center; gap: 15px;
+            padding-bottom: 12px; border-bottom: 1px dashed #eee;
+        }
+        .combo-airline-logo { width: 30px; height: 30px; object-fit: contain; }
+        .combo-flight-text { font-size: 14px; color: var(--text-dark); display: flex; align-items: center; gap: 8px; }
+        
+        /* Baris Hotel di Combo */
+        .combo-hotel-row { display: flex; align-items: center; gap: 10px; }
+        .combo-hotel-icon { font-size: 18px; }
+        .combo-hotel-name { font-weight: 700; font-size: 15px; color: var(--text-dark); }
+        .combo-hotel-star { color: #ffc107; font-size: 12px; }
+
+        /* Bagian Harga (Kanan) */
+        .combo-price-section {
+            width: 200px;
+            background: #fcfcfc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 20px;
+            gap: 10px;
+        }
+        .combo-price-label { font-size: 12px; color: #888; text-align: right; }
+        .combo-price { font-size: 22px; font-weight: 700; color: var(--secondary-color); }
+        .btn-select-combo {
+            background-color: var(--secondary-color);
+            color: white; border: none; padding: 8px 25px; border-radius: 20px; font-weight: 600; cursor: pointer; transition: background 0.2s;
+        }
+        .btn-select-combo:hover { background-color: #d95e00; }
+
+
+        .btn-select {
+            background-color: var(--primary-color); color: white; border: none; padding: 8px 20px; border-radius: 20px; font-weight: 600; cursor: pointer; transition: background 0.2s;
+        }
+        .btn-select:hover { background-color: var(--primary-dark); }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .flight-card { flex-direction: column; gap: 15px; height: auto; }
+            .airline-info, .flight-route, .flight-action { width: 100%; justify-content: space-between; flex-direction: row; }
+            .flight-action { align-items: center; border-top: 1px solid #eee; padding-top: 10px; }
+            
+            .combo-card { flex-direction: column; height: auto; }
+            .combo-image-container { width: 100%; height: 150px; }
+            .combo-details { border-right: none; border-bottom: 1px solid #eee; }
+            .combo-price-section { width: 100%; align-items: center; flex-direction: row; justify-content: space-between; padding: 15px; box-sizing: border-box; }
+            .combo-price { font-size: 18px; }
+            #results-content { grid-template-columns: 1fr; }
+        }
+
+        /* Star Rating Form */
+        .star-rating { display: flex; flex-wrap: wrap; gap: 10px; }
+        .star-rating label { display: flex; align-items: center; gap: 5px; background: var(--light-bg); border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 20px; cursor: pointer; transition: background-color 0.2s; }
+        .star-rating label:hover { background-color: #e9e9e9; }
+        .star-rating input { display: none; }
+        .star-rating input:checked + span { background-color: var(--primary-color); border-color: var(--primary-dark); color: var(--white); font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <datalist id="airport-list">
+        <option value="SUB">Surabaya</option>
+        <option value="CGK">Jakarta (Soekarno Hatta)</option>
+        <option value="DPS">Bali (Denpasar)</option>
+        <option value="HLP">Jakarta (Halim)</option>
+        <option value="JKT">Jakarta (Semua Bandara)</option>
+        <option value="SIN">Singapura</option>
+        <option value="SRG">Semarang</option>
+        <option value="KUL">Kuala Lumpur</option>
+        <option value="BKK">Bangkok</option>
+        <option value="JOG">Yogyakarta</option>
+        <option value="UPG">Makassar</option>
+    </datalist>
+
+    <datalist id="city-list">
+        <option value="Surabaya">Surabaya</option>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Bali">Bali</option>
+        <option value="Singapura">Singapura</option>
+        <option value="Semarang">Semarang</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+        <option value="Makassar">Makassar</option>
+    </datalist>
+
+    <h1>TravelCompare</h1>
+
+    <div class="search-container">
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'flights')" data-tab="flights">Flights</button>
+            <button class="tab-link" onclick="openTab(event, 'hotels')" data-tab="hotels">Hotels</button>
+            <button class="tab-link" onclick="openTab(event, 'combo')" data-tab="combo">Combo</button>
+        </div>
+
+        <div id="flights" class="tab-content active">
+            <form id="flight-form" onsubmit="runFilter(event, 'flight')">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="f-origin">Asal (Kota atau Bandara)</label>
+                        <input type="text" id="f-origin" name="origin" list="airport-list" placeholder="Ketik 'Surabaya' atau 'SUB'">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-destination">Tujuan (Kota atau Bandara)</label>
+                        <input type="text" id="f-destination" name="destination" list="airport-list" placeholder="Ketik 'Jakarta' atau 'CGK'">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-date">Tanggal Berangkat</label>
+                        <input type="date" id="f-date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-airline">Maskapai</label>
+                        <select id="f-airline" name="airline">
+                            <option value="">Semua Maskapai</option>
+                            <option value="Garuda">Garuda Indonesia</option>
+                            <option value="Lion">Lion Air</option>
+                            <option value="Citilink">Citilink</option>
+                            <option value="Batik">Batik Air</option>
+                            <option value="AirAsia">AirAsia</option>
+                            <option value="Super Air Jet">Super Air Jet</option>
+                            <option value="Pelita">Pelita Air</option>
+                            <option value="TransNusa">TransNusa</option>
+                            <option value="Sriwijaya">Sriwijaya Air</option>
+                            <option value="NAM">NAM Air</option>
+                            <option value="Scoot">Scoot</option>
+                            <option value="Jetstar">Jetstar</option>
+                            <option value="Singapore">Singapore Airlines</option>
+                            <option value="Malaysia">Malaysia Airlines</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-min-price">Harga Minimum</label>
+                        <input type="number" id="f-min-price" name="min_price" placeholder="Contoh: 1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-max-price">Harga Maksimum</label>
+                        <input type="number" id="f-max-price" name="max_price" placeholder="Contoh: 3000000">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="f-cluster">Kategori Penerbangan</label>
+                        <select id="f-cluster" name="cluster_label">
+                            <option value="">Semua Kategori</option>
+                            <option value="Budget Flight">Budget Flight</option>
+                            <option value="Mid-range Flight">Mid-range Flight</option>
+                            <option value="High-end Flight">High-end Flight</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Cari Penerbangan</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="hotels" class="tab-content">
+            <form id="hotel-form" onsubmit="runFilter(event, 'hotel')">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="h-city">Kota</label>
+                        <input type="text" id="h-city" name="city" list="city-list" placeholder="Ketik nama kota... (cth: Surabaya)">
+                    </div>
+                    <div class="form-group">
+                        <label for="h-checkin">Tanggal Check-in</label>
+                        <input type="date" id="h-checkin" name="checkin_date">
+                    </div>
+                    <div class="form-group">
+                        <label for="h-checkout">Tanggal Check-out</label>
+                        <input type="date" id="h-checkout" name="checkout_date">
+                    </div>
+                    <div class="form-group">
+                        <label for="h-min-price">Total Harga Min.</label>
+                        <input type="number" id="h-min-price" name="min_total_price" placeholder="Contoh: 1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="h-max-price">Total Harga Max.</label>
+                        <input type="number" id="h-max-price" name="max_total_price" placeholder="Contoh: 3000000">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Bintang Hotel</label>
+                        <div class="star-rating">
+                            <label><input type="checkbox" name="hotel_star" value="1"> <span>⭐</span></label>
+                            <label><input type="checkbox" name="hotel_star" value="2"> <span>⭐⭐</span></label>
+                            <label><input type="checkbox" name="hotel_star" value="3"> <span>⭐⭐⭐</span></label>
+                            <label><input type="checkbox" name="hotel_star" value="4"> <span>⭐⭐⭐⭐</span></label>
+                            <label><input type="checkbox" name="hotel_star" value="5"> <span>⭐⭐⭐⭐⭐</span></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Cari Hotel</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="combo" class="tab-content">
+            <form id="combo-form" onsubmit="runFilter(event, 'combo')">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="c-origin">Asal Penerbangan</label>
+                        <input type="text" id="c-origin" name="origin" list="airport-list" placeholder="Ketik 'Surabaya' atau 'SUB'">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-destination">Tujuan Penerbangan (dan Kota Hotel)</label>
+                        <input type="text" id="c-destination" name="destination" list="airport-list" placeholder="Ketik 'Jakarta' atau 'CGK'">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="c-checkin-date">Tanggal Check-in Hotel</label>
+                        <input type="date" id="c-checkin-date" name="checkin_date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="c-airline">Maskapai</label>
+                        <select id="c-airline" name="airline">
+                            <option value="">Semua Maskapai</option>
+                            <option value="Garuda">Garuda Indonesia</option>
+                            <option value="Lion">Lion Air</option>
+                            <option value="Citilink">Citilink</option>
+                            <option value="Batik">Batik Air</option>
+                            <option value="AirAsia">AirAsia</option>
+                            <option value="Super Air Jet">Super Air Jet</option>
+                            <option value="Pelita">Pelita Air</option>
+                            <option value="TransNusa">TransNusa</option>
+                            <option value="Sriwijaya">Sriwijaya Air</option>
+                            <option value="NAM">NAM Air</option>
+                            <option value="Scoot">Scoot</option>
+                            <option value="Jetstar">Jetstar</option>
+                            <option value="Singapore">Singapore Airlines</option>
+                            <option value="Malaysia">Malaysia Airlines</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="c-cluster">Kategori Paket</label>
+                        <select id="c-cluster" name="cluster">
+                            <option value="">Semua Kategori</option>
+                            <option value="Budget">Budget</option>
+                            <option value="Mid-range">Mid-range</option>
+                            <option value="Luxury">Luxury</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-min-price">Total Harga Min.</label>
+                        <input type="number" id="c-min-price" name="min_total_price" placeholder="Contoh: 1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-max-price">Total Harga Max.</label>
+                        <input type="number" id="c-max-price" name="max_total_price" placeholder="Contoh: 5000000">
+                    </div>
+                    <button type="submit" class="submit-button">Cari Paket Combo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <h2>Hasil Pencarian</h2>
+        <div id="results-content">
+            <p style="color: #888; grid-column: 1 / -1; text-align: center;">Hasil pencarian Anda akan tampil di sini.</p>
+        </div>
+    </div>
+
+    <script>
+        // --- HELPER FUNCTIONS ---
+        function getAirlineLogo(airlineName) {
+            if (!airlineName) return 'https://cdn-icons-png.flaticon.com/512/723/723955.png';
+            const name = airlineName.toLowerCase().trim();
+            if (name.includes('pelita')) return 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgODAiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0wIDBoMjUwdjgwSDB6Ii8+PHRleHQgeD0iMTAiIHk9IjUzIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiNlNzI2MjQiPlBlbGl0YTwvdGV4dD48dGV4dCB4PSIxMjUiIHk9IjUzIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiM1NTU1NTUiPkFpcjwvdGV4dD48cGF0aCBkPSJNMjIwIDEwIEwyNDAgMzAgTDIyMCA1MCBaIiBmaWxsPSIjZTcyNjI0Ii8+PC9zdmc+';
+            if (name.includes('transnusa')) return 'https://logo.clearbit.com/transnusa.co.id';
+            if (name.includes('super air jet')) return 'https://logo.clearbit.com/superairjet.com';
+            if (name.includes('sriwijaya')) return 'https://logo.clearbit.com/sriwijayaair.co.id';
+            if (name.includes('nam air')) return 'https://logo.clearbit.com/flynamair.com';
+            
+            let iataCode = '';
+            if (name.includes('garuda')) iataCode = 'GA';
+            else if (name.includes('citilink')) iataCode = 'QG';
+            else if (name.includes('lion')) iataCode = 'JT';
+            else if (name.includes('batik')) iataCode = 'ID';
+            else if (name.includes('wings')) iataCode = 'IW';
+            else if (name.includes('airasia') || name.includes('air asia')) iataCode = 'QZ';
+            else if (name.includes('scoot')) iataCode = 'TR';
+            else if (name.includes('jetstar')) iataCode = 'JQ';
+            else if (name.includes('singapore') || name === 'sq') iataCode = 'SQ';
+            else if (name.includes('malaysia')) iataCode = 'MH';
+            
+            if (iataCode) return `https://pics.avs.io/200/200/${iataCode}.png`;
+            return 'https://cdn-icons-png.flaticon.com/512/723/723955.png';
+        }
+
+        function getHotelImage(index) {
+            return `https://loremflickr.com/400/300/hotel,building?random=${index}`;
+        }
+
+        function formatPrice(number) {
+            const num = Number(number);
+            if (isNaN(num) || num === 0) return number;
+            const formattedNumber = new Intl.NumberFormat('id-ID', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(num);
+            return 'Rp. ' + formattedNumber;
+        }
+
+        function formatDate(timestamp) {
+            if (!timestamp) return 'N/A';
+            const date = new Date(Number(timestamp));
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+
+            const resultsContent = document.getElementById('results-content');
+            resultsContent.innerHTML = '<p style="color: #888; grid-column: 1 / -1; text-align: center;">Hasil pencarian Anda akan tampil di sini.</p>';
+            
+            if (tabName === 'hotels') {
+                resultsContent.classList.remove('list-mode');
+            } else {
+                resultsContent.classList.add('list-mode');
+            }
+        }
+
+        async function runFilter(event, type) {
+            event.preventDefault(); 
+            const resultsContent = document.getElementById('results-content');
+            resultsContent.innerHTML = `<div style="text-align:center; padding:20px; grid-column: 1/-1;"><p style="color: var(--primary-dark); font-weight: 600;">Sedang mencari penawaran terbaik...</p></div>`;
+
+            let formId, apiEndpoint;
+            if (type === 'flight') { formId = 'flight-form'; apiEndpoint = '/api/search-flights'; } 
+            else if (type === 'hotel') { formId = 'hotel-form'; apiEndpoint = '/api/search-hotels'; } 
+            else { formId = 'combo-form'; apiEndpoint = '/api/search-combo'; }
+
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            let filterData = Object.fromEntries(formData.entries());
+            if (type === 'hotel') {
+                const starCheckboxes = form.querySelectorAll('input[name="hotel_star"]:checked');
+                filterData.hotel_star = Array.from(starCheckboxes).map(cb => cb.value);
+            }
+
+            try {
+                const response = await fetch(apiEndpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(filterData) 
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    const data = JSON.parse(result.data);
+                    
+                    if (type === 'flight') renderFlightCards(data);
+                    else if (type === 'hotel') renderHotelCards(data);
+                    else if (type === 'combo') renderComboCards(data); 
+
+                } else {
+                    resultsContent.innerHTML = `<p style="color: red; text-align:center; grid-column: 1/-1;">${result.message}</p>`;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                resultsContent.innerHTML = `<p style="color: red; text-align:center; grid-column: 1/-1;">Gagal terhubung ke server: ${error}</p>`;
+            }
+        }
+
+        // --- RENDER FLIGHT ---
+        function renderFlightCards(data) {
+            const resultsContent = document.getElementById('results-content');
+            resultsContent.classList.add('list-mode');
+
+            data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+
+            if (!data || data.length === 0) {
+                resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada penerbangan ditemukan.</p>`; return;
+            }
+            let html = '';
+            data.forEach(row => {
+                const airline = row['airline'] || 'Airline';
+                html += `
+                <div class="flight-card">
+                    <div class="airline-info">
+                        <img src="${getAirlineLogo(airline)}" class="airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
+                        <div><div class="airline-name">${airline}</div></div>
+                    </div>
+                    <div class="flight-route">
+                        <div style="text-align:center;"><div class="route-time">${row['departure_time'] || '--:--'}</div><div class="route-city">${row['origin'] || ''}</div></div>
+                        <div class="route-duration"><span class="duration-text">${row['duration'] || 'Direct'}</span><div class="duration-line"></div></div>
+                        <div style="text-align:center;"><div class="route-time">${row['arrival_time'] || '--:--'}</div><div class="route-city">${row['destination'] || ''}</div></div>
+                    </div>
+                    <div class="flight-action"><div class="flight-price">${formatPrice(row['price'])}</div></div>
+                </div>`;
+            });
+            resultsContent.innerHTML = html;
+        }
+
+        // --- RENDER HOTEL ---
+        function renderHotelCards(data) {
+            const resultsContent = document.getElementById('results-content');
+            resultsContent.classList.remove('list-mode');
+            if (!data || data.length === 0) {
+                resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada hotel ditemukan.</p>`; return;
+            }
+            let html = '';
+            data.forEach((row, idx) => {
+                const img = row['image_url'] || getHotelImage(idx);
+                html += `
+                <div class="hotel-card">
+                    <img src="${img}" class="hotel-card-image" loading="lazy" onerror="this.src='https://loremflickr.com/400/300/hotel?random=${idx}'">
+                    <div class="hotel-card-content">
+                        <h3 class="hotel-name">${row['Hotel Name'] || 'Hotel'}</h3>
+                        <div class="hotel-stars">${'⭐'.repeat(Math.floor(row['Hotel Star'] || 0))}</div>
+                        <div class="hotel-city">📍 ${row['City'] || ''}</div>
+                        <div class="hotel-footer">
+                            <div class="hotel-price-container"><span class="hotel-price-label">Total Harga</span><div class="hotel-price">${formatPrice(row['Total Price'])}</div></div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            resultsContent.innerHTML = html;
+        }
+
+        // --- RENDER COMBO (CARD BARU) ---
+        function renderComboCards(data) {
+            const resultsContent = document.getElementById('results-content');
+            resultsContent.classList.add('list-mode'); // List ke bawah
+            
+            if (!data || data.length === 0) {
+                resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo ditemukan.</p>`; return;
+            }
+
+            let html = '';
+            data.forEach((row, idx) => {
+                const airline = row['airline'] || 'Airline';
+                const hotelName = row['Hotel Name'] || 'Hotel';
+                const hotelImg = getHotelImage(idx+100); 
+                
+                // --- PERBAIKAN DI SINI: MENGAMBIL STAR DARI DATA ---
+                // Pastikan 'Hotel Star' ada di data combo Anda. Jika tidak, akan default ke 0
+                const hotelStars = row['Hotel Star'] || 0;
+                const hotelStarsDisplay = '⭐'.repeat(Math.floor(hotelStars));
+
+                html += `
+                <div class="combo-card">
+                    <div class="combo-image-container">
+                        <img src="${hotelImg}" class="combo-image" loading="lazy">
+                        <span class="combo-badge">${row['cluster'] || 'Paket'}</span>
+                    </div>
+
+                    <div class="combo-details">
+                        <div class="combo-flight-row">
+                            <img src="${getAirlineLogo(airline)}" class="combo-airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
+                            <div>
+                                <div class="combo-flight-text" style="font-weight:700;">${airline}</div>
+                                <div class="combo-flight-text" style="color:#666; font-size:13px;">
+                                    ${row['origin']} ➝ ${row['destination']} • ${formatDate(row['date'])}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="combo-hotel-row">
+                            <span class="combo-hotel-icon">🏨</span>
+                            <div>
+                                <div class="combo-hotel-name">${hotelName}</div>
+                                <div class="combo-hotel-star">${hotelStarsDisplay}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="combo-price-section">
+                        <span class="combo-price-label">Harga Paket per Orang</span>
+                        <div class="combo-price">${formatPrice(row['total_price'])}</div>
+                    </div>
+                </div>
+                `;
+            });
+            resultsContent.innerHTML = html;
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', function() {
+            if(document.getElementById('flights').classList.contains('active')) {
+                document.getElementById('results-content').classList.add('list-mode');
+            }
+        });
+    </script>
+</body>
+</html>

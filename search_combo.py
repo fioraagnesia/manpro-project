@@ -13,6 +13,7 @@ AIRPORT_TO_CITY_MAP = {
 }
 
 def search_combo (
+    filepath,
     origin,
     destination,
     checkin_date,
@@ -34,7 +35,7 @@ def search_combo (
         return
     # --- BATAS LANGKAH BARU ---
 
-    df = pd.read_csv("data_clustered/flight_hotel_clustered.csv")
+    df = pd.read_csv(filepath)
     df_result = df.copy()
 
     # Date format
@@ -72,6 +73,10 @@ def search_combo (
     if cluster:    # frontend: dropdown
         df_result = df_result[df_result['cluster'] == cluster]
 
+    if max_total_price is None:
+        # Hapus data yang harganya di atas 50 Juta (50.000.000)
+        df_result = df_result[df_result["total_price"] <= 50000000]
+
     if df_result.empty:
         return "No combo found with the specified filters."
     
@@ -88,17 +93,18 @@ target_min_price = 1000000
 target_max_price = 1100000
 target_cluster = "Luxury"
 
+if __name__ == "__main__":
+    filtered_result = search_combo(
+        filepath="data_clustered/flight_hotel_clustered.csv",
+        origin=target_origin,
+        destination=target_destination,
+        checkin_date=target_checkin_date,
+        min_total_price=target_min_price,
+        max_total_price=target_max_price,
+        cluster=target_cluster
+    )
 
-filtered_result = search_combo(
-    origin=target_origin,
-    destination=target_destination,
-    checkin_date=target_checkin_date,
-    min_total_price=target_min_price,
-    max_total_price=target_max_price,
-    cluster=target_cluster
-)
-
-print(f"--- RESULT: {len(filtered_result)} combos found ---")
-show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
-print(filtered_result.sort_values(by='total_price')[show_columns])
+    print(f"--- RESULT: {len(filtered_result)} combos found ---")
+    show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
+    print(filtered_result.sort_values(by='total_price')[show_columns])
 # print(filtered_result)

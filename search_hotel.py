@@ -2,8 +2,10 @@ import pandas as pd
 import numpy as np
 import warnings
 
+filepath = "data_clustered/hotel_clustered_global.csv"
 
 def search_hotels(
+    filepath,
     city,
     checkin_date,
     checkout_date,
@@ -16,7 +18,7 @@ def search_hotels(
     segmentation = None 
 ):
 
-    df_file = pd.read_csv("data_clustered/hotel_clustered_global.csv")
+    df_file = pd.read_csv(filepath)
     df = df_file.copy()
 
     # Date format
@@ -89,14 +91,16 @@ target_max_price = 3000000
 # target_star = 3
 # target_rating = 9
 
-filtered_result = search_hotels(
-    city=target_city,
-    checkin_date=target_checkin_date,
-    checkout_date=target_checkout_date,
-    min_total_price=target_min_price,
-    max_total_price=target_max_price,
-    # hotel_star=target_star,
-    # guest_rating=target_rating
-)
+if __name__ == "__main__":
+    filtered_result = search_hotels(
+        filepath=filepath,
+        city=target_city,
+        checkin_date=target_checkin_date,
+        checkout_date=target_checkout_date,
+        min_total_price=target_min_price,
+        max_total_price=target_max_price,
+        # hotel_star=target_star,
+        # guest_rating=target_rating
+    )
 
-print(filtered_result)
+    print(filtered_result)

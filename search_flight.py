@@ -54,15 +54,17 @@ def search_flights(
 file_path = "data_clustered/cleaned_flights_clustered.csv"
 
 # GANTI INPUT OLEH FRONT END
-filtered = search_flights(
-    file_path,
-    origin="SIN",
-    destination="CGK",
-    min_price=1000000,
-    max_price=3000000,
-    airline="AirAsia",
-    date="01/11/2025",
-    cluster_label="" #Budget Flight, Mid-range Flight, High-end flight
-)
+if __name__ == "__main__":
+
+    filtered = search_flights(
+        file_path,
+        origin="SIN",
+        destination="CGK",
+        min_price=1000000,
+        max_price=3000000,
+        airline="AirAsia",
+        date="01/11/2025",
+        cluster_label="" #Budget Flight, Mid-range Flight, High-end flight
+    )
 # contoh search 01/11/25,AirAsia,07:40,13:00,6h 20m,1,2191927,SIN,CGK,Business,40,Jakarta
-print(filtered)
+    print(filtered)
