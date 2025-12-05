@@ -77,6 +77,9 @@ def search_combo (
         # Hapus data yang harganya di atas 50 Juta (50.000.000)
         df_result = df_result[df_result["total_price"] <= 50000000]
 
+    if 'arrival_dt' in df_result.columns:
+            df_result = df_result[df_result['arrival_dt'].dt.hour >= 12]
+
     if df_result.empty:
         return "No combo found with the specified filters."
     

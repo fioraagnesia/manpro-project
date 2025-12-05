@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel-INA | Cari Penawaran Terbaik</title>
+    <title>TravelCompare</title>
+    
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <style>
         /* --- CSS GLOBAL --- */
         :root {
             --primary-color: #007bff;
             --primary-dark: #0056b3;
-            --secondary-color: #ff6f00; /* Warna Spesial Combo */
+            --secondary-color: #ff6f00;
             --light-bg: #f4f7f6;
             --white: #ffffff;
             --text-dark: #333;
@@ -41,129 +45,46 @@
         }
 
         /* --- TABS --- */
-        .tabs {
-            display: flex;
-            background-color: #f9f9f9;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .tab-link {
-            flex: 1;
-            padding: 18px 10px;
-            border: none;
-            background: none;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-light);
-            transition: all 0.3s;
-            border-bottom: 3px solid transparent;
-        }
+        .tabs { display: flex; background-color: #f9f9f9; border-bottom: 1px solid var(--border-color); }
+        .tab-link { flex: 1; padding: 18px 10px; border: none; background: none; cursor: pointer; font-size: 16px; font-weight: 600; color: var(--text-light); transition: all 0.3s; border-bottom: 3px solid transparent; }
         .tab-link:hover { color: var(--primary-dark); background: #f0f0f0; }
-        .tab-link.active {
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--primary-color);
-            background: #fff;
-        }
-        .tab-link[data-tab="combo"].active {
-             color: var(--secondary-color);
-             border-bottom-color: var(--secondary-color);
-             color: var(--secondary-color);
-        }
+        .tab-link.active { color: var(--primary-color); border-bottom: 3px solid var(--primary-color); background: #fff; }
+        .tab-link[data-tab="combo"].active { color: var(--secondary-color); border-bottom-color: var(--secondary-color); color: var(--secondary-color); }
         .tab-content { padding: 25px 30px; display: none; }
         .tab-content.active { display: block; }
 
         /* --- FORM --- */
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .form-group { display: flex; flex-direction: column; width: 100%; }
         .form-group.full-width { grid-column: 1 / -1; }
-        .form-group label {
-            font-weight: 600;
-            margin-bottom: 6px;
-            font-size: 14px;
-            color: var(--text-dark);
-        }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 15px;
-            box-sizing: border-box;
-            background-color: #fff;
-            transition: border-color 0.2s;
-        }
-        .form-group input:focus, .form-group select:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
+        .form-group label { font-weight: 600; margin-bottom: 6px; font-size: 14px; color: var(--text-dark); }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 15px; box-sizing: border-box; background-color: #fff; transition: border-color 0.2s; }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--primary-color); }
 
         /* --- BUTTONS --- */
-        .submit-button {
-            grid-column: 1 / -1;
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 14px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            margin-top: 15px;
-            transition: background-color 0.3s, transform 0.1s;
-        }
+        .submit-button { grid-column: 1 / -1; background-color: var(--primary-color); color: var(--white); padding: 14px; border: none; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; margin-top: 15px; transition: background-color 0.3s, transform 0.1s; }
         .submit-button:hover { background-color: var(--primary-dark); }
         .submit-button:active { transform: scale(0.98); }
         #combo-form .submit-button { background-color: var(--secondary-color); }
         #combo-form .submit-button:hover { background-color: #d95e00; }
 
-        /* --- RESULTS CONTAINER --- */
-        .results-container {
-            max-width: 900px;
-            margin: 30px auto;
-        }
-        .results-container h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-        
-        /* Layout Grid Default (Hotel) */
-        #results-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        /* Layout List (Flight & Combo) */
-        #results-content.list-mode {
-            display: flex;
-            flex-direction: column;
-        }
+        /* --- STYLE FILTER BINTANG --- */
+        .star-rating { display: flex; flex-wrap: wrap; gap: 10px; }
+        .star-rating input[type="checkbox"] { display: none; }
+        .star-rating label { display: inline-flex; align-items: center; justify-content: center; padding: 10px 18px; background-color: #f0f2f5; color: #555; border: 1px solid #ddd; border-radius: 25px; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.2s ease; user-select: none; }
+        .star-rating label:hover { background-color: #e4e6e9; }
+        .star-rating input[type="checkbox"]:checked + label { background-color: var(--primary-color); color: white; border-color: var(--primary-dark); box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3); }
 
-        /* --- CARD FLIGHT --- */
-        .flight-card {
-            display: flex;
-            background: white;
-            border-radius: 10px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border-color);
-            padding: 20px;
-            align-items: center;
-            justify-content: space-between;
-            transition: transform 0.2s;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .flight-card:hover { transform: translateY(-2px); border-color: var(--primary-color); }
+        /* --- RESULTS --- */
+        .results-container { max-width: 900px; margin: 30px auto; }
+        .results-container h2 { font-size: 20px; margin-bottom: 15px; color: var(--text-dark); }
+        #results-content { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        #results-content.list-mode { display: flex; flex-direction: column; }
+
+        /* --- FLIGHT CARD --- */
+        .flight-card-wrapper { background: white; border-radius: 10px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color); overflow: hidden; transition: transform 0.2s; }
+        .flight-card-wrapper:hover { transform: translateY(-2px); border-color: var(--primary-color); }
+        .flight-card-main { display: flex; padding: 20px; align-items: center; justify-content: space-between; width: 100%; box-sizing: border-box; }
         .airline-info { display: flex; align-items: center; gap: 15px; width: 25%; }
         .airline-logo { width: 50px; height: 50px; object-fit: contain; }
         .airline-name { font-weight: 700; font-size: 16px; color: var(--text-dark); line-height: 1.2; }
@@ -176,123 +97,72 @@
         .duration-line { width: 100%; height: 2px; background: #ddd; position: relative; }
         .duration-line::after { content: "✈"; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); color: #aaa; font-size: 14px; }
         .flight-action { display: flex; flex-direction: column; align-items: flex-end; width: 20%; }
-        .flight-price { font-size: 20px; font-weight: 700; color: #ff5e00; margin-bottom: 10px; }
+        .flight-price { font-size: 20px; font-weight: 700; color: #ff5e00; margin-bottom: 5px; }
         
-        /* --- CARD HOTEL --- */
-        .hotel-card {
-            background: white; border-radius: 10px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color);
-            overflow: hidden; transition: transform 0.2s; display: flex; flex-direction: column;
-        }
+        /* Tombol PDF & Detail */
+        .btn-group-action { display: flex; gap: 15px; margin-top: 5px; }
+        .btn-toggle-detail { color: var(--primary-color); background: none; border: none; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; padding: 0; }
+        .btn-toggle-detail:hover { text-decoration: underline; }
+        .btn-pdf { color: #dc3545; background: none; border: none; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; padding: 0; display: flex; align-items: center; gap: 4px; }
+        .btn-pdf:hover { text-decoration: underline; color: #a71d2a; }
+
+        /* --- HOTEL CARD --- */
+        .hotel-card { background: white; border-radius: 10px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color); overflow: hidden; transition: transform 0.2s; display: flex; flex-direction: column; }
         .hotel-card:hover { transform: translateY(-2px); border-color: var(--primary-color); }
         .hotel-card-image { width: 100%; height: 180px; object-fit: cover; background-color: #eee; }
         .hotel-card-content { padding: 15px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
         .hotel-name { font-weight: 700; font-size: 16px; color: var(--text-dark); margin: 0; line-height: 1.4; }
         .hotel-stars { color: #ffc107; font-size: 14px; margin-bottom: 5px; }
-        .hotel-city { font-size: 13px; color: #666; }
+        .hotel-city { font-size: 13px; color: #666; display: flex; align-items: center; gap: 4px; }
         .hotel-footer { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; padding-top: 10px; border-top: 1px solid #f0f0f0; }
         .hotel-price { font-size: 16px; font-weight: 700; color: #ff5e00; }
-        .btn-view {
-            background-color: white; border: 1px solid var(--primary-color); color: var(--primary-color); padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;
-        }
-        .btn-view:hover { background-color: var(--primary-color); color: white; }
-
-        /* --- CARD COMBO (BARU) --- */
-        .combo-card {
-            display: flex;
-            background: white;
-            border-radius: 10px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border-color);
-            overflow: hidden;
-            transition: transform 0.2s;
-            width: 100%;
-            box-sizing: border-box;
-            height: 180px;
-        }
-        .combo-card:hover { transform: translateY(-2px); border-color: var(--secondary-color); }
         
-        /* Bagian Gambar (Kiri) */
-        .combo-image-container {
-            width: 200px;
-            flex-shrink: 0;
-            position: relative;
-        }
-        .combo-image { width: 100%; height: 100%; object-fit: cover; }
-        .combo-badge {
-            position: absolute; top: 10px; left: 10px;
-            background: var(--secondary-color); color: white;
-            padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;
-        }
-
-        /* Bagian Detail (Tengah) */
-        .combo-details {
-            flex: 1;
-            padding: 15px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 15px;
-            border-right: 1px solid #eee;
-        }
-        /* Baris Penerbangan di Combo */
-        .combo-flight-row {
-            display: flex; align-items: center; gap: 15px;
-            padding-bottom: 12px; border-bottom: 1px dashed #eee;
-        }
+        /* --- COMBO CARD --- */
+        .combo-card-wrapper { background: white; border-radius: 10px; box-shadow: var(--card-shadow); border: 1px solid var(--border-color); overflow: hidden; transition: transform 0.2s; margin-bottom: 20px; }
+        .combo-card-wrapper:hover { transform: translateY(-2px); border-color: var(--secondary-color); }
+        .combo-card-main { display: flex; width: 100%; box-sizing: border-box; min-height: 100px; }
+        .combo-details-main { flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; gap: 15px; border-right: 1px solid #eee; border-left: 6px solid var(--secondary-color); }
+        .combo-cluster-tag { display: inline-block; background-color: #fff3e0; color: var(--secondary-color); padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; margin-bottom: 5px; width: fit-content; }
+        .combo-flight-row { display: flex; align-items: center; gap: 15px; padding-bottom: 12px; border-bottom: 1px dashed #eee; }
         .combo-airline-logo { width: 30px; height: 30px; object-fit: contain; }
         .combo-flight-text { font-size: 14px; color: var(--text-dark); display: flex; align-items: center; gap: 8px; }
-        
-        /* Baris Hotel di Combo */
         .combo-hotel-row { display: flex; align-items: center; gap: 10px; }
         .combo-hotel-icon { font-size: 18px; }
         .combo-hotel-name { font-weight: 700; font-size: 15px; color: var(--text-dark); }
         .combo-hotel-star { color: #ffc107; font-size: 12px; }
-
-        /* Bagian Harga (Kanan) */
-        .combo-price-section {
-            width: 200px;
-            background: #fcfcfc;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            padding: 20px;
-            gap: 10px;
-        }
+        .combo-price-section { width: 200px; background: #fcfcfc; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; padding: 20px; gap: 10px; }
         .combo-price-label { font-size: 12px; color: #888; text-align: right; }
         .combo-price { font-size: 22px; font-weight: 700; color: var(--secondary-color); }
-        .btn-select-combo {
-            background-color: var(--secondary-color);
-            color: white; border: none; padding: 8px 25px; border-radius: 20px; font-weight: 600; cursor: pointer; transition: background 0.2s;
-        }
-        .btn-select-combo:hover { background-color: #d95e00; }
+        
+        .btn-toggle-combo { color: var(--secondary-color); background: none; border: none; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; padding: 0; }
+        .btn-toggle-combo:hover { text-decoration: underline; }
 
+        /* General Details */
+        .detail-item { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+        .detail-label { font-size: 11px; color: #888; text-transform: uppercase; font-weight: 600; }
+        .detail-value { font-weight: 500; color: #333; display: flex; align-items: center; gap: 6px; }
+        .detail-panel { display: none; background-color: #f9f9f9; border-top: 1px dashed #e0e0e0; padding: 15px 20px; font-size: 14px; color: #555; }
+        .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+        .combo-detail-panel { display: none; background-color: #fcfcfc; border-top: 1px dashed #e0e0e0; padding: 20px; font-size: 14px; color: #555; }
+        .combo-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .combo-detail-col h4 { font-size: 14px; font-weight: 700; color: var(--text-dark); margin-top: 0; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        
+        .hotel-detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .rating-box { display: flex; align-items: center; gap: 10px; }
+        .rating-score { background-color: #003580; color: white; padding: 6px 8px; border-radius: 6px; font-weight: 700; font-size: 14px; border-bottom-left-radius: 0; }
+        .rating-text { font-size: 14px; font-weight: 600; color: var(--primary-dark); }
+        .rating-count { font-size: 12px; color: #888; font-weight: normal; }
+        .amenities-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .amenity-tag { font-size: 12px; background: white; border: 1px solid #ddd; padding: 4px 10px; border-radius: 15px; color: #555; display: flex; align-items: center; gap: 5px; }
 
-        .btn-select {
-            background-color: var(--primary-color); color: white; border: none; padding: 8px 20px; border-radius: 20px; font-weight: 600; cursor: pointer; transition: background 0.2s;
-        }
-        .btn-select:hover { background-color: var(--primary-dark); }
-
-        /* Mobile */
         @media (max-width: 768px) {
-            .flight-card { flex-direction: column; gap: 15px; height: auto; }
+            .flight-card-main, .combo-card-main { flex-direction: column; height: auto; }
             .airline-info, .flight-route, .flight-action { width: 100%; justify-content: space-between; flex-direction: row; }
-            .flight-action { align-items: center; border-top: 1px solid #eee; padding-top: 10px; }
-            
-            .combo-card { flex-direction: column; height: auto; }
-            .combo-image-container { width: 100%; height: 150px; }
-            .combo-details { border-right: none; border-bottom: 1px solid #eee; }
-            .combo-price-section { width: 100%; align-items: center; flex-direction: row; justify-content: space-between; padding: 15px; box-sizing: border-box; }
-            .combo-price { font-size: 18px; }
+            .combo-details-main { border-right: none; border-bottom: 1px solid #eee; border-left: none; border-top: 4px solid var(--secondary-color); }
+            .combo-price-section { width: 100%; align-items: center; flex-direction: row; justify-content: space-between; padding: 15px; }
+            .combo-detail-grid { grid-template-columns: 1fr; gap: 15px; }
             #results-content { grid-template-columns: 1fr; }
         }
-
-        /* Star Rating Form */
-        .star-rating { display: flex; flex-wrap: wrap; gap: 10px; }
-        .star-rating label { display: flex; align-items: center; gap: 5px; background: var(--light-bg); border: 1px solid var(--border-color); padding: 8px 12px; border-radius: 20px; cursor: pointer; transition: background-color 0.2s; }
-        .star-rating label:hover { background-color: #e9e9e9; }
-        .star-rating input { display: none; }
-        .star-rating input:checked + span { background-color: var(--primary-color); border-color: var(--primary-dark); color: var(--white); font-weight: 600; }
     </style>
 </head>
 <body>
@@ -410,16 +280,18 @@
                         <label for="h-max-price">Total Harga Max.</label>
                         <input type="number" id="h-max-price" name="max_total_price" placeholder="Contoh: 3000000">
                     </div>
+                    
                     <div class="form-group full-width">
-                        <label>Bintang Hotel</label>
+                        <label>Filter Bintang Hotel (Pilih Satu atau Lebih)</label>
                         <div class="star-rating">
-                            <label><input type="checkbox" name="hotel_star" value="1"> <span>⭐</span></label>
-                            <label><input type="checkbox" name="hotel_star" value="2"> <span>⭐⭐</span></label>
-                            <label><input type="checkbox" name="hotel_star" value="3"> <span>⭐⭐⭐</span></label>
-                            <label><input type="checkbox" name="hotel_star" value="4"> <span>⭐⭐⭐⭐</span></label>
-                            <label><input type="checkbox" name="hotel_star" value="5"> <span>⭐⭐⭐⭐⭐</span></label>
+                            <input type="checkbox" id="star1" name="hotel_star" value="1"><label for="star1">⭐ 1 Bintang</label>
+                            <input type="checkbox" id="star2" name="hotel_star" value="2"><label for="star2">⭐ 2 Bintang</label>
+                            <input type="checkbox" id="star3" name="hotel_star" value="3"><label for="star3">⭐ 3 Bintang</label>
+                            <input type="checkbox" id="star4" name="hotel_star" value="4"><label for="star4">⭐ 4 Bintang</label>
+                            <input type="checkbox" id="star5" name="hotel_star" value="5"><label for="star5">⭐ 5 Bintang</label>
                         </div>
                     </div>
+
                     <button type="submit" class="submit-button">Cari Hotel</button>
                 </div>
             </form>
@@ -494,6 +366,144 @@
     </div>
 
     <script>
+        // --- GLOBAL VARIABLE UTAMA ---
+        window.currentResults = [];
+
+        // Logo Perusahaan (Ikon Pesawat - Base64 Valid)
+        const COMPANY_LOGO_DATA = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAjklEQVRogeaV0Q3DIAxE30yRjZAxMkY2SsdoF2iH0jFC6iJ1V4o45Q/8E58T24ADxEQ4q8Bq9zYAmN17B+AO4A0A5VzX3iO899m51lq/EyKl5BExM3POvfc+Iq613n8FQs65i4hZaz3/CoSUknfPzFprX3uP8N5n51prz/0XIGb2zrnn3nsfEbfW+v8ChJTyB95rJ8IqWz0RAAAAAElFTkSuQmCC";
+
+        // --- FUNGSI DOWNLOAD PDF (DENGAN SWEETALERT) ---
+        function confirmDownloadPDF(type, index) {
+            // Pastikan data ada
+            const data = window.currentResults[index];
+
+            if (!data) {
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire('Error', 'Data tidak ditemukan. Silakan cari ulang.', 'error');
+                } else {
+                    alert('Error: Data tidak ditemukan.');
+                }
+                return;
+            }
+
+            if (typeof Swal !== 'undefined') {
+                Swal.fire({
+                    title: 'Download Penawaran?',
+                    text: "Anda akan mengunduh detail penawaran ini dalam format PDF.",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#007bff',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, Download!',
+                    cancelButtonText: 'Batal'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        generatePDF(type, data);
+                    }
+                });
+            } else {
+                // Fallback jika SweetAlert gagal load
+                if(confirm("Download PDF untuk penawaran ini?")) {
+                    generatePDF(type, data);
+                }
+            }
+        }
+
+        function generatePDF(type, data) {
+            // Cek apakah library sudah siap
+            if (!window.jspdf) {
+                alert("Error: Library PDF gagal dimuat. Mohon refresh halaman.");
+                return;
+            }
+
+            try {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                // Header & Logo
+                try {
+                    doc.addImage(COMPANY_LOGO_DATA, 'PNG', 15, 10, 10, 10);
+                } catch (e) { console.warn("Logo gagal dimuat di PDF"); }
+
+                doc.setFontSize(18);
+                doc.setTextColor(0, 123, 255);
+                doc.text("Travel Compare", 30, 17);
+                
+                doc.setFontSize(10);
+                doc.setTextColor(100);
+                doc.text("Official Itinerary & Quote", 30, 22);
+                doc.text(`Date: ${new Date().toLocaleDateString()}`, 150, 17);
+                doc.setDrawColor(200);
+                doc.line(15, 28, 195, 28);
+
+                // Konten
+                let yPos = 40;
+                const price = formatPrice(data['price'] || data['Total Price'] || data['total_price']);
+
+                if (type === 'flight') {
+                    doc.setFontSize(14); doc.setTextColor(0);
+                    doc.text("Flight Details", 15, yPos); yPos += 10;
+                    doc.setFontSize(12);
+                    doc.text(`Airline: ${data['airline'] || '-'}`, 15, yPos); yPos+=8;
+                    doc.text(`Route: ${data['origin']} -> ${data['destination']}`, 15, yPos); yPos+=8;
+                    doc.text(`Time: ${data['departure_time']} - ${data['arrival_time']}`, 15, yPos); yPos+=8;
+                    doc.text(`Duration: ${data['duration'] || '-'}`, 15, yPos); yPos+=8;
+                    doc.text(`Baggage: ${data['baggage_weight'] || '20'} kg`, 15, yPos); yPos+=15;
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
+                    doc.text(`Total Price: ${price}`, 15, yPos);
+
+                } else if (type === 'hotel') {
+                    doc.setFontSize(14); doc.setTextColor(0);
+                    doc.text("Hotel Booking Details", 15, yPos); yPos += 10;
+                    doc.setFontSize(12);
+                    doc.text(`Hotel Name: ${data['Hotel Name']}`, 15, yPos); yPos+=8;
+                    doc.text(`City: ${data['City']}`, 15, yPos); yPos+=8;
+                    doc.text(`Guest Rating: ${data['Guest Rating'] || 'N/A'}/10`, 15, yPos); yPos+=8;
+                    doc.text(`Check-in: ${formatDate(data['Checkin Date'])}`, 15, yPos); yPos+=8;
+                    doc.text(`Check-out: ${formatDate(data['Checkout Date'])}`, 15, yPos); yPos+=8;
+                    doc.text(`Rating: ${data['Hotel Star']} Stars`, 15, yPos); yPos+=15;
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
+                    doc.text(`Total Price: ${price}`, 15, yPos);
+
+                } else if (type === 'combo') {
+                    doc.setFontSize(14); doc.setTextColor(0);
+                    doc.text(`Combo Package (${data['cluster'] || 'Standard'})`, 15, yPos); yPos += 10;
+                    
+                    // Flight Details
+                    doc.setFontSize(12); doc.setTextColor(0);
+                    doc.text("Flight Details:", 15, yPos); yPos+=8;
+                    doc.setFontSize(11); doc.setTextColor(80);
+                    doc.text(`- Airline: ${data['airline']}`, 20, yPos); yPos+=6;
+                    doc.text(`- Route: ${data['origin']} -> ${data['destination']}`, 20, yPos); yPos+=6;
+                    doc.text(`- Time: ${data['departure_time']} - ${data['arrival_time']}`, 20, yPos); yPos+=6;
+                    doc.text(`- Date: ${formatDate(data['date'])}`, 20, yPos); yPos+=10;
+                    
+                    // Hotel Details
+                    doc.setFontSize(12); doc.setTextColor(0);
+                    doc.text("Hotel Details:", 15, yPos); yPos+=8;
+                    doc.setFontSize(11); doc.setTextColor(80);
+                    doc.text(`- Hotel: ${data['Hotel Name']}`, 20, yPos); yPos+=6;
+                    doc.text(`- City: ${data['City']}`, 20, yPos); yPos+=6;
+                    doc.text(`- Check-in: ${formatDate(data['Checkin Date'])}`, 20, yPos); yPos+=6;
+                    doc.text(`- Rating: ${data['Hotel Star']} Stars`, 20, yPos); yPos+=15;
+
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
+                    doc.text(`Package Price: ${price} / pax`, 15, yPos);
+                }
+
+                doc.save(`TravelCompare_${type}_${new Date().getTime()}.pdf`);
+                
+                // Show success alert
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire('Berhasil!', 'File PDF telah didownload.', 'success');
+                }
+
+            } catch(e) {
+                console.error("PDF Gen Error:", e);
+                alert("Gagal membuat PDF: " + e.message);
+            }
+        }
+
         // --- HELPER FUNCTIONS ---
         function getAirlineLogo(airlineName) {
             if (!airlineName) return 'https://cdn-icons-png.flaticon.com/512/723/723955.png';
@@ -510,7 +520,7 @@
             else if (name.includes('lion')) iataCode = 'JT';
             else if (name.includes('batik')) iataCode = 'ID';
             else if (name.includes('wings')) iataCode = 'IW';
-            else if (name.includes('airasia') || name.includes('air asia')) iataCode = 'QZ';
+            else if (name.includes('airasia')) iataCode = 'QZ';
             else if (name.includes('scoot')) iataCode = 'TR';
             else if (name.includes('jetstar')) iataCode = 'JQ';
             else if (name.includes('singapore') || name === 'sq') iataCode = 'SQ';
@@ -538,6 +548,15 @@
             const month = String(date.getMonth() + 1).padStart(2, '0');
             const year = date.getFullYear();
             return `${day}/${month}/${year}`;
+        }
+
+        function getBadgeColor(clusterName) {
+            if (!clusterName) return '#999'; 
+            const name = clusterName.toLowerCase();
+            if (name.includes('luxury') || name.includes('business')) return '#4a148c'; 
+            if (name.includes('mid') || name.includes('middle')) return '#007bff'; 
+            if (name.includes('budget') || name.includes('economy')) return '#28a745'; 
+            return '#ff6f00'; 
         }
 
         function openTab(evt, tabName) {
@@ -594,6 +613,9 @@
                 if (result.success) {
                     const data = JSON.parse(result.data);
                     
+                    // --- SIMPAN DATA KE GLOBAL VARIABLE UNTUK PDF ---
+                    window.currentResults = data; 
+
                     if (type === 'flight') renderFlightCards(data);
                     else if (type === 'hotel') renderHotelCards(data);
                     else if (type === 'combo') renderComboCards(data); 
@@ -607,31 +629,59 @@
             }
         }
 
+        function toggleDetail(id) {
+            const detailPanel = document.getElementById(id);
+            if (detailPanel.style.display === "block") {
+                detailPanel.style.display = "none";
+            } else {
+                detailPanel.style.display = "block";
+            }
+        }
+
         // --- RENDER FLIGHT ---
         function renderFlightCards(data) {
             const resultsContent = document.getElementById('results-content');
             resultsContent.classList.add('list-mode');
-
-            data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
-
             if (!data || data.length === 0) {
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada penerbangan ditemukan.</p>`; return;
             }
+            data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+
             let html = '';
-            data.forEach(row => {
+            data.forEach((row, index) => {
                 const airline = row['airline'] || 'Airline';
+                const seatClass = row['cabin_class'] || 'Economy'; 
+                const baggage = row['baggage_weight'] ? row['baggage_weight'] + ' kg' : '20 kg'; 
+                const flightCode = row['flight_code'] || 'FN-' + (Math.floor(Math.random() * 900) + 100);
+
                 html += `
-                <div class="flight-card">
-                    <div class="airline-info">
-                        <img src="${getAirlineLogo(airline)}" class="airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
-                        <div><div class="airline-name">${airline}</div></div>
+                <div class="flight-card-wrapper">
+                    <div class="flight-card-main">
+                        <div class="airline-info">
+                            <img src="${getAirlineLogo(airline)}" class="airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
+                            <div><div class="airline-name">${airline}</div></div>
+                        </div>
+                        <div class="flight-route">
+                            <div style="text-align:center;"><div class="route-time">${row['departure_time'] || '--:--'}</div><div class="route-city">${row['origin'] || ''}</div></div>
+                            <div class="route-duration"><span class="duration-text">${row['duration'] || 'Direct'}</span><div class="duration-line"></div></div>
+                            <div style="text-align:center;"><div class="route-time">${row['arrival_time'] || '--:--'}</div><div class="route-city">${row['destination'] || ''}</div></div>
+                        </div>
+                        <div class="flight-action">
+                            <div class="flight-price">${formatPrice(row['price'])}</div>
+                            <div class="btn-group-action">
+                                <button class="btn-toggle-detail" onclick="toggleDetail('f-detail-${index}')">Lihat Detail ⬇</button>
+                                <button class="btn-pdf" onclick="confirmDownloadPDF('flight', ${index})">📄 PDF</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flight-route">
-                        <div style="text-align:center;"><div class="route-time">${row['departure_time'] || '--:--'}</div><div class="route-city">${row['origin'] || ''}</div></div>
-                        <div class="route-duration"><span class="duration-text">${row['duration'] || 'Direct'}</span><div class="duration-line"></div></div>
-                        <div style="text-align:center;"><div class="route-time">${row['arrival_time'] || '--:--'}</div><div class="route-city">${row['destination'] || ''}</div></div>
+                    
+                    <div id="f-detail-${index}" class="detail-panel">
+                        <div class="detail-grid">
+                            <div class="detail-item"><span class="detail-label">Maskapai</span><span class="detail-value">${airline} (${flightCode})</span></div>
+                            <div class="detail-item"><span class="detail-label">Kelas</span><span class="detail-value">💺 ${seatClass}</span></div>
+                            <div class="detail-item"><span class="detail-label">Bagasi</span><span class="detail-value">🧳 ${baggage}</span></div>
+                        </div>
                     </div>
-                    <div class="flight-action"><div class="flight-price">${formatPrice(row['price'])}</div></div>
                 </div>`;
             });
             resultsContent.innerHTML = html;
@@ -647,6 +697,11 @@
             let html = '';
             data.forEach((row, idx) => {
                 const img = row['image_url'] || getHotelImage(idx);
+                // Gunakan Rating Asli dari Database
+                const rating = row['Guest Rating'] ? row['Guest Rating'] : 'N/A';
+                let ratingText = "Baik";
+                if (rating > 9.0) ratingText = "Luar Biasa"; else if (rating > 8.0) ratingText = "Hebat";
+                
                 html += `
                 <div class="hotel-card">
                     <img src="${img}" class="hotel-card-image" loading="lazy" onerror="this.src='https://loremflickr.com/400/300/hotel?random=${idx}'">
@@ -656,17 +711,31 @@
                         <div class="hotel-city">📍 ${row['City'] || ''}</div>
                         <div class="hotel-footer">
                             <div class="hotel-price-container"><span class="hotel-price-label">Total Harga</span><div class="hotel-price">${formatPrice(row['Total Price'])}</div></div>
+                            <div class="btn-group-action" style="flex-direction: column; align-items: flex-end; gap: 5px;">
+                                <button class="btn-toggle-detail" onclick="toggleDetail('h-detail-${idx}')">Lihat Detail ⬇</button>
+                                <button class="btn-pdf" onclick="confirmDownloadPDF('hotel', ${idx})">📄 PDF</button>
+                            </div>
                         </div>
+                    </div>
+                    <div id="h-detail-${idx}" class="detail-panel">
+                        <div class="hotel-detail-header">
+                            <div class="rating-box">
+                                <div class="rating-score">${rating}</div>
+                                <div><div class="rating-text">${ratingText}</div><div class="rating-count">Verified Reviews</div></div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom:8px; font-size:12px; font-weight:600; color:#888;">FASILITAS POPULER</div>
+                        <div class="amenities-list"><span class="amenity-tag">📶 WiFi Gratis</span><span class="amenity-tag">🏊 Kolam Renang</span><span class="amenity-tag">🅿️ Parkir</span><span class="amenity-tag">❄️ AC</span></div>
                     </div>
                 </div>`;
             });
             resultsContent.innerHTML = html;
         }
 
-        // --- RENDER COMBO (CARD BARU) ---
+        // --- RENDER COMBO (UPDATED) ---
         function renderComboCards(data) {
             const resultsContent = document.getElementById('results-content');
-            resultsContent.classList.add('list-mode'); // List ke bawah
+            resultsContent.classList.add('list-mode'); 
             
             if (!data || data.length === 0) {
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo ditemukan.</p>`; return;
@@ -676,43 +745,65 @@
             data.forEach((row, idx) => {
                 const airline = row['airline'] || 'Airline';
                 const hotelName = row['Hotel Name'] || 'Hotel';
-                const hotelImg = getHotelImage(idx+100); 
-                
-                // --- PERBAIKAN DI SINI: MENGAMBIL STAR DARI DATA ---
-                // Pastikan 'Hotel Star' ada di data combo Anda. Jika tidak, akan default ke 0
+                const clusterName = row['cluster'] || '-'; 
+                const badgeColor = getBadgeColor(clusterName);
                 const hotelStars = row['Hotel Star'] || 0;
                 const hotelStarsDisplay = '⭐'.repeat(Math.floor(hotelStars));
+                const baggage = row['baggage_weight'] ? row['baggage_weight'] + ' kg' : '20 kg'; 
 
                 html += `
-                <div class="combo-card">
-                    <div class="combo-image-container">
-                        <img src="${hotelImg}" class="combo-image" loading="lazy">
-                        <span class="combo-badge">${row['cluster'] || 'Paket'}</span>
-                    </div>
+                <div class="combo-card-wrapper">
+                    <div class="combo-card-main">
+                        <div class="combo-details-main" style="border-left: 6px solid ${badgeColor};">
+                            
+                            <span class="combo-cluster-tag" style="color: ${badgeColor}; background-color: ${badgeColor}20;">
+                                ${clusterName}
+                            </span>
 
-                    <div class="combo-details">
-                        <div class="combo-flight-row">
-                            <img src="${getAirlineLogo(airline)}" class="combo-airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
-                            <div>
-                                <div class="combo-flight-text" style="font-weight:700;">${airline}</div>
-                                <div class="combo-flight-text" style="color:#666; font-size:13px;">
-                                    ${row['origin']} ➝ ${row['destination']} • ${formatDate(row['date'])}
+                            <div class="combo-flight-row">
+                                <img src="${getAirlineLogo(airline)}" class="combo-airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
+                                <div>
+                                    <div class="combo-flight-text" style="font-weight:700;">${airline}</div>
+                                    <div class="combo-flight-text" style="color:#666; font-size:13px;">
+                                        ${row['origin']} ➝ ${row['destination']} • ${formatDate(row['date'])}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combo-hotel-row">
+                                <span class="combo-hotel-icon">🏨</span>
+                                <div>
+                                    <div class="combo-hotel-name">${hotelName}</div>
+                                    <div class="combo-hotel-star">${hotelStarsDisplay}</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="combo-hotel-row">
-                            <span class="combo-hotel-icon">🏨</span>
-                            <div>
-                                <div class="combo-hotel-name">${hotelName}</div>
-                                <div class="combo-hotel-star">${hotelStarsDisplay}</div>
-                            </div>
+                        <div class="combo-price-section">
+                            <span class="combo-price-label">Harga Paket per Orang</span>
+                            <div class="combo-price" style="color: ${badgeColor};">${formatPrice(row['total_price'])}</div>
+                            <button class="btn-toggle-combo" style="color: ${badgeColor};" onclick="toggleDetail('c-detail-${idx}')">Lihat Detail ⬇</button>
+                            <button class="btn-pdf" style="margin-top:5px; color:#555;" onclick="confirmDownloadPDF('combo', ${idx})">📄 Download PDF</button>
                         </div>
                     </div>
 
-                    <div class="combo-price-section">
-                        <span class="combo-price-label">Harga Paket per Orang</span>
-                        <div class="combo-price">${formatPrice(row['total_price'])}</div>
+                    <div id="c-detail-${idx}" class="combo-detail-panel">
+                        <div class="combo-detail-grid">
+                            <div class="combo-detail-col">
+                                <h4>✈️ Detail Penerbangan</h4>
+                                <div class="detail-item"><span class="detail-label">Maskapai</span><span class="detail-value">${airline}</span></div>
+                                <div class="detail-item"><span class="detail-label">Waktu</span><span class="detail-value">Berangkat: ${row['departure_time'] || '--:--'} <br> Tiba: ${row['arrival_time'] || '--:--'}</span></div>
+                                <div class="detail-item"><span class="detail-label">Durasi</span><span class="detail-value">${row['duration'] || '-'}</span></div>
+                                <div class="detail-item"><span class="detail-label">Bagasi</span><span class="detail-value">🧳 ${baggage}</span></div>
+                            </div>
+
+                            <div class="combo-detail-col">
+                                <h4>🏨 Detail Hotel</h4>
+                                <div class="detail-item"><span class="detail-label">Nama Hotel</span><span class="detail-value">${hotelName} ${hotelStarsDisplay}</span></div>
+                                <div class="detail-item"><span class="detail-label">Kota</span><span class="detail-value">${row['City'] || '-'}</span></div>
+                                <div class="detail-item"><span class="detail-label">Fasilitas</span><span class="detail-value">📶 WiFi, 🏊 Kolam Renang, ❄️ AC</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 `;
@@ -720,7 +811,6 @@
             resultsContent.innerHTML = html;
         }
 
-        // Init
         document.addEventListener('DOMContentLoaded', function() {
             if(document.getElementById('flights').classList.contains('active')) {
                 document.getElementById('results-content').classList.add('list-mode');

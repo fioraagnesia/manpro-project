@@ -46,6 +46,8 @@ def search_flights(
     if cluster_label:
         result = result[result["cluster_label"] == cluster_label.title()]
 
+    result = result[result["price"] <= 50000000]
+
     if result.empty:
         return "No flights found with the specified filters."
 

@@ -55,6 +55,9 @@ def search_hotels(
     df_result = pd.merge(df_total_price, 
                          df_info.drop(columns=['Price', 'Checkin Date', 'Checkout Date', 'Platform', 'Cleaned Name'], errors="ignore"), # Buang kolom yg tidak relevan
                         on='Hotel Name')
+    
+    df_result['Checkin Date'] = checkin_date
+    df_result['Checkout Date'] = checkout_date
 
     # Filter total price
     if min_total_price is not None:
@@ -76,6 +79,8 @@ def search_hotels(
 
     if segmentation:    # frontend: dropdown
         df_result = df_result[df_result['Segmentation'] == segmentation]
+
+    df_result = df_result[df_result["Total Price"] <= 50000000]
     
     if df_result.empty:
         return "No hotel found with the specified filters."
