@@ -29,7 +29,7 @@ airline_map = {
     "thai airways": "Thai Airways",
     "transnusa": "TransNusa",
     "transnusa aviation": "TransNusa",
-    "KLM" : "Koninklijke Luchtvaart Maatschappij",
+    "klm" : "Koninklijke Luchtvaart Maatschappij",
 }
 
 # normalize airline names to same names

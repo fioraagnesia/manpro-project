@@ -89,11 +89,11 @@ def search_combo (
 
 
 # SIMULATION --> ganti di front end
-target_origin = "DPS"
-target_destination = "SUB"
-target_checkin_date = "2025-10-27"
-target_min_price = 1000000
-target_max_price = 1100000
+target_origin = "SUB"
+target_destination = "SIN"
+target_checkin_date = "2025-12-12"
+target_min_price = 0
+target_max_price = 10000000000
 target_cluster = "Luxury"
 
 if __name__ == "__main__":
@@ -109,5 +109,5 @@ if __name__ == "__main__":
 
     print(f"--- RESULT: {len(filtered_result)} combos found ---")
     show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
-    print(filtered_result.sort_values(by='total_price')[show_columns])
-# print(filtered_result)
+    # print(filtered_result.sort_values(by='total_price')[show_columns])
+    print(filtered_result)

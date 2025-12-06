@@ -273,7 +273,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 09/12/25,Citilink,20:10,22:10,1h 0m,0,553791.0,SUB,DPS,Economy,15,Bali
 09/12/25,Citilink,20:50,22:25,1h 35m,0,929980.0,SUB,CGK,Economy,15,Jakarta
 09/12/25,"Citilink , Garuda Indonesia",14:10,14:10,4h 35m,1,2694323.0,SUB,SRG,Economy,20,Semarang
-09/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1897829.0,SUB,SIN,Economy,20,Singapura
+09/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1897829.0,SUB,SIN,Economy,20,Singapura
 09/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2253756.0,SUB,SRG,Economy,10,Semarang
 09/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2457095.0,SUB,SRG,Economy,10,Semarang
 09/12/25,"Citilink , Lion Air",11:20,11:20,4h 55m,1,2321535.0,SUB,SRG,Economy,10,Semarang
@@ -299,7 +299,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 09/12/25,Garuda Indonesia,19:00,19:00,2h 30m,0,4287145.0,SIN,SUB,Economy,30,Surabaya
 09/12/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126.0,SIN,CGK,Business,40,Jakarta
 09/12/25,"Jetstar Airways , Lion Air",11:15,11:15,6h,1,2067278.0,SUB,SIN,Economy,20,Singapura
-09/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1863939.0,SUB,SIN,Economy,20,Singapura
+09/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1863939.0,SUB,SIN,Economy,20,Singapura
 09/12/25,Lion Air,03:30,05:00,1h 30m,0,867438.0,CGK,SUB,Economy,10,Surabaya
 09/12/25,Lion Air,05:05,05:05,3h 50m,1,2355425.0,SUB,DPS,Economy,10,Bali
 09/12/25,Lion Air,07:00,07:00,1h,0,542979.0,DPS,SUB,Economy,10,Surabaya
@@ -536,7 +536,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 10/12/25,Citilink,20:10,22:10,1h 0m,0,704522.0,SUB,DPS,Economy,10,Bali
 10/12/25,Citilink,21:00,21:50,1h 50m,0,1296702.0,SIN,CGK,Economy,10,Jakarta
 10/12/25,"Citilink , Garuda Indonesia",12:50,12:50,4h 10m,1,2677295.0,SUB,SRG,Economy,20,Semarang
-10/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1897829.0,SUB,SIN,Economy,20,Singapura
+10/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1897829.0,SUB,SIN,Economy,20,Singapura
 10/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2253756.0,SUB,SRG,Economy,10,Semarang
 10/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2219866.0,SUB,SRG,Economy,10,Semarang
 10/12/25,"Citilink , Lion Air",11:20,11:20,4h 55m,1,2321535.0,SUB,SRG,Economy,10,Semarang
@@ -561,7 +561,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 10/12/25,Garuda Indonesia,21:30,22:35,2h 5m,0,15015126.0,SIN,CGK,Business,40,Jakarta
 10/12/25,"Garuda Indonesia , Lion Air",07:40,07:40,4h 15m,1,2762103.0,SUB,SRG,Economy,20,Semarang
 10/12/25,"Jetstar Airways , Lion Air",11:15,11:15,6h,1,2067278.0,SUB,SIN,Economy,20,Singapura
-10/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+10/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 10/12/25,Lion Air,03:30,05:00,1h 30m,0,780427.0,CGK,SUB,Economy,10,Surabaya
 10/12/25,Lion Air,05:05,05:05,3h 50m,1,2423205.0,SUB,DPS,Economy,10,Bali
 10/12/25,Lion Air,07:00,07:00,1h 0m,0,637000.0,DPS,SUB,Economy,10,Surabaya
@@ -1038,7 +1038,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 12/12/25,Citilink,19:45,19:45,1h 05m,0,1067612.0,SUB,DPS,Economy,15,Bali
 12/12/25,Citilink,20:10,22:10,1h 0m,0,770645.0,SUB,DPS,Economy,10,Bali
 12/12/25,"Citilink , Garuda Indonesia",10:25,10:25,4h 15m,1,2745075.0,SUB,SRG,Economy,20,Semarang
-12/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,2084307.0,SUB,SIN,Economy,20,Singapura
+12/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,2084307.0,SUB,SIN,Economy,20,Singapura
 12/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2389315.0,SUB,SRG,Economy,10,Semarang
 12/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2219866.0,SUB,SRG,Economy,10,Semarang
 12/12/25,"Citilink , Lion Air",11:20,11:20,4h 55m,1,2389315.0,SUB,SRG,Economy,10,Semarang
@@ -1062,7 +1062,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 12/12/25,Garuda Indonesia,18:55,18:55,2h,0,1016694.0,CGK,SIN,Business,40,Singapura
 12/12/25,Garuda Indonesia,19:00,19:00,2h 30m,0,3388981.0,SIN,SUB,Economy,30,Surabaya
 12/12/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693.0,SIN,CGK,Business,40,Jakarta
-12/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,2033388.0,SUB,SIN,Economy,20,Singapura
+12/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,2033388.0,SUB,SIN,Economy,20,Singapura
 12/12/25,Lion Air,03:30,05:00,1h 30m,0,831191.0,CGK,SUB,Economy,10,Surabaya
 12/12/25,Lion Air,05:05,05:05,3h 50m,1,2745075.0,SUB,DPS,Economy,10,Bali
 12/12/25,Lion Air,06:00,07:30,1h 30m,0,967080.0,CGK,SUB,Economy,20,Surabaya
@@ -1313,7 +1313,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 13/12/25,Citilink,21:00,21:50,1h 50m,0,1423100.0,SIN,CGK,Economy,15,Jakarta
 13/12/25,"Citilink , Garuda Indonesia",12:50,12:50,4h 10m,1,2694323.0,SUB,SRG,Economy,20,Semarang
 13/12/25,"Citilink , Garuda Indonesia",15:25,15:25,5h 15m,1,2355425.0,SRG,SUB,Economy,20,Surabaya
-13/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
+13/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
 13/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2321535.0,SUB,SRG,Economy,10,Semarang
 13/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2355425.0,SUB,SRG,Economy,10,Semarang
 13/12/25,"Citilink , Lion Air",12:45,20:10,7h 25m,1,1902075.0,SUB,SRG,Economy,15,Semarang
@@ -1362,7 +1362,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 13/12/25,Garuda Indonesia,21:30,14:30,18h 0m,1,15163300.0,SIN,SUB,Business,40,Surabaya
 13/12/25,"Garuda Indonesia , Lion Air",15:25,15:25,4h 55m,1,2389315.0,SRG,SUB,Economy,10,Surabaya
 13/12/25,"Garuda Indonesia , Pelita Air",10:50,10:50,3h 50m,1,2728213.0,SUB,SRG,Economy,20,Semarang
-13/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+13/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 13/12/25,Lion Air,03:30,05:00,1h 30m,0,867438.0,CGK,SUB,Economy,10,Surabaya
 13/12/25,Lion Air,07:00,07:00,1h 0m,0,612837.0,DPS,SUB,Economy,10,Surabaya
 13/12/25,Lion Air,07:00,10:35,3h 35m,1,1786400.0,SRG,SUB,Economy,10,Surabaya
@@ -1676,7 +1676,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 14/12/25,Garuda Indonesia,21:30,22:35,2h 5m,0,11316693.0,SIN,CGK,Business,40,Jakarta
 14/12/25,"Garuda Indonesia , Lion Air",07:40,07:40,4h 15m,1,2473956.0,SUB,SRG,Economy,20,Semarang
 14/12/25,"Garuda Indonesia , Pelita Air",10:50,10:50,3h 50m,1,2795993.0,SUB,SRG,Economy,20,Semarang
-14/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+14/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 14/12/25,Lion Air,03:30,05:00,1h 30m,0,831191.0,CGK,SUB,Economy,10,Surabaya
 14/12/25,Lion Air,05:05,06:35,1h 30m,0,1070490.0,SUB,CGK,Economy,10,Jakarta
 14/12/25,Lion Air,05:25,07:00,1h 35m,0,910715.0,CGK,SUB,Economy,15,Surabaya
@@ -1934,7 +1934,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 15/12/25,"Citilink , Garuda Indonesia",09:45,09:45,4h 55m,1,2592654.0,SRG,SUB,Economy,10,Surabaya
 15/12/25,"Citilink , Garuda Indonesia",10:25,10:25,4h 15m,1,2762103.0,SUB,SRG,Economy,20,Semarang
 15/12/25,"Citilink , Garuda Indonesia",12:50,12:50,4h 10m,1,2931552.0,SUB,SRG,Economy,20,Semarang
-15/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
+15/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
 15/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2457095.0,SUB,SRG,Economy,10,Semarang
 15/12/25,"Citilink , Lion Air",13:25,13:25,5h 45m,1,2372287.0,SRG,SUB,Economy,15,Surabaya
 15/12/25,"Citilink , Pelita Air",13:00,13:00,5h 50m,1,2440066.0,SRG,SUB,Economy,15,Surabaya
@@ -1983,7 +1983,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 15/12/25,Garuda Indonesia,20:15,21:50,1h 35m,0,8514300.0,CGK,SUB,Business,30,Surabaya
 15/12/25,Garuda Indonesia,21:30,22:35,2h 5m,0,2806458.0,SIN,CGK,Economy,30,Jakarta
 15/12/25,"Garuda Indonesia , Lion Air",15:25,15:25,4h 55m,1,2728213.0,SRG,SUB,Economy,20,Surabaya
-15/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+15/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 15/12/25,Lion Air,03:30,05:00,1h 30m,0,921031.0,CGK,SUB,Economy,10,Surabaya
 15/12/25,Lion Air,05:05,05:05,3h 50m,1,2473956.0,SUB,DPS,Economy,10,Bali
 15/12/25,Lion Air,07:00,07:00,1h 0m,0,612837.0,DPS,SUB,Economy,10,Surabaya
@@ -2229,7 +2229,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 16/12/25,Citilink,20:50,22:25,1h 35m,0,970556.0,SUB,CGK,Economy,10,Jakarta
 16/12/25,Citilink,21:00,21:50,1h 50m,0,1396602.0,SIN,CGK,Economy,10,Jakarta
 16/12/25,Citilink,21:00,07:00,11h 0m,1,2848500.0,SIN,SUB,Economy,15,Surabaya
-16/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
+16/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
 16/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2321535.0,SUB,SRG,Economy,10,Semarang
 16/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2202838.0,SUB,SRG,Economy,10,Semarang
 16/12/25,"Citilink , Lion Air",11:20,11:20,4h 55m,1,2389315.0,SUB,SRG,Economy,10,Semarang
@@ -2286,7 +2286,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 16/12/25,Garuda Indonesia,19:30,20:30,2h 0m,0,15015126.0,SIN,CGK,Business,40,Jakarta
 16/12/25,Garuda Indonesia,20:15,21:50,1h 35m,0,5493700.0,CGK,SUB,Business,30,Surabaya
 16/12/25,"Jetstar Airways , Lion Air",11:15,11:15,6h,1,1863939.0,SUB,SIN,Economy,20,Singapura
-16/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+16/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 16/12/25,Lion Air,03:30,05:00,1h 30m,0,831191.0,CGK,SUB,Economy,10,Surabaya
 16/12/25,Lion Air,05:05,05:05,3h 50m,1,2473956.0,SUB,DPS,Economy,30,Bali
 16/12/25,Lion Air,07:00,07:00,1h 0m,0,605900.0,DPS,SUB,Economy,10,Surabaya
@@ -2549,7 +2549,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 17/12/25,Citilink,20:50,22:25,1h 35m,0,1225100.0,SUB,CGK,Economy,15,Jakarta
 17/12/25,"Citilink , Garuda Indonesia",07:35,07:35,4h 20m,1,2507846.0,SUB,SRG,Economy,20,Semarang
 17/12/25,"Citilink , Garuda Indonesia",09:45,09:45,4h 55m,1,2592654.0,SRG,SUB,Economy,15,Surabaya
-17/12/25,"Citilink , Klm",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
+17/12/25,"Citilink , Koninklijke Luchtvaart Maatschappij",16:45,16:45,6h 25m,1,1880968.0,SUB,SIN,Economy,20,Singapura
 17/12/25,"Citilink , Lion Air",07:40,07:40,4h 50m,1,2457095.0,SUB,SRG,Economy,10,Semarang
 17/12/25,"Citilink , Lion Air",09:15,09:15,3h 30m,1,2355425.0,SUB,SRG,Economy,10,Semarang
 17/12/25,"Citilink , Lion Air",11:40,11:40,4h 05m,1,2236727.0,SRG,SUB,Economy,20,Surabaya
@@ -2594,7 +2594,7 @@ date,airline,departure_time,arrival_time,duration,transit,price,origin,destinati
 17/12/25,"Garuda Indonesia , Lion Air",07:40,07:40,4h 15m,1,2473956.0,SUB,SRG,Economy,20,Semarang
 17/12/25,"Garuda Indonesia , Pelita Air",10:50,10:50,3h 50m,1,2897662.0,SUB,SRG,Economy,20,Semarang
 17/12/25,"Jetstar Airways , Lion Air",11:15,11:15,6h,1,1830050.0,SUB,SIN,Economy,20,Singapura
-17/12/25,"Klm , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
+17/12/25,"Koninklijke Luchtvaart Maatschappij , Lion Air",17:05,17:05,6h 05m,1,1830050.0,SUB,SIN,Economy,20,Singapura
 17/12/25,Lion Air,03:30,05:00,1h 30m,0,815128.0,CGK,SUB,Economy,10,Surabaya
 17/12/25,Lion Air,05:05,05:05,3h 50m,1,2473956.0,SUB,DPS,Economy,10,Bali
 17/12/25,Lion Air,05:25,07:00,1h 35m,0,910715.0,CGK,SUB,Economy,15,Surabaya

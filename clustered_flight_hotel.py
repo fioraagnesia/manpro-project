@@ -132,7 +132,7 @@ for i, cluster_id in enumerate(sorted_clusters):
 
 df_merged["cluster"] = df_merged["cluster_raw"].map(label_map)
 
-out_fp = "data_cleaned/flight_hotel_clustered.csv"
+out_fp = "data_clustered/flight_hotel_clustered.csv"
 df_merged.to_csv(out_fp, index=False)
 print("Saved clustered results to:", out_fp)
 
