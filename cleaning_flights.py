@@ -29,6 +29,7 @@ airline_map = {
     "thai airways": "Thai Airways",
     "transnusa": "TransNusa",
     "transnusa aviation": "TransNusa",
+    "KLM" : "Koninklijke Luchtvaart Maatschappij",
 }
 
 # normalize airline names to same names
@@ -164,6 +165,16 @@ df_booking = pd.read_excel("data_scraping/flight/flight_booking.xlsx")
 df_tiket = pd.read_excel("data_scraping/flight/flight_tiket.xlsx")
 df_agoda = pd.read_excel("data_scraping/flight/flight_agoda.xlsx")
 
+# cut last 2 nums in price
+df_booking['price'] = (
+    df_booking['price']
+    .astype(str)           
+    .str.replace(r'[^\d]', '', regex=True)
+    .astype(float)
+)
+df_booking.loc[df_booking['price'] > 99999999, 'price'] = (
+    df_booking.loc[df_booking['price'] > 99999999, 'price'] // 100
+)
 
 # col name change
 df_trip = df_trip.rename(columns={
