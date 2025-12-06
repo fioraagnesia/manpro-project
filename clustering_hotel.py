@@ -7,24 +7,14 @@ import warnings
 warnings.filterwarnings("ignore")
 
 try:
-    df_cleaned_combined = pd.read_csv('data_cleaned/cleaned_hotel_combined new.csv')
-    df_cleaned_combined['Checkin Date'] = pd.to_datetime(df_cleaned_combined['Checkin Date'], dayfirst=True)
-    df_cleaned_combined['Checkout Date'] = pd.to_datetime(df_cleaned_combined['Checkout Date'], dayfirst=True)
+    df_cleaned_combined = pd.read_csv('data_cleaned/cleaned_hotel_combined.csv')
+    df_cleaned_combined['Checkin Date'] = pd.to_datetime(df_cleaned_combined['Checkin Date'], format='%Y-%m-%d', errors='coerce')
+    df_cleaned_combined['Checkout Date'] = pd.to_datetime(df_cleaned_combined['Checkout Date'], format='%Y-%m-%d', errors='coerce')
 except FileNotFoundError:
     print("File 'cleaned_hotel_combined.csv' not found.")
     exit()
 
 
-# CUSTOMIZE: Filter Analysis, adjust the city & check-in date
-# city_target = 'Surabaya'
-# date_target = pd.to_datetime('2025-10-22') 
-
-# print(f"=== Clustering for: {city_target}, {date_target.strftime('%Y-%m-%d')} ===")
-# Make a new copy according to the specified filters 
-# df_analisis = df_cleaned_combined[
-#     (df_cleaned_combined['City'] == city_target) &
-#     (df_cleaned_combined['Checkin Date'] == date_target)
-# ].copy()
 print(f"=== Global Clustering for all hotels ===")
 df_analisis = df_cleaned_combined.copy()
 
@@ -57,16 +47,37 @@ else:
         df_result['Cluster'] = labels
 
         # --- Investigation ---
-        print("\n=== Cluster Characteristics ===")
-        cluster_summary = df_result.groupby('Cluster')[features].mean().round(2)
+        print("\n=== Cluster Characteristics based on Weighted Score ===")
+        cluster_stats = df_result.groupby('Cluster')[features].mean().round(2)
+
+        ranked = pd.DataFrame()
+        ranked['R_Price'] = cluster_stats['Price'].rank(ascending=True)
+        ranked['R_Star'] = cluster_stats['Hotel Star'].rank(ascending=True)
+        ranked['R_Rating'] = cluster_stats['Guest Rating'].rank(ascending=True)
+        
+        # Give weight to each aspects
+        weight_price = 0.6
+        weight_star = 0.3
+        weight_rating = 0.1
+        # Count the weighted values
+        cluster_stats['Weighted Score'] = (
+            (ranked['R_Price'] * weight_price) + 
+            (ranked['R_Star'] * weight_star) + 
+            (ranked['R_Rating'] * weight_rating)
+        )
+        # Sort based on the highest score
+        cluster_summary = cluster_stats.sort_values('Weighted Score')
         print(cluster_summary)
 
-        # Labeling for each segmentation (based on the characteristics)
-        segmentation_map = {
-            0: 'Mid-Range', # mid price, mid star and rating
-            1: 'Budget',    # cheapest, lowest star and rating
-            2: 'Luxury'     # most expensive, highest star and rating
-        }
+        # Labeling for each segmentation
+        segment_names = ['Budget',      # cheapest, lowest star and rating
+                         'Mid-Range',   # mid price, mid star and rating
+                         'Luxury']      # most expensive, highest star and rating
+        segmentation_map = {}
+        
+        for i, cluster_id in enumerate(cluster_summary.index):
+            assigned_name = segment_names[i]
+            segmentation_map[cluster_id] = assigned_name
         
         df_result['Segmentation'] = df_result['Cluster'].map(segmentation_map)
 
@@ -82,11 +93,10 @@ else:
             section_data = df_result[df_result['Segmentation'] == segment]
             print(section_data[['Hotel Name', 'City', 'Country', 'Price', 'Hotel Star', 'Guest Rating']])
             # print(section_data)
-            print(f"Total for '{segment}' segmentation: {len(df_result)} hotels")
+            print(f"Total for '{segment}' segmentation: {len(section_data)} hotels")
 
         # Save results as csv
         folder_name = 'data_clustered/'
-        # file_name = f'hotel_clustered_{city_target}_{date_target.strftime("%Y%m%d")}.csv'
         file_name = f'hotel_clustered_global new.csv'
         file_path = folder_name+ file_name
         df_result.to_csv(file_path, index=False)

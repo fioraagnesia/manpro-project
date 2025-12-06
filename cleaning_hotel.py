@@ -54,20 +54,30 @@ def clean_guest_rating(df, dataset_name, column_name='Guest Rating'):
 
 # FUNCTION for converting date
 def date_format(df, dataset_name):
-    print(f"--- Formatting dates for '{dataset_name}' to dd/mm/yyyy ---")
+    date_cols = ['Checkin Date', 'Checkout Date']
     
-    # Change the data type to datetime
-    if 'Checkin Date' in df.columns:
-        df['Checkin Date'] = pd.to_datetime(df['Checkin Date'], errors='coerce', dayfirst=True)
-    if 'Checkout Date' in df.columns:
-        df['Checkout Date'] = pd.to_datetime(df['Checkout Date'], errors='coerce', dayfirst=True)
-    df.dropna(subset=['Checkin Date', 'Checkout Date'], inplace=True)
+    for col in date_cols:
+        if col in df.columns:
+            # convert to string
+            df[col] = df[col].astype(str).str.strip()
+            
+            # special case: Traveloka (date format: dd-mm-yyyy)
+            if 'Traveloka' in dataset_name:
+                df[col] = pd.to_datetime(df[col], dayfirst=True, errors='coerce')
+            else:
+                df[col] = pd.to_datetime(df[col], dayfirst=False, errors='coerce')
 
-    # 3. Change the date format to dd/mm/yyyy
+    # Hapus data yang gagal dikonversi (NaT)
+    df.dropna(subset=[c for c in date_cols if c in df.columns], inplace=True)
+
+    # print(f"--- Formatting dates for '{dataset_name}' to dd/mm/yyyy ---")
+    
+    # # Change the data type to datetime
     # if 'Checkin Date' in df.columns:
-    #     df['Checkin Date'] = df['Checkin Date'].dt.strftime('%d/%m/%Y')
+    #     df['Checkin Date'] = pd.to_datetime(df['Checkin Date'], errors='coerce', dayfirst=True)
     # if 'Checkout Date' in df.columns:
-    #     df['Checkout Date'] = df['Checkout Date'].dt.strftime('%d/%m/%Y')
+    #     df['Checkout Date'] = pd.to_datetime(df['Checkout Date'], errors='coerce', dayfirst=True)
+    # df.dropna(subset=['Checkin Date', 'Checkout Date'], inplace=True)
 
     return df
 
@@ -86,11 +96,11 @@ def normalize_name(name):
 # DATA SCRAPING PATHS
 dataset_folder = 'data_scraping/hotel/'
 dataset_files = [
-    'hotel_agoda_20250926_10days.xlsx',
-    'hotel_traveloka_20250926_10days.xlsx',
-    'hotel_tiketcom_(13 Oktober 2025 - 24 Oktober 2025).xlsx',
-    'hotel_tripcom_(12 Oktober 2025 - 23 Oktober 2025).xlsx',
-    'hotel_bookingcom_data_(27 Oktober 2025 - 6 November 2025).xlsx'
+    'hotel_agoda.xlsx',
+    'hotel_traveloka.xlsx',
+    'hotel_tiketcom.xlsx',
+    'hotel_tripcom.xlsx',
+    'hotel_bookingcom.xlsx'
 ]
 
 # DATA CLEANING on each datasets
@@ -99,8 +109,9 @@ for dataset in dataset_files:
     try:
         # Access the data
         path = dataset_folder + dataset
-        df_raw = pd.read_excel(path)
-        dataset_name = dataset.split('_')[1].split('(')[0].title()
+        # df_raw = pd.read_excel(path)
+        df_raw = pd.read_excel(path, dtype={'Checkin Date': str, 'Checkout Date': str})
+        dataset_name = dataset.split('_')[1].split('.')[0].title()
 
         # Drop columns that are not needed
         drop_columns = ['Hotel_ID', 'Scraped Timestamp', 'Source URL']
@@ -165,6 +176,14 @@ print("Standardizing hotel stars and guest rating...")
 df_best_price['Hotel Star'] = df_best_price.groupby('Hotel Name')['Hotel Star'].transform('max')
 # Standardizing guest rating with the maximum value
 df_best_price['Guest Rating'] = df_best_price.groupby('Hotel Name')['Guest Rating'].transform('max')
+
+# Convert to the date format
+print("Formatting dates to yyyy-mm-dd...")
+if 'Checkin Date' in df_best_price.columns:
+    df_best_price['Checkin Date'] = df_best_price['Checkin Date'].dt.strftime('%Y-%m-%d')
+
+if 'Checkout Date' in df_best_price.columns:
+    df_best_price['Checkout Date'] = df_best_price['Checkout Date'].dt.strftime('%Y-%m-%d')
 
 # Save as csv
 file_name = 'data_cleaned/cleaned_hotel_combined.csv'
