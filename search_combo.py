@@ -73,10 +73,6 @@ def search_combo (
     if cluster:    # frontend: dropdown
         df_result = df_result[df_result['cluster'] == cluster]
 
-    if max_total_price is None:
-        # Hapus data yang harganya di atas 50 Juta (50.000.000)
-        df_result = df_result[df_result["total_price"] <= 50000000]
-
     if 'arrival_dt' in df_result.columns:
             df_result = df_result[df_result['arrival_dt'].dt.hour >= 12]
 
@@ -85,6 +81,7 @@ def search_combo (
     
     # df_result.to_csv("data_clustered/coba.csv", index=False)
 
+    print(df.dtypes)
     return df_result
 
 
@@ -109,5 +106,5 @@ if __name__ == "__main__":
 
     print(f"--- RESULT: {len(filtered_result)} combos found ---")
     show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
-    # print(filtered_result.sort_values(by='total_price')[show_columns])
-    print(filtered_result)
+    print(filtered_result.sort_values(by='total_price')[show_columns])
+    # print(filtered_result)
