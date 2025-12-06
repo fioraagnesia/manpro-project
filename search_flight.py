@@ -62,8 +62,8 @@ if __name__ == "__main__":
         file_path,
         origin="SIN",
         destination="CGK",
-        min_price=1000000,
-        max_price=3000000,
+        min_price=None,
+        max_price=None,
         airline="AirAsia",
         date="01/11/2025",
         cluster_label="" #Budget Flight, Mid-range Flight, High-end flight
