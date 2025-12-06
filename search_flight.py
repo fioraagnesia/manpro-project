@@ -58,13 +58,13 @@ if __name__ == "__main__":
 
     filtered = search_flights(
         file_path,
-        origin="SIN",
-        destination="CGK",
+        origin=None,
+        destination=None,
         min_price=None,
         max_price=None,
-        airline="AirAsia",
-        date="12/12/2025",
-        cluster_label="" #Budget Flight, Mid-range Flight, High-end flight
+        airline=None,
+        date=None,
+        cluster_label=None #Budget Flight, Mid-range Flight, High-end flight
     )
 # contoh search 01/11/25,AirAsia,07:40,13:00,6h 20m,1,2191927,SIN,CGK,Business,40,Jakarta
     print(filtered)

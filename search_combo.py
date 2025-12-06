@@ -81,7 +81,6 @@ def search_combo (
     
     # df_result.to_csv("data_clustered/coba.csv", index=False)
 
-    print(df.dtypes)
     return df_result
 
 
@@ -89,9 +88,9 @@ def search_combo (
 target_origin = "SUB"
 target_destination = "SIN"
 target_checkin_date = "2025-12-12"
-target_min_price = 0
-target_max_price = 10000000000
-target_cluster = "Luxury"
+target_min_price = None
+target_max_price = None
+target_cluster = None
 
 if __name__ == "__main__":
     filtered_result = search_combo(
