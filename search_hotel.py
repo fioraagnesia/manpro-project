@@ -89,8 +89,8 @@ def search_hotels(
 
 # SIMULATION --> ganti di front end
 target_city = "Surabaya"
-target_checkin_date = "2025-10-16"
-target_checkout_date = "2025-10-18"
+target_checkin_date = "2025-12-08"
+target_checkout_date = "2025-12-10"
 target_min_price = 1000000
 target_max_price = 3000000
 # target_star = 3
