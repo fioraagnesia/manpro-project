@@ -1,281 +1,174 @@
-import time
-import re
-import pandas as pd
-import os
-from datetime import datetime, timedelta
+# scrape_booking.py
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, StaleElementReferenceException
+import time, random
 from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
+import pandas as pd 
+import re
+import os
+import undetected_chromedriver as uc
 
-options = Options()
-options.add_argument("--disable-blink-features=AutomationControlled")
-options.add_argument("--start-maximized")
-# options.add_argument("--headless") # Aktifkan untuk run tanpa membuka browser
-driver = webdriver.Chrome(options=options)
+def main():
+    start = time.time()   
+    
+    # KADANG KADANG TERDETEKSI BOT, KADANG KADANG NGGA TERDETEKSI BOTE. KALAU TERDEKTEKSI BOT KELUARNYA NGGA ADA HARGANYA
+    options = Options()
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--start-maximized")
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36")
+    options.add_argument(r"C:\Users\marce\AppData\Local\Google\Chrome\User Data\Default")
+    options.add_argument(r"profile-directory=Default")
+    driver = uc.Chrome(options=options)
 
-start_date = datetime(2025, 11, 14)
-num_days = 10
-dates = [(start_date + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(num_days)]
+    city_to_country = {
+        "Jakarta": "Indonesia",
+        "Bali": "Indonesia",
+        "Surabaya": "Indonesia",
+        "Bandung": "Indonesia",
+        "Yogyakarta": "Indonesia",
+        "Semarang": "Indonesia",
+        "Malang": "Indonesia",
+        "Singapura": "Singapura",
+        "Kuala Lumpur": "Malaysia",
+        "Bangkok": "Thailand",
+    }
 
-routes = [
-    ("JKT", "SIN"),
-    ("SIN", "JKT"),
-    ("SUB" , "DPS"),
-    ("DPS", "SUB"),
-    ("SUB", "SIN"),
-    ("SIN", "SUB"),
-    ("SUB", "SRG"),
-    ("SRG", "SUB"),
-    ("SUB", "JKT"),
-    ("JKT", "SUB"),
-]
+    collected = []
+    today = datetime(2025,11,13)
 
-seat_classes = [
-    "ECONOMY",
-    "BUSINESS"]
+    for day in range(11): 
+        checkin = (today + timedelta(days=day)).strftime("%Y-%m-%d")
+        checkout = (today + timedelta(days=day+1)).strftime("%Y-%m-%d")
+        print(f"\n📅 Scraping tanggal {checkin} → {checkout} (hari ke-{day+1})")
 
-flights = []
-print("✈️ Memulai proses scraping Booking.com...")
-
-for date in dates:
-    for origin, destination in routes:
-        for sc in seat_classes:
-            
-            url = (
-                f"https://flights.booking.com/flights/{origin}.CITY-{destination}.CITY?"
-                f"type=ONEWAY&adults=1&cabinClass={sc}&from={origin}.CITY&to={destination}.CITY"
-                f"&depart={date}&sort=BEST"
+        for city, country in city_to_country.items():
+            base = "https://www.booking.com/searchresults.html?"
+            search_page_url = (
+                f"{base}ss={city}"
+                f"&checkin_year_month_monthday={checkin}"
+                f"&checkout_year_month_monthday={checkout}"
+                f"&group_adults=2&no_rooms=1"
             )
-            
-            print(f"\n--- Mengambil data untuk: {origin} -> {destination} ({sc}) pada {date} ---")
-            print(f"URL: {url}")
-            
+            print(f"🌐 Sedang scrape: {city} ({search_page_url})")
+
             try:
-                driver.get(url)
-                time.sleep(5) 
-
-                try:
-                    driver.find_element(By.XPATH, "//div[@data-testid='searchresults_no_results_found']")
-                    print(f"🟡 TIDAK ADA PENERBANGAN: Rute {origin} -> {destination} kelas {sc} tanggal {date}. Melanjutkan...")
-                    continue
-                except NoSuchElementException:
-                    pass 
-
-                
-                for i in range(2): 
-                    driver.execute_script("window.scrollBy(0, 2000);")
-                    print(f"   Scroll ke-{i+1}...")
-                    time.sleep(3) 
-                    try:
-                        WebDriverWait(driver, 5).until(
-                            EC.presence_of_all_elements_located((By.XPATH, "//div[@data-testid='searchresults_card']"))
-                        )
-                    except TimeoutException:
-                        print("   Tidak ada kartu baru/selesai scroll.")
-                        break 
-                
-                try:
-                    card_elements = driver.find_elements(By.XPATH, "//div[@data-testid='searchresults_card']")
-                    total_cards = len(card_elements)
-                    if total_cards == 0:
-                        print("   Tidak ada kartu ditemukan sama sekali.")
-                        continue 
-                        
-                    print(f"   Menemukan {total_cards} total kartu penerbangan.")
-                except Exception as e:
-                    print(f"   Tidak ada kartu ditemukan setelah scroll. Error: {e}")
-                    continue
-
-                for idx in range(total_cards):
-                    
-                    airline = None
-                    departure_time = None
-                    arrival_time = None
-                    duration = None
-                    transit = None
-                    price = None
-                    origin_code = None
-                    dest_code = None
-                    seat_class = None
-                    baggage = 0
-
-                    try:
-                        all_cards = driver.find_elements(By.XPATH, "//div[@data-testid='searchresults_card']")
-                        
-                        card = all_cards[idx]
-                        
-                        soup_card = BeautifulSoup(card.get_attribute("outerHTML"), "html.parser")
-                        
-                        # 1. Airline
-                        airline_tag = soup_card.find("div", {"data-testid": "flight_card_carriers"})
-                        airline = airline_tag.get_text(strip=True) if airline_tag else None
-
-                        # 2. Departure Time & Arrival Time 
-                        time_box = soup_card.find("div", {"data-testid": "flight_card_segment_departure_time_0"})
-                        if time_box:
-                            times = time_box.find("div", class_=re.compile("Text-module__root--variant-strong"))
-                            departure_time = times.get_text(strip=True)
-
-                        time_box1 = soup_card.find("div", {"data-testid": "flight_card_segment_destination_time_0"})
-                        if time_box1:
-                            times1 = time_box.find("div", class_=re.compile("Text-module__root--variant-strong"))
-                            arrival_time = times.get_text(strip=True)
-
-                        # 3. Duration
-                        duration_tag = soup_card.find(attrs={"data-testid": "flight_card_segment_duration_0"})
-                        
-                        if duration_tag:
-                            duration = duration_tag.get_text(strip=True)
-
-                        # 4. Transit 
-                        stops_anchor = soup_card.find("span", {"data-testid": "flight_card_segment_stops_0"})
-                        if stops_anchor:
-                            stops_raw = stops_anchor.get_text(strip=True)
-                            if re.search(r"direct", stops_raw, re.IGNORECASE):
-                                transit = "0"
-                            else:
-                                match = re.search(r"(\d+)", stops_raw)
-                                transit = match.group(1) if match else stops_raw
-
-                        # 5. Price 
-                        price_tag = soup_card.find("div", {"data-testid": "upt_price"})
-                        
-                        if price_tag:
-                            harga_text = price_tag.get_text(strip=True)
-                            harga_num = int(re.sub(r'\D', '', harga_text))
-                        else:
-                            harga_num = None
-
-    
-                        # 6. Origin & Destination 
-                        origin_tag = soup_card.find("span", {"data-testid": re.compile("flight_card_segment_departure_airport")})
-                        dest_tag = soup_card.find("span", {"data-testid": re.compile("flight_card_segment_destination_airport")})
-                        origin_code = origin_tag.get_text(strip=True) if origin_tag else None
-                        dest_code = dest_tag.get_text(strip=True) if dest_tag else None
-
-                        # 7. Seat Class
-                        seat_class = sc.replace("_", " ").title()
-
-                       # 8. Baggage (Selenium)
-                        try:
-                            details_btn = card.find_element(By.XPATH, ".//button[contains(., 'View details')]")
-                            ActionChains(driver).move_to_element(details_btn).perform()
-                            driver.execute_script("arguments[0].click();", details_btn)
-
-                            modal_xpath = "//div[@role='dialog']"
-                            WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, modal_xpath)))
-
-                            try:
-                                WebDriverWait(driver, 10).until(
-                                    EC.presence_of_element_located((By.XPATH, f"{modal_xpath}//div[@data-testid='baggage_title']"))
-                                )
-                            except TimeoutException:
-                                print(f"     ⚠ Konten bagasi di flight {idx+1} tidak terdeteksi (timeout).")
-                            
-                            soup_page = BeautifulSoup(driver.page_source, "html.parser")
-
-                            all_baggage_titles = soup_page.find_all("div", {"data-testid": "baggage_title"})
-                            
-                            for title_tag in all_baggage_titles:
-                                title_text = title_tag.get_text(strip=True).lower()
-                                
-                                if "checked" in title_text:
-                                    
-                                    description_tag = title_tag.find_next_sibling("div", {"data-testid": "baggage_description"})
-                                    
-                                    if description_tag:
-                                        description_text = description_tag.get_text(strip=True)
-                                        
-                                        match_kg = re.search(r"(\d+)\s*kg", description_text, re.IGNORECASE)
-                                        if match_kg:
-                                            baggage = match_kg.group(1) 
-                                            break 
-                    
-                            close_btn = driver.find_element(By.XPATH, f"{modal_xpath}//button[contains(@aria-label, 'Close') or contains(@aria-label, 'Tutup')]")
-                            driver.execute_script("arguments[0].click();", close_btn)
-                            time.sleep(1) 
-
-                        except Exception as e:
-                            print(f"     ⚠ Gagal ambil baggage di flight {idx+1}: {e}")
-
-                            try:
-                                close_btn = driver.find_element(By.XPATH, f"//div[@role='dialog']//button[contains(@aria-label, 'Close') or contains(@aria-label, 'Tutup')]")
-                                driver.execute_script("arguments[0].click();", close_btn)
-                            except:
-                                pass # Modal tidak terbuka
-
-                        except Exception as e:
-                            print(f"     ⚠ Gagal ambil baggage di flight {idx+1}: {e}")
-                            try:
-                                close_btn = driver.find_element(By.XPATH, f"//div[@role='dialog']//button[contains(@aria-label, 'Close') or contains(@aria-label, 'Tutup')]")
-                                driver.execute_script("arguments[0].click();", close_btn)
-                            except:
-                                pass 
-
-                        if airline:
-                            flights.append({
-                                "date": date,
-                                "airline": airline,
-                                "departure_time": departure_time,
-                                "arrival_time": arrival_time,
-                                "duration": duration,
-                                "transit": transit,
-                                "price": harga_num,
-                                "origin": origin_code,
-                                "destination": dest_code,
-                                "seat_class": seat_class,
-                                "baggage": baggage,
-                                "url": url
-                            })
-                            print(f"   ✅ [{len(flights)}] {airline} ({origin_code}-{dest_code}) | {departure_time}-{arrival_time} | {duration} | {transit} | Rp {harga_num} | Bag: {baggage}")
-                        else:
-                            print(f"   ℹ️ Melewati card {idx+1} (kemungkinan bukan penerbangan).")
-
-                    except (StaleElementReferenceException, IndexError) as e:
-                        print(f"   ⚠ Error Stale/Index di card {idx+1}: {e}. Kartu mungkin hilang. Melanjutkan...")
-                        continue 
-                    except Exception as e:
-                        print(f"   ⚠ Error scrape umum di card {idx+1}: {e}")
-              
+                driver.get(search_page_url)
+                time.sleep(5)
             except Exception as e:
-                print(f"❌ ERROR besar saat memproses {origin}->{destination} {date} {sc}: {e}")
-                print(f"   URL Gagal: {url}")
+                print(f"❌ Gagal membuka {search_page_url}, error: {e}")          
+                continue
 
-driver.quit()
-print("\n🎉 Proses scraping selesai.")
+            try:
+                seen_per_day = set()
+                stop_scrolling =   False
+                for _ in range(10):  # scroll 
+                    if stop_scrolling:
+                        break
+                    driver.execute_script("window.scrollBy(0, 800);")
+                    time.sleep(random.uniform(1,2))
 
-if flights: 
-    
-    df_baru = pd.DataFrame(flights) 
-    output_filename = "NEW_booking_flight_data.xlsx"
-    
-    try:
+                    element = BeautifulSoup(driver.page_source, "html.parser")
 
-        if os.path.exists(output_filename):
-            print(f"ℹ️ File '{output_filename}' sudah ada. Membaca data lama...")
-            df_lama = pd.read_excel(output_filename, engine="openpyxl")
-            print("   Menggabungkan data lama dan baru...")
-            df_gabungan = pd.concat([df_lama, df_baru], ignore_index=True) 
-            df_gabungan.to_excel(output_filename, index=False, engine="openpyxl")
-            print(f"✅ Data berhasil ditambahkan ke {output_filename}")
-            print(f"   (Total {len(df_lama)} baris lama + {len(df_baru)} baris baru = {len(df_gabungan)} total baris)")
-        
-        else:
-            print(f"ℹ️ File '{output_filename}' tidak ditemukan. Membuat file baru...")
-            df_baru.to_excel(output_filename, index=False, engine="openpyxl")
-            print(f"✅ Data baru berhasil disimpan ke {output_filename} ({len(df_baru)} baris)")
+                    names = element.find_all("div", {"data-testid": "title"})
+                    prices = element.find_all("span", {"data-testid": "price-and-discounted-price"})
+                    locations = element.find_all("span", {"data-testid": "address"})
+                    ratings = element.find_all("div", {"data-testid": "review-score"})
+                    stars = element.find_all("div", attrs={"aria-label": re.compile(r"\d+ out of \d+")})
+                    hotel_links = element.find_all("a", {"data-testid": "title-link"})
 
-    except Exception as e:
-        print(f"❌ ERROR saat menyimpan ke Excel: {e}")
-        print("   Mungkin file sedang terbuka? Menyimpan sebagai file backup...")
-        backup_filename = f"BACKUP_booking_data_{int(time.time())}.xlsx"
-        df_baru.to_excel(backup_filename, index=False, engine="openpyxl")
-        print(f"   Data scrape SAAT INI disimpan ke {backup_filename}")
-        
-else:
-    print("❌ Tidak ada data penerbangan baru yang berhasil di-scrape. File Excel tidak diubah.")
+                    scraped_timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+                    n = min(len(names), len(prices), len(locations), len(ratings), len(hotel_links))
+
+                    for i in range(n):
+                        hotel_name = names[i].get_text(strip=True) if names[i] else None
+                        hotel_price_raw = prices[i].get_text(strip=True) if prices[i] else None
+                        hotel_price = int(re.sub(r"[^\d]", "", hotel_price_raw)) if hotel_price_raw else None
+                        hotel_loc = locations[i].get_text(strip=True) if locations[i] else None
+                        
+                        guest_rating = None
+                        if ratings and i < len(ratings):
+                            rating_text = ratings[i].get_text(strip=True)
+                            m = re.search(r"\d+(\.\d+)?", rating_text)
+                            guest_rating = m.group(0) if m else 0
+                        else:
+                            guest_rating = 0
+
+                        star_count = None
+                        if stars and i < len(stars):
+                            aria_text = stars[i].get("aria-label", "")
+                            m = re.search(r"(\d+)", aria_text)
+                            star_count = int(m.group(1)) if m else 0
+
+                        hotel_source_url = "N/A"
+                        if hotel_links[i] and 'href' in hotel_links[i].attrs:
+                            relative_url = hotel_links[i]['href']
+                            if relative_url.startswith('/'):
+                                hotel_source_url = "https://www.booking.com" + relative_url
+                            else:
+                                hotel_source_url = relative_url
+
+                        key = (hotel_name, checkin, checkout)
+                        if key in seen_per_day:
+                            continue
+
+
+                        if len(seen_per_day) >= 15:
+                            stop_scrolling = True   
+                            break
+                        seen_per_day.add(key) 
+
+                        record = (
+                            hotel_name, 
+                            hotel_price, 
+                            city, 
+                            country, 
+                            star_count, 
+                            guest_rating, 
+                            scraped_timestamp, 
+                            checkin, 
+                            checkout, 
+                            hotel_source_url 
+                        )
+                        if record not in collected:
+                            collected.append(record)
+
+                print(f"📌 Hotel terkumpul sampai sekarang: {len(collected)}")
+
+            except Exception as e:
+                print(f"⚠️ Gagal scrape data dari {search_page_url}, error: {e}")
+                continue
+
+            time.sleep(random.uniform(5, 6)) 
+
+    print("\n=== HASIL AKHIR ===")
+    df_new = pd.DataFrame(collected, columns=[
+        "hotel_name", "price", "city", "country", "hotel_star",
+        "guest_rating", "Scraped Timestamp", "checkin_date", "checkout_date", "source_url"
+    ])
+
+    filename = "hotel_booking_data.xlsx"  
+
+    if os.path.exists(filename):
+        df_existing = pd.read_excel(filename)
+
+        df_combined = pd.concat([df_existing, df_new], ignore_index=True)
+
+        df_combined.drop_duplicates(subset=["hotel_name", "checkin_date", "checkout_date"], inplace=True)
+
+        df_combined.to_excel(filename, index=False, engine="openpyxl")
+        print(f"✅ Data ditambahkan ke file yang sudah ada: {filename}")
+    else:
+        df_new.insert(0, "Hotel_ID", range(1, len(df_new) + 1))
+        df_new.to_excel(filename, index=False, engine="openpyxl")
+        print(f"✅ File baru dibuat: {filename}")
+
+    driver.quit()
+
+    end = time.time()     
+    print(f"\nWaktu eksekusi: {end - start:.4f} detik")
+
+if __name__ == "__main__":
+    main()
