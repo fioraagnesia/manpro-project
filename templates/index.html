@@ -337,12 +337,10 @@
                             <option value="Pelita">Pelita Air</option>
                             <option value="TransNusa">TransNusa</option>
                             <option value="Sriwijaya">Sriwijaya Air</option>
-                            <option value="NAM">NAM Air</option>
                             <option value="Wings">Wings Air</option>
                             <option value="Scoot">Scoot</option>
                             <option value="Singapore">Singapore Airlines</option>
                             <option value="Malaysia">Malaysia Airlines</option>
-                            <option value="Koninklijke">KLM</option>
                         </select>
                     </div>
 
@@ -512,14 +510,9 @@
             if (name.includes('transnusa')) return 'https://pics.avs.io/200/200/8B.png';
             if (name.includes('super air jet')) return 'https://logo.clearbit.com/superairjet.com';
             if (name.includes('sriwijaya')) return 'https://logo.clearbit.com/sriwijayaair.co.id';
-            if (name.includes('nam air')) return 'https://logo.clearbit.com/flynamair.com';
-            if (name.includes('klm') || name.includes('koninklijke')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/KLM_logo.svg/1024px-KLM_logo.svg.png';
             
             // --- FIX LOGO WINGS AIR ---
             if (name.includes('wings')) return 'https://upload.wikimedia.org/wikipedia/commons/2/23/Wings_Air_Logo.png';
-            
-            if (name.includes('jetstar')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Jetstar_Airways_logo.svg/1200px-Jetstar_Airways_logo.svg.png';
-            if (name.includes('firefly') || name.includes('fy')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Firefly_logo.svg/1200px-Firefly_logo.svg.png';
             
             let iataCode = '';
             if (name.includes('garuda')) iataCode = 'GA';
