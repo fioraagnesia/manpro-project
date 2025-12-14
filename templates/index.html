@@ -355,7 +355,6 @@
                             <option value="Budget">Budget</option>
                             <option value="Mid-range">Mid-range</option>
                             <option value="Luxury">Luxury</option>
-
                         </select>
                     </div>
                     <div class="form-group">
@@ -455,10 +454,14 @@
                 let yPos = 40;
                 const price = formatPrice(data['price'] || data['Total Price'] || data['total_price']);
                 
-                // Recalculate duration for PDF
-                const durInfo = getDurationData(data['departure_time'], data['arrival_time']);
-                let displayDuration = row['duration'] || durInfo.text; // Use CSV duration if available
-                if (durInfo.valid) displayDuration = durInfo.text;
+                // Recalculate duration for PDF (ONLY FOR FLIGHT/COMBO)
+                let displayDuration = "-";
+                
+                if (type === 'flight' || type === 'combo') {
+                    const durInfo = getDurationData(data['departure_time'], data['arrival_time']);
+                    displayDuration = data['duration'] || durInfo.text;
+                    if (durInfo.valid) displayDuration = durInfo.text;
+                }
 
                 if (type === 'flight') {
                     doc.setFontSize(14); doc.setTextColor(0); doc.text("Flight Details", 15, yPos); yPos += 10;
@@ -505,7 +508,7 @@
                 doc.save(`TravelCompare_${type}_${new Date().getTime()}.pdf`);
                 if (typeof Swal !== 'undefined') Swal.fire('Berhasil!', 'File PDF telah didownload.', 'success');
 
-            } catch(e) { console.error(e); alert("Gagal membuat PDF."); }
+            } catch(e) { console.error(e); alert("Gagal membuat PDF. " + e.message); }
         }
 
         // --- HELPER FUNCTIONS ---
@@ -733,7 +736,7 @@
             }
         }
 
-        // --- RENDER HOTEL ---
+        // --- RENDER HOTEL (FIXED: SHOW SEGMENTATION BADGE) ---
         function renderHotelCards(data) {
             const resultsContent = document.getElementById('results-content');
             resultsContent.classList.remove('list-mode');
@@ -748,6 +751,13 @@
             data.forEach((row, idx) => {
                 const img = row['image_url'] || getHotelImage(idx);
                 const rating = row['Guest Rating'] ? row['Guest Rating'] : 'N/A';
+                
+                // --- FIX: AMBIL SEGMENTATION DARI BACKEND ---
+                const segment = row['segmentation'] || ''; 
+                // Format Teks agar rapi (Title Case)
+                const displaySegment = segment.charAt(0).toUpperCase() + segment.slice(1);
+                const badgeColor = getBadgeColor(segment); // Warna sesuai kategori
+
                 let ratingText = "Baik";
                 if (rating > 9.0) ratingText = "Luar Biasa"; else if (rating > 8.0) ratingText = "Hebat";
                 
@@ -755,6 +765,13 @@
                 <div class="hotel-card">
                     <img src="${img}" class="hotel-card-image" loading="lazy" onerror="this.src='https://loremflickr.com/400/300/hotel?random=${idx}'">
                     <div class="hotel-card-content">
+                        
+                        <div style="margin-bottom: 5px;">
+                            <span style="background-color: ${badgeColor}20; color: ${badgeColor}; font-size: 11px; font-weight: bold; padding: 4px 8px; border-radius: 4px;">
+                                ${displaySegment || 'Hotel'}
+                            </span>
+                        </div>
+
                         <h3 class="hotel-name">${row['Hotel Name'] || 'Hotel'}</h3>
                         <div class="hotel-stars">${'⭐'.repeat(Math.floor(row['Hotel Star'] || 0))}</div>
                         <div class="hotel-city">📍 ${row['City'] || ''}</div>
