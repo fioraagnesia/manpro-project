@@ -726,6 +726,8 @@
             // Hotel tidak perlu filter durasi, jadi langsung pakai data
             window.currentResults = data;
 
+            data.sort((a, b) => parseFloat(a['Total Price']) - parseFloat(b['Total Price']));
+
             data.forEach((row, idx) => {
                 const img = row['image_url'] || getHotelImage(idx);
                 const rating = row['Guest Rating'] ? row['Guest Rating'] : 'N/A';
