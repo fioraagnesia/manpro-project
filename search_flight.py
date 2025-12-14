@@ -46,11 +46,9 @@ def search_flights(
     if cluster_label:
         result = result[result["cluster_label"] == cluster_label.title()]
 
-    result = result[result["price"] <= 50000000]
-
     if result.empty:
         return "No flights found with the specified filters."
-
+    print(df.dtypes)
     return result
 
 file_path = "data_clustered/cleaned_flights_clustered.csv"
@@ -60,13 +58,13 @@ if __name__ == "__main__":
 
     filtered = search_flights(
         file_path,
-        origin="SIN",
-        destination="CGK",
-        min_price=1000000,
-        max_price=3000000,
-        airline="AirAsia",
-        date="01/11/2025",
-        cluster_label="" #Budget Flight, Mid-range Flight, High-end flight
+        origin=None,
+        destination=None,
+        min_price=None,
+        max_price=None,
+        airline=None,
+        date=None,
+        cluster_label=None #Budget Flight, Mid-range Flight, High-end flight
     )
 # contoh search 01/11/25,AirAsia,07:40,13:00,6h 20m,1,2191927,SIN,CGK,Business,40,Jakarta
     print(filtered)

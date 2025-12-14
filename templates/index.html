@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelCompare</title>
+    <title>TravelCompare | Cari Penawaran Terbaik</title>
     
     <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -189,6 +189,8 @@
         <option value="Semarang">Semarang</option>
         <option value="Yogyakarta">Yogyakarta</option>
         <option value="Makassar">Makassar</option>
+        <option value="Kuala Lumpur">Kuala Lumpur</option>
+        <option value="Bangkok">Bangkok</option>
     </datalist>
 
     <h1>TravelCompare</h1>
@@ -282,6 +284,16 @@
                     </div>
                     
                     <div class="form-group full-width">
+                        <label for="h-segmentation">Kategori Hotel (Segmentation)</label>
+                        <select id="h-segmentation" name="segmentation">
+                            <option value="">Semua Kategori</option>
+                            <option value="Budget">Budget</option>
+                            <option value="Mid-range">Mid-range</option>
+                            <option value="Luxury">Luxury</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
                         <label>Filter Bintang Hotel (Pilih Satu atau Lebih)</label>
                         <div class="star-rating">
                             <input type="checkbox" id="star1" name="hotel_star" value="1"><label for="star1">⭐ 1 Bintang</label>
@@ -366,95 +378,97 @@
     </div>
 
     <script>
-        // --- GLOBAL VARIABLE UTAMA ---
+        // --- GLOBAL VARIABLE ---
         window.currentResults = [];
 
-        // Logo Perusahaan (Ikon Pesawat - Base64 Valid)
+        // Logo Perusahaan
         const COMPANY_LOGO_DATA = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAjklEQVRogeaV0Q3DIAxE30yRjZAxMkY2SsdoF2iH0jFC6iJ1V4o45Q/8E58T24ADxEQ4q8Bq9zYAmN17B+AO4A0A5VzX3iO899m51lq/EyKl5BExM3POvfc+Iq613n8FQs65i4hZaz3/CoSUknfPzFprX3uP8N5n51prz/0XIGb2zrnn3nsfEbfW+v8ChJTyB95rJ8IqWz0RAAAAAElFTkSuQmCC";
 
-        // --- FUNGSI DOWNLOAD PDF (DENGAN SWEETALERT) ---
-        function confirmDownloadPDF(type, index) {
-            // Pastikan data ada
-            const data = window.currentResults[index];
+        // --- FUNGSI HITUNG DURASI & VALIDASI (FIX 0 DURATION) ---
+        function getDurationData(dep, arr) {
+            if(!dep || !arr || dep === arr) return { valid: false, text: "Direct" }; // Invalid jika jam sama persis
+            
+            try {
+                const [h1, m1] = dep.split(':').map(Number);
+                const [h2, m2] = arr.split(':').map(Number);
+                
+                const startMins = h1 * 60 + m1;
+                const endMins = h2 * 60 + m2;
+                
+                let diff = endMins - startMins;
+                if (diff < 0) diff += 1440; // +1 Hari
+                
+                if (diff === 0) return { valid: false, text: "0h 0m" }; // Durasi 0 menit = Error Data
 
+                const hours = Math.floor(diff / 60);
+                const mins = diff % 60;
+                
+                return { valid: true, text: `${hours}h ${mins}m` };
+            } catch (e) {
+                return { valid: false, text: "-" };
+            }
+        }
+
+        // --- FUNGSI DOWNLOAD PDF ---
+        function confirmDownloadPDF(type, index) {
+            const data = window.currentResults[index];
             if (!data) {
-                if (typeof Swal !== 'undefined') {
-                    Swal.fire('Error', 'Data tidak ditemukan. Silakan cari ulang.', 'error');
-                } else {
-                    alert('Error: Data tidak ditemukan.');
-                }
+                if (typeof Swal !== 'undefined') Swal.fire('Error', 'Data tidak ditemukan.', 'error');
+                else alert('Error: Data tidak ditemukan.');
                 return;
             }
 
             if (typeof Swal !== 'undefined') {
                 Swal.fire({
                     title: 'Download Penawaran?',
-                    text: "Anda akan mengunduh detail penawaran ini dalam format PDF.",
+                    text: "Unduh detail penawaran ini dalam format PDF.",
                     icon: 'question',
                     showCancelButton: true,
                     confirmButtonColor: '#007bff',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Ya, Download!',
-                    cancelButtonText: 'Batal'
+                    confirmButtonText: 'Ya, Download!'
                 }).then((result) => {
-                    if (result.isConfirmed) {
-                        generatePDF(type, data);
-                    }
+                    if (result.isConfirmed) generatePDF(type, data);
                 });
             } else {
-                // Fallback jika SweetAlert gagal load
-                if(confirm("Download PDF untuk penawaran ini?")) {
-                    generatePDF(type, data);
-                }
+                if(confirm("Download PDF?")) generatePDF(type, data);
             }
         }
 
         function generatePDF(type, data) {
-            // Cek apakah library sudah siap
-            if (!window.jspdf) {
-                alert("Error: Library PDF gagal dimuat. Mohon refresh halaman.");
-                return;
-            }
+            if (!window.jspdf) { alert("Error: Library PDF gagal dimuat."); return; }
 
             try {
                 const { jsPDF } = window.jspdf;
                 const doc = new jsPDF();
                 
-                // Header & Logo
-                try {
-                    doc.addImage(COMPANY_LOGO_DATA, 'PNG', 15, 10, 10, 10);
-                } catch (e) { console.warn("Logo gagal dimuat di PDF"); }
-
-                doc.setFontSize(18);
-                doc.setTextColor(0, 123, 255);
-                doc.text("Travel Compare", 30, 17);
-                
-                doc.setFontSize(10);
-                doc.setTextColor(100);
-                doc.text("Official Itinerary & Quote", 30, 22);
+                // Header
+                try { doc.addImage(COMPANY_LOGO_DATA, 'PNG', 15, 10, 10, 10); } catch (e) {}
+                doc.setFontSize(18); doc.setTextColor(0, 123, 255); doc.text("TravelCompare", 30, 17);
+                doc.setFontSize(10); doc.setTextColor(100); doc.text("Official Itinerary", 30, 22);
                 doc.text(`Date: ${new Date().toLocaleDateString()}`, 150, 17);
-                doc.setDrawColor(200);
-                doc.line(15, 28, 195, 28);
+                doc.setDrawColor(200); doc.line(15, 28, 195, 28);
 
-                // Konten
+                // Content
                 let yPos = 40;
                 const price = formatPrice(data['price'] || data['Total Price'] || data['total_price']);
+                
+                // Recalculate duration for PDF
+                const durInfo = getDurationData(data['departure_time'], data['arrival_time']);
+                const displayDuration = durInfo.text;
 
                 if (type === 'flight') {
-                    doc.setFontSize(14); doc.setTextColor(0);
-                    doc.text("Flight Details", 15, yPos); yPos += 10;
+                    doc.setFontSize(14); doc.setTextColor(0); doc.text("Flight Details", 15, yPos); yPos += 10;
                     doc.setFontSize(12);
                     doc.text(`Airline: ${data['airline'] || '-'}`, 15, yPos); yPos+=8;
                     doc.text(`Route: ${data['origin']} -> ${data['destination']}`, 15, yPos); yPos+=8;
                     doc.text(`Time: ${data['departure_time']} - ${data['arrival_time']}`, 15, yPos); yPos+=8;
-                    doc.text(`Duration: ${data['duration'] || '-'}`, 15, yPos); yPos+=8;
+                    doc.text(`Duration: ${displayDuration}`, 15, yPos); yPos+=8; 
                     doc.text(`Baggage: ${data['baggage_weight'] || '20'} kg`, 15, yPos); yPos+=15;
-                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
-                    doc.text(`Total Price: ${price}`, 15, yPos);
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0); doc.text(`Total Price: ${price}`, 15, yPos);
 
                 } else if (type === 'hotel') {
-                    doc.setFontSize(14); doc.setTextColor(0);
-                    doc.text("Hotel Booking Details", 15, yPos); yPos += 10;
+                    doc.setFontSize(14); doc.setTextColor(0); doc.text("Hotel Booking Details", 15, yPos); yPos += 10;
                     doc.setFontSize(12);
                     doc.text(`Hotel Name: ${data['Hotel Name']}`, 15, yPos); yPos+=8;
                     doc.text(`City: ${data['City']}`, 15, yPos); yPos+=8;
@@ -462,46 +476,33 @@
                     doc.text(`Check-in: ${formatDate(data['Checkin Date'])}`, 15, yPos); yPos+=8;
                     doc.text(`Check-out: ${formatDate(data['Checkout Date'])}`, 15, yPos); yPos+=8;
                     doc.text(`Rating: ${data['Hotel Star']} Stars`, 15, yPos); yPos+=15;
-                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
-                    doc.text(`Total Price: ${price}`, 15, yPos);
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0); doc.text(`Total Price: ${price}`, 15, yPos);
 
                 } else if (type === 'combo') {
-                    doc.setFontSize(14); doc.setTextColor(0);
-                    doc.text(`Combo Package (${data['cluster'] || 'Standard'})`, 15, yPos); yPos += 10;
+                    doc.setFontSize(14); doc.setTextColor(0); doc.text(`Combo Package (${data['cluster'] || 'Standard'})`, 15, yPos); yPos += 10;
                     
-                    // Flight Details
-                    doc.setFontSize(12); doc.setTextColor(0);
-                    doc.text("Flight Details:", 15, yPos); yPos+=8;
+                    doc.setFontSize(12); doc.setTextColor(0); doc.text("Flight Details:", 15, yPos); yPos+=8;
                     doc.setFontSize(11); doc.setTextColor(80);
                     doc.text(`- Airline: ${data['airline']}`, 20, yPos); yPos+=6;
                     doc.text(`- Route: ${data['origin']} -> ${data['destination']}`, 20, yPos); yPos+=6;
                     doc.text(`- Time: ${data['departure_time']} - ${data['arrival_time']}`, 20, yPos); yPos+=6;
+                    doc.text(`- Duration: ${displayDuration}`, 20, yPos); yPos+=6; 
                     doc.text(`- Date: ${formatDate(data['date'])}`, 20, yPos); yPos+=10;
                     
-                    // Hotel Details
-                    doc.setFontSize(12); doc.setTextColor(0);
-                    doc.text("Hotel Details:", 15, yPos); yPos+=8;
+                    doc.setFontSize(12); doc.setTextColor(0); doc.text("Hotel Details:", 15, yPos); yPos+=8;
                     doc.setFontSize(11); doc.setTextColor(80);
                     doc.text(`- Hotel: ${data['Hotel Name']}`, 20, yPos); yPos+=6;
                     doc.text(`- City: ${data['City']}`, 20, yPos); yPos+=6;
                     doc.text(`- Check-in: ${formatDate(data['Checkin Date'])}`, 20, yPos); yPos+=6;
                     doc.text(`- Rating: ${data['Hotel Star']} Stars`, 20, yPos); yPos+=15;
 
-                    doc.setFontSize(16); doc.setTextColor(0, 128, 0);
-                    doc.text(`Package Price: ${price} / pax`, 15, yPos);
+                    doc.setFontSize(16); doc.setTextColor(0, 128, 0); doc.text(`Package Price: ${price} / pax`, 15, yPos);
                 }
 
                 doc.save(`TravelCompare_${type}_${new Date().getTime()}.pdf`);
-                
-                // Show success alert
-                if (typeof Swal !== 'undefined') {
-                    Swal.fire('Berhasil!', 'File PDF telah didownload.', 'success');
-                }
+                if (typeof Swal !== 'undefined') Swal.fire('Berhasil!', 'File PDF telah didownload.', 'success');
 
-            } catch(e) {
-                console.error("PDF Gen Error:", e);
-                alert("Gagal membuat PDF: " + e.message);
-            }
+            } catch(e) { console.error(e); alert("Gagal membuat PDF."); }
         }
 
         // --- HELPER FUNCTIONS ---
@@ -642,13 +643,34 @@
         function renderFlightCards(data) {
             const resultsContent = document.getElementById('results-content');
             resultsContent.classList.add('list-mode');
+            
+            // Temporary array untuk menyimpan data yang valid saja (durasi > 0)
+            let validData = [];
+
             if (!data || data.length === 0) {
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada penerbangan ditemukan.</p>`; return;
             }
+            
             data.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
 
             let html = '';
+            
+            // Loop untuk filter dan render
             data.forEach((row, index) => {
+                // HITUNG DURASI
+                const durInfo = getDurationData(row['departure_time'], row['arrival_time']);
+                
+                // FILTER: JIKA TIDAK VALID (0 menit), LEWATI (CONTINUE)
+                if (!durInfo.valid) {
+                    return; 
+                }
+                
+                // Simpan data valid untuk akses PDF nanti (agar index sinkron)
+                validData.push(row); 
+                
+                // Gunakan index baru dari validData.length - 1
+                const newIndex = validData.length - 1;
+
                 const airline = row['airline'] || 'Airline';
                 const seatClass = row['cabin_class'] || 'Economy'; 
                 const baggage = row['baggage_weight'] ? row['baggage_weight'] + ' kg' : '20 kg'; 
@@ -659,23 +681,23 @@
                     <div class="flight-card-main">
                         <div class="airline-info">
                             <img src="${getAirlineLogo(airline)}" class="airline-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/723/723955.png'">
-                            <div><div class="airline-name">${airline}</div></div>
+                            <div><div class="airline-name">${airline}</div><span class="airline-cluster">${row['cluster_label'] || ''}</span></div>
                         </div>
                         <div class="flight-route">
                             <div style="text-align:center;"><div class="route-time">${row['departure_time'] || '--:--'}</div><div class="route-city">${row['origin'] || ''}</div></div>
-                            <div class="route-duration"><span class="duration-text">${row['duration'] || 'Direct'}</span><div class="duration-line"></div></div>
+                            <div class="route-duration"><span class="duration-text">${durInfo.text}</span><div class="duration-line"></div></div>
                             <div style="text-align:center;"><div class="route-time">${row['arrival_time'] || '--:--'}</div><div class="route-city">${row['destination'] || ''}</div></div>
                         </div>
                         <div class="flight-action">
                             <div class="flight-price">${formatPrice(row['price'])}</div>
                             <div class="btn-group-action">
-                                <button class="btn-toggle-detail" onclick="toggleDetail('f-detail-${index}')">Lihat Detail ⬇</button>
-                                <button class="btn-pdf" onclick="confirmDownloadPDF('flight', ${index})">📄 PDF</button>
+                                <button class="btn-toggle-detail" onclick="toggleDetail('f-detail-${newIndex}')">Lihat Detail ⬇</button>
+                                <button class="btn-pdf" onclick="confirmDownloadPDF('flight', ${newIndex})">📄 PDF</button>
                             </div>
                         </div>
                     </div>
                     
-                    <div id="f-detail-${index}" class="detail-panel">
+                    <div id="f-detail-${newIndex}" class="detail-panel">
                         <div class="detail-grid">
                             <div class="detail-item"><span class="detail-label">Maskapai</span><span class="detail-value">${airline} (${flightCode})</span></div>
                             <div class="detail-item"><span class="detail-label">Kelas</span><span class="detail-value">💺 ${seatClass}</span></div>
@@ -684,7 +706,15 @@
                     </div>
                 </div>`;
             });
-            resultsContent.innerHTML = html;
+            
+            // UPDATE GLOBAL VARIABLE HANYA DENGAN DATA VALID
+            window.currentResults = validData;
+            
+            if (validData.length === 0) {
+                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada penerbangan yang valid.</p>`;
+            } else {
+                 resultsContent.innerHTML = html;
+            }
         }
 
         // --- RENDER HOTEL ---
@@ -695,9 +725,12 @@
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada hotel ditemukan.</p>`; return;
             }
             let html = '';
+            
+            // Hotel tidak perlu filter durasi, jadi langsung pakai data
+            window.currentResults = data;
+
             data.forEach((row, idx) => {
                 const img = row['image_url'] || getHotelImage(idx);
-                // Gunakan Rating Asli dari Database
                 const rating = row['Guest Rating'] ? row['Guest Rating'] : 'N/A';
                 let ratingText = "Baik";
                 if (rating > 9.0) ratingText = "Luar Biasa"; else if (rating > 8.0) ratingText = "Hebat";
@@ -737,12 +770,25 @@
             const resultsContent = document.getElementById('results-content');
             resultsContent.classList.add('list-mode'); 
             
+            let validData = [];
+
             if (!data || data.length === 0) {
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo ditemukan.</p>`; return;
             }
 
             let html = '';
+            
             data.forEach((row, idx) => {
+                // HITUNG DURASI & FILTER
+                const durInfo = getDurationData(row['departure_time'], row['arrival_time']);
+                
+                if (!durInfo.valid) {
+                    return; // Skip data error (0 menit)
+                }
+                
+                validData.push(row);
+                const newIndex = validData.length - 1;
+
                 const airline = row['airline'] || 'Airline';
                 const hotelName = row['Hotel Name'] || 'Hotel';
                 const clusterName = row['cluster'] || '-'; 
@@ -782,18 +828,18 @@
                         <div class="combo-price-section">
                             <span class="combo-price-label">Harga Paket per Orang</span>
                             <div class="combo-price" style="color: ${badgeColor};">${formatPrice(row['total_price'])}</div>
-                            <button class="btn-toggle-combo" style="color: ${badgeColor};" onclick="toggleDetail('c-detail-${idx}')">Lihat Detail ⬇</button>
-                            <button class="btn-pdf" style="margin-top:5px; color:#555;" onclick="confirmDownloadPDF('combo', ${idx})">📄 Download PDF</button>
+                            <button class="btn-toggle-combo" style="color: ${badgeColor};" onclick="toggleDetail('c-detail-${newIndex}')">Lihat Detail ⬇</button>
+                            <button class="btn-pdf" style="margin-top:5px; color:#555;" onclick="confirmDownloadPDF('combo', ${newIndex})">📄 Download PDF</button>
                         </div>
                     </div>
 
-                    <div id="c-detail-${idx}" class="combo-detail-panel">
+                    <div id="c-detail-${newIndex}" class="combo-detail-panel">
                         <div class="combo-detail-grid">
                             <div class="combo-detail-col">
                                 <h4>✈️ Detail Penerbangan</h4>
                                 <div class="detail-item"><span class="detail-label">Maskapai</span><span class="detail-value">${airline}</span></div>
                                 <div class="detail-item"><span class="detail-label">Waktu</span><span class="detail-value">Berangkat: ${row['departure_time'] || '--:--'} <br> Tiba: ${row['arrival_time'] || '--:--'}</span></div>
-                                <div class="detail-item"><span class="detail-label">Durasi</span><span class="detail-value">${row['duration'] || '-'}</span></div>
+                                <div class="detail-item"><span class="detail-label">Durasi</span><span class="detail-value">${durInfo.text}</span></div>
                                 <div class="detail-item"><span class="detail-label">Bagasi</span><span class="detail-value">🧳 ${baggage}</span></div>
                             </div>
 
@@ -808,7 +854,14 @@
                 </div>
                 `;
             });
-            resultsContent.innerHTML = html;
+            
+            window.currentResults = validData; // Update data global agar PDF tidak error ambil index
+            
+            if (validData.length === 0) {
+                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo yang valid.</p>`;
+            } else {
+                 resultsContent.innerHTML = html;
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {

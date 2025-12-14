@@ -73,10 +73,6 @@ def search_combo (
     if cluster:    # frontend: dropdown
         df_result = df_result[df_result['cluster'] == cluster]
 
-    if max_total_price is None:
-        # Hapus data yang harganya di atas 50 Juta (50.000.000)
-        df_result = df_result[df_result["total_price"] <= 50000000]
-
     if 'arrival_dt' in df_result.columns:
             df_result = df_result[df_result['arrival_dt'].dt.hour >= 12]
 
@@ -89,12 +85,12 @@ def search_combo (
 
 
 # SIMULATION --> ganti di front end
-target_origin = "DPS"
-target_destination = "SUB"
-target_checkin_date = "2025-10-27"
-target_min_price = 1000000
-target_max_price = 1100000
-target_cluster = "Luxury"
+target_origin = "SUB"
+target_destination = "SIN"
+target_checkin_date = "2025-12-12"
+target_min_price = None
+target_max_price = None
+target_cluster = None
 
 if __name__ == "__main__":
     filtered_result = search_combo(
@@ -110,4 +106,4 @@ if __name__ == "__main__":
     print(f"--- RESULT: {len(filtered_result)} combos found ---")
     show_columns = ["date", "airline", "origin", "destination", "City", "Hotel Name", "total_price", "cluster"]
     print(filtered_result.sort_values(by='total_price')[show_columns])
-# print(filtered_result)
+    # print(filtered_result)

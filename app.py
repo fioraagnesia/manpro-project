@@ -129,7 +129,8 @@ def api_search_hotels():
             checkout_date=checkout,
             min_total_price=to_float(data.get('min_total_price')),
             max_total_price=to_float(data.get('max_total_price')),
-            hotel_star=stars_num_list
+            hotel_star=stars_num_list,
+            segmentation=data.get('segmentation')
         )
         
         # 2. Tambahkan Gambar Real (Logic Baru)
