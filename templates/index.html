@@ -230,10 +230,12 @@
                             <option value="Pelita">Pelita Air</option>
                             <option value="TransNusa">TransNusa</option>
                             <option value="Sriwijaya">Sriwijaya Air</option>
+                            <option value="NAM">NAM Air</option>
                             <option value="Wings">Wings Air</option>
                             <option value="Scoot">Scoot</option>
                             <option value="Singapore">Singapore Airlines</option>
                             <option value="Malaysia">Malaysia Airlines</option>
+                            <option value="Koninklijke">KLM</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -337,10 +339,12 @@
                             <option value="Pelita">Pelita Air</option>
                             <option value="TransNusa">TransNusa</option>
                             <option value="Sriwijaya">Sriwijaya Air</option>
+                            <option value="NAM">NAM Air</option>
                             <option value="Wings">Wings Air</option>
                             <option value="Scoot">Scoot</option>
                             <option value="Singapore">Singapore Airlines</option>
                             <option value="Malaysia">Malaysia Airlines</option>
+                            <option value="Koninklijke">KLM</option>
                         </select>
                     </div>
 
@@ -350,7 +354,8 @@
                             <option value="">Semua Kategori</option>
                             <option value="Budget">Budget</option>
                             <option value="Mid-range">Mid-range</option>
-                            <option value="Business">Luxury</option>
+                            <option value="Luxury">Luxury</option>
+
                         </select>
                     </div>
                     <div class="form-group">
@@ -452,7 +457,8 @@
                 
                 // Recalculate duration for PDF
                 const durInfo = getDurationData(data['departure_time'], data['arrival_time']);
-                const displayDuration = durInfo.text;
+                let displayDuration = row['duration'] || durInfo.text; // Use CSV duration if available
+                if (durInfo.valid) displayDuration = durInfo.text;
 
                 if (type === 'flight') {
                     doc.setFontSize(14); doc.setTextColor(0); doc.text("Flight Details", 15, yPos); yPos += 10;
@@ -461,7 +467,7 @@
                     doc.text(`Route: ${data['origin']} -> ${data['destination']}`, 15, yPos); yPos+=8;
                     doc.text(`Time: ${data['departure_time']} - ${data['arrival_time']}`, 15, yPos); yPos+=8;
                     doc.text(`Duration: ${displayDuration}`, 15, yPos); yPos+=8; 
-                    doc.text(`Baggage: ${data['baggage'] || '20'} kg`, 15, yPos); yPos+=15;
+                    doc.text(`Baggage: ${data['baggage_weight'] || '20'} kg`, 15, yPos); yPos+=15;
                     doc.setFontSize(16); doc.setTextColor(0, 128, 0); doc.text(`Total Price: ${price}`, 15, yPos);
 
                 } else if (type === 'hotel') {
@@ -510,9 +516,14 @@
             if (name.includes('transnusa')) return 'https://pics.avs.io/200/200/8B.png';
             if (name.includes('super air jet')) return 'https://logo.clearbit.com/superairjet.com';
             if (name.includes('sriwijaya')) return 'https://logo.clearbit.com/sriwijayaair.co.id';
+            if (name.includes('nam air')) return 'https://logo.clearbit.com/flynamair.com';
+            if (name.includes('klm') || name.includes('koninklijke')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/KLM_logo.svg/1024px-KLM_logo.svg.png';
             
             // --- FIX LOGO WINGS AIR ---
-            if (name.includes('wings')) return 'https://upload.wikimedia.org/wikipedia/commons/2/23/Wings_Air_Logo.png';
+            if (name.includes('wings')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Wings_Air_Logo.png/320px-Wings_Air_Logo.png';
+            
+            if (name.includes('jetstar')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Jetstar_Airways_logo.svg/1200px-Jetstar_Airways_logo.svg.png';
+            if (name.includes('firefly') || name.includes('fy')) return 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Firefly_logo.svg/1200px-Firefly_logo.svg.png';
             
             let iataCode = '';
             if (name.includes('garuda')) iataCode = 'GA';
@@ -521,6 +532,7 @@
             else if (name.includes('batik')) iataCode = 'ID';
             else if (name.includes('airasia')) iataCode = 'QZ';
             else if (name.includes('scoot')) iataCode = 'TR';
+            else if (name.includes('jetstar')) iataCode = 'JQ';
             else if (name.includes('singapore') || name === 'sq') iataCode = 'SQ';
             else if (name.includes('malaysia')) iataCode = 'MH';
             
@@ -657,20 +669,28 @@
                 // HITUNG DURASI
                 const durInfo = getDurationData(row['departure_time'], row['arrival_time']);
                 
-                // FILTER: JIKA TIDAK VALID (0 menit), LEWATI (CONTINUE)
-                if (!durInfo.valid) {
-                    return; 
+                // LOGIKA FILTER BARU: HANYA SKIP JIKA BENAR-BENAR KOSONG
+                // Jika jam 0 menit, TAPI ada teks durasi di CSV, tetap TAMPILKAN.
+                let displayDuration = row['duration'] || '-';
+                let isValid = true;
+
+                if (durInfo.valid) {
+                    displayDuration = durInfo.text; // Pakai hasil hitung jika valid
+                } else {
+                    // Jika hitung 0, cek apakah ada teks asli?
+                    if (!row['duration'] || row['duration'] === '0' || row['duration'] === '-') {
+                        isValid = false; // Memang data sampah
+                    }
                 }
+
+                if (!isValid) return; // Skip
                 
-                // Simpan data valid untuk akses PDF nanti (agar index sinkron)
-                validData.push(row); 
-                
-                // Gunakan index baru dari validData.length - 1
+                validData.push(row);
                 const newIndex = validData.length - 1;
 
                 const airline = row['airline'] || 'Airline';
-                const seatClass = row['seat_class'] || 'Economy'; 
-                const baggage = row['baggage'] ? row['baggage'] + ' kg' : '20 kg'; 
+                const seatClass = row['cabin_class'] || 'Economy'; 
+                const baggage = row['baggage'] ? row['baggage'] + ' kg' : '20 kg'; // FIX: BAGGAGE COLUMN
                 const flightCode = row['flight_code'] || 'FN-' + (Math.floor(Math.random() * 900) + 100);
 
                 html += `
@@ -682,7 +702,7 @@
                         </div>
                         <div class="flight-route">
                             <div style="text-align:center;"><div class="route-time">${row['departure_time'] || '--:--'}</div><div class="route-city">${row['origin'] || ''}</div></div>
-                            <div class="route-duration"><span class="duration-text">${durInfo.text}</span><div class="duration-line"></div></div>
+                            <div class="route-duration"><span class="duration-text">${displayDuration}</span><div class="duration-line"></div></div>
                             <div style="text-align:center;"><div class="route-time">${row['arrival_time'] || '--:--'}</div><div class="route-city">${row['destination'] || ''}</div></div>
                         </div>
                         <div class="flight-action">
@@ -704,8 +724,7 @@
                 </div>`;
             });
             
-            // UPDATE GLOBAL VARIABLE HANYA DENGAN DATA VALID
-            window.currentResults = validData;
+            window.currentResults = validData; 
             
             if (validData.length === 0) {
                  resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada penerbangan yang valid.</p>`;
@@ -723,9 +742,7 @@
             }
             let html = '';
             
-            // Hotel tidak perlu filter durasi, jadi langsung pakai data
             window.currentResults = data;
-
             data.sort((a, b) => parseFloat(a['Total Price']) - parseFloat(b['Total Price']));
 
             data.forEach((row, idx) => {
@@ -774,16 +791,26 @@
             if (!data || data.length === 0) {
                 resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo ditemukan.</p>`; return;
             }
+            
+            data.sort((a, b) => parseFloat(a['total_price']) - parseFloat(b['total_price']));
 
             let html = '';
             
             data.forEach((row, idx) => {
-                // HITUNG DURASI & FILTER
+                // HITUNG DURASI & FILTER (SAMA SEPERTI FLIGHT)
                 const durInfo = getDurationData(row['departure_time'], row['arrival_time']);
-                
-                if (!durInfo.valid) {
-                    return; // Skip data error (0 menit)
+                let displayDuration = row['duration'] || '-';
+                let isValid = true;
+
+                if (durInfo.valid) {
+                    displayDuration = durInfo.text;
+                } else {
+                    if (!row['duration'] || row['duration'] === '0' || row['duration'] === '-') {
+                        isValid = false; 
+                    }
                 }
+
+                if (!isValid) return; // Skip
                 
                 validData.push(row);
                 const newIndex = validData.length - 1;
@@ -794,7 +821,7 @@
                 const badgeColor = getBadgeColor(clusterName);
                 const hotelStars = row['Hotel Star'] || 0;
                 const hotelStarsDisplay = '⭐'.repeat(Math.floor(hotelStars));
-                const baggage = row['baggage'] ? row['baggage'] + ' kg' : '20 kg'; 
+                const baggage = row['baggage'] ? row['baggage'] + ' kg' : '20 kg'; // FIX: BAGGAGE
 
                 html += `
                 <div class="combo-card-wrapper">
@@ -838,7 +865,7 @@
                                 <h4>✈️ Detail Penerbangan</h4>
                                 <div class="detail-item"><span class="detail-label">Maskapai</span><span class="detail-value">${airline}</span></div>
                                 <div class="detail-item"><span class="detail-label">Waktu</span><span class="detail-value">Berangkat: ${row['departure_time'] || '--:--'} <br> Tiba: ${row['arrival_time'] || '--:--'}</span></div>
-                                <div class="detail-item"><span class="detail-label">Durasi</span><span class="detail-value">${durInfo.text}</span></div>
+                                <div class="detail-item"><span class="detail-label">Durasi</span><span class="detail-value">${displayDuration}</span></div>
                                 <div class="detail-item"><span class="detail-label">Bagasi</span><span class="detail-value">🧳 ${baggage}</span></div>
                             </div>
 
@@ -854,7 +881,7 @@
                 `;
             });
             
-            window.currentResults = validData; // Update data global agar PDF tidak error ambil index
+            window.currentResults = validData; 
             
             if (validData.length === 0) {
                  resultsContent.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">Tidak ada paket combo yang valid.</p>`;
